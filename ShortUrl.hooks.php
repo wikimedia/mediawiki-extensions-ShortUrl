@@ -28,10 +28,10 @@ class ShortUrlHooks {
 			$shortURL = $wgShortUrlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
 				Html::Element( 'a', array(
-									'href' => $shortURL,
-									'title' => wfMsg( 'shorturl-toolbox-title' )
-								),
-								wfMsg ( 'shorturl-toolbox-text' ) )
+					'href' => $shortURL,
+					'title' => wfMsg( 'shorturl-toolbox-title' )
+				),
+				wfMsg ( 'shorturl-toolbox-text' ) )
 			);
 
 			echo $html;

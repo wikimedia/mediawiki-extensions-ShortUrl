@@ -36,13 +36,13 @@ class SpecialShortUrl extends SpecialPage {
 	 * @param $par Mixed: Parameters passed to the page
 	 */
 	public function execute( $par ) {
-        global $wgOut;
+		global $wgOut;
 
-        $title = shorturlDecode( $par );
-        if ( $title ) {
-            $wgOut->redirect( $title->getFullURL(), '301' );
-            return;
-        }
+		$title = shorturlDecode( $par );
+		if ( $title ) {
+			$wgOut->redirect( $title->getFullURL(), '301' );
+			return;
+		}
 		// Wrong ID
 		$notfound = Html::element( 'p', array(), wfMsg ( 'shorturl-not-found', $par ) );
 		$wgOut->addHTML( $notfound );
