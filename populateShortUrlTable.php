@@ -17,7 +17,8 @@ class PopulateShortUrlsTable extends Maintenance {
 		$dbw->insert( 
 			'shorturls', 
 			$a,
-			__METHOD__
+			__METHOD__,
+			array( 'IGNORE' )
 		);
 
 	}
