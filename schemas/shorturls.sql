@@ -8,6 +8,3 @@ CREATE TABLE IF NOT EXISTS /*_*/shorturls (
 	PRIMARY KEY (su_id),
 	UNIQUE KEY (su_namespace, su_title)
 ) /*$wgDBTableOptions*/;
-
-CREATE INDEX /*i*/su_id ON /*_*/shorturls (su_id);
-CREATE INDEX /*i*/su_title ON /*_*/shorturls (su_namespace, su_title);
