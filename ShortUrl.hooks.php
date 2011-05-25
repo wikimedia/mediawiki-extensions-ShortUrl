@@ -16,6 +16,10 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 require_once "ShortUrl.functions.php";
 
 class ShortUrlHooks {
+	/**
+	 * @param $tpl
+	 * @return bool
+	 */
 	public static function AddToolboxLink( &$tpl ) {
 		global $wgOut, $wgShortUrlPrefix;
 		if ( ! $wgOut->getTitle()->equals( Title::newMainPage() ) ) {
@@ -23,7 +27,11 @@ class ShortUrlHooks {
 			$shortId = shorturlEncode( $title );
 			$shortURL = $wgShortUrlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
-				Html::Element( 'a', array( 'href' => $shortURL, 'title' => wfMsg( 'shorturl-toolbox-title' ) ), wfMsg ( 'shorturl-toolbox-text' ) )
+				Html::Element( 'a', array(
+									'href' => $shortURL,
+									'title' => wfMsg( 'shorturl-toolbox-title' )
+								),
+								wfMsg ( 'shorturl-toolbox-text' ) )
 			);
 
 			echo $html;
@@ -31,6 +39,10 @@ class ShortUrlHooks {
 		return true;
 	}
 
+	/**
+	 * @param $du DatabaseUpdater
+	 * @return bool
+	 */
 	public static function SetupSchema( DatabaseUpdater $du ) {
 		$base = dirname( __FILE__ ) . '/schemas';
 		$du->addExtensionTable( "shorturls", "$base/shorturls.sql" );

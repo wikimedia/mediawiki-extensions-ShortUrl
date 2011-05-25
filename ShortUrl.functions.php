@@ -13,14 +13,22 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-/* stolen from http://www.php.net/manual/en/function.base64-encode.php#63543 */
+/**
+ * stolen from http://www.php.net/manual/en/function.base64-encode.php#63543
+ *
+ * @param $string string
+ */
 function urlsafe_b64encode( $string ) {
 	$data = base64_encode( $string );
 	$data = str_replace( array( '+', '/', '=' ), array( '-', '_', '' ), $data );
 	return $data;
 }
 
-/* stolen from http://www.php.net/manual/en/function.base64-encode.php#63543 */
+/**
+ * stolen from http://www.php.net/manual/en/function.base64-encode.php#63543
+ *
+ * @param $string string
+ */
 function urlsafe_b64decode( $string ) {
 	$data = str_replace( array( '-', '_' ), array( '+', '/' ), $string );
 	$mod4 = strlen( $data ) % 4;
@@ -30,6 +38,10 @@ function urlsafe_b64decode( $string ) {
 	return base64_decode( $data );
 }
 
+/**
+ * @param $title Title
+ * @return mixed|string
+ */
 function shorturlEncode ( $title ) {
 	global $wgMemc;
 
@@ -59,6 +71,10 @@ function shorturlEncode ( $title ) {
 	return urlsafe_b64encode( $id );
 }
 
+/**
+ * @param $data string
+ * @return Title
+ */
 function shorturlDecode ( $data ) {
 	global $wgMemc;
 
