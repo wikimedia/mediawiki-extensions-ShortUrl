@@ -28,7 +28,9 @@ class PopulateShortUrlsTable extends Maintenance {
 		$dbr = wfGetDB( DB_SLAVE );
         $all_titles = $dbr->select(
 			"page",
-			array( "page_namespace", "page_title" )
+            array( "page_namespace", "page_title" ),
+			array(),
+			__METHOD__
 		);
 		$insert_buffer = array();
 
