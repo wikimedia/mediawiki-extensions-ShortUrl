@@ -51,7 +51,7 @@ function shorturlEncode ( $title ) {
 		$query = $dbr->select(
 			'shorturls',
 			array( 'su_id' ),
-			array( 'su_namespace' => $title->getNamespace(), 'su_title' => $title->getText() ),
+			array( 'su_namespace' => $title->getNamespace(), 'su_title' => $title->getDBkey() ),
 			__METHOD__ );
 		if ( $dbr->numRows( $query ) > 0 ) {
 			$entry = $dbr->fetchRow( $query );
@@ -61,7 +61,7 @@ function shorturlEncode ( $title ) {
 			$row_data = array(
 				'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 				'su_namespace' => $title->getNamespace(),
-				'su_title' => $title->getText()
+				'su_title' => $title->getDBkey()
 			);
 			$dbw->insert( 'shorturls', $row_data );
 			$id = $dbw->insertId();
