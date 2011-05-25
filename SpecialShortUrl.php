@@ -36,7 +36,7 @@ class SpecialShortUrl extends SpecialPage {
 	 * @param $par Mixed: Parameters passed to the page
 	 */
 	public function execute( $par ) {
-        global $wgOut, $wgRequest;
+        global $wgOut;
 
         $title = shorturlDecode( $par );
         if ( $title ) {
