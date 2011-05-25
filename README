@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------
+README for the ShortUrl extension
+Copyright © 2011 Yuvi Panda
+Licenses: GNU General Public Licence (GPL)
+--------------------------------------------------------------------------
+
+The ShortUrl extension implements a URL Shortener
+creates a special page Special:Contact, which is similar to
+Special:Emailuser, but it has a fixed recipient, and can be used
+anonymously.
+
+<http://mediawiki.org/wiki/Extension:ShortUrl>
+
+== Installing ==
+
+Copy the ShortUrl directory into the extensions folder of your 
+MediaWiki installation. Then add the following lines to your
+LocalSettings.php file (near the end):
+
+  require_once( "$IP/extensions/ShortUrl/ShortUrl.php" );
+
+== Configuration ==
+
+There are no configuration options available as of now.
