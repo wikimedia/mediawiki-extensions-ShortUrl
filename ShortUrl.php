@@ -1,6 +1,6 @@
 <?php
 /**
- * Setup for ShortUrl extension, a special page that provides redirects to articles  
+ * Setup for ShortUrl extension, a special page that provides redirects to articles
  * via their page IDs
  *
  * @file
@@ -10,7 +10,7 @@
  * @licence Modified BSD License
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
 	die( 1 );
 }

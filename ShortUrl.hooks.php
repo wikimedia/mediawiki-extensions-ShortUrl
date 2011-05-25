@@ -23,7 +23,7 @@ class ShortUrlHooks {
 			$shortId = shorturlEncode( $title );
 			$shortURL = $wgShortUrlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
-				Html::Element( 'a', array( 'href' => $shortURL, 'title' => wfMsg( 'shorturl-toolbox-title') ), wfMsg ( 'shorturl-toolbox-text' ) )
+				Html::Element( 'a', array( 'href' => $shortURL, 'title' => wfMsg( 'shorturl-toolbox-title' ) ), wfMsg ( 'shorturl-toolbox-text' ) )
 			);
 
 			echo $html;
@@ -33,7 +33,7 @@ class ShortUrlHooks {
 
 	public static function SetupSchema( DatabaseUpdater $du ) {
 		$base = dirname( __FILE__ ) . '/schemas';
-		$du->addExtensionTable( "shorturls", "$base/shorturls.sql");
+		$du->addExtensionTable( "shorturls", "$base/shorturls.sql" );
 		return true;
 	}
 

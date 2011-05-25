@@ -6,7 +6,7 @@
  * @ingroup Extensions
  * @author Yuvi Panda, yuvi.in
  * @copyright © Yuvaraj Pandian <yuvipanda@yuvi.in>
- * @license Modified BSD License 
+ * @license Modified BSD License
  */
 
 $messages = array();

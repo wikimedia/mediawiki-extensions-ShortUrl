@@ -1,6 +1,6 @@
 <?php
 /**
- * Setup for ShortUrl extension, a special page that provides redirects to articles  
+ * Setup for ShortUrl extension, a special page that provides redirects to articles
  * via their page IDs
  *
  * @file
@@ -10,7 +10,7 @@
  * @licence Modified BSD License
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "not a valid entry point.\n" );
 	die( 1 );
 }
@@ -37,7 +37,7 @@ class SpecialShortUrl extends SpecialPage {
 	 */
 	public function execute( $par ) {
         global $wgOut, $wgRequest;
-        
+
         $title = shorturlDecode( $par );
         if ( $title ) {
             $wgOut->redirect( $title->getFullURL(), '301' );
