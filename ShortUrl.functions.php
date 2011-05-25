@@ -14,31 +14,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 /**
- * stolen from http://www.php.net/manual/en/function.base64-encode.php#63543
- *
- * @param $string string
- */
-function urlsafe_b64encode( $string ) {
-	$data = base64_encode( $string );
-	$data = str_replace( array( '+', '/', '=' ), array( '-', '_', '' ), $data );
-	return $data;
-}
-
-/**
- * stolen from http://www.php.net/manual/en/function.base64-encode.php#63543
- *
- * @param $string string
- */
-function urlsafe_b64decode( $string ) {
-	$data = str_replace( array( '-', '_' ), array( '+', '/' ), $string );
-	$mod4 = strlen( $data ) % 4;
-	if ( $mod4 ) {
-		$data .= substr( '====', $mod4 );
-	}
-	return base64_decode( $data );
-}
-
-/**
  * @param $title Title
  * @return mixed|string
  */
@@ -68,7 +43,7 @@ function shorturlEncode ( $title ) {
 		}
 		$wgMemc->set( wfMemcKey( 'shorturls', 'title', $title->getFullText() ), $id, 0 );
 	}
-	return urlsafe_b64encode( $id );
+	return base_convert( $id, 10, 36 );
 }
 
 /**
@@ -78,7 +53,7 @@ function shorturlEncode ( $title ) {
 function shorturlDecode ( $data ) {
 	global $wgMemc;
 
-	$id = intval( urlsafe_b64decode ( $data ) );
+	$id = intval( base_convert ( $data, 36, 10 ) );
 	$entry = $wgMemc->get( wfMemcKey( 'shorturls', 'id', $id ) );
 	if ( !$entry ) {
 		$dbr = wfGetDB( DB_SLAVE );
