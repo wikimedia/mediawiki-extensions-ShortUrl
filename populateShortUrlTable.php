@@ -12,7 +12,7 @@ class PopulateShortUrlsTable extends Maintenance {
 		$this->mDescription = "Populates ShortUrls Table with all existing articles";
 	}
 
-	private function insertRows($a) {
+	private function insertRows( $a ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->insert( 
 			'shorturls', 
@@ -20,14 +20,13 @@ class PopulateShortUrlsTable extends Maintenance {
 			__METHOD__,
 			array( 'IGNORE' )
 		);
-
 	}
 
 	//FIXME: Refactor out code in ShortUrl.functions.php so it can be used here
 	public function execute() {
 		$rowCount = 0;
 		$dbr = wfGetDB( DB_SLAVE );
-		$all_titles = $dbr->select(
+		$res = $dbr->select(
 			"page",
 			array( "page_namespace", "page_title" ),
 			array(),
