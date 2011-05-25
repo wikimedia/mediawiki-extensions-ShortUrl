@@ -18,7 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 require_once "ShortUrl.functions.php";
 
 /**
- * Provides the contact form
+ * Provides the actual redirection
  * @ingroup SpecialPage
  */
 class SpecialShortUrl extends SpecialPage {
