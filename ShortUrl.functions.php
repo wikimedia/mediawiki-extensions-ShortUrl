@@ -29,8 +29,8 @@ function shorturlEncode ( $title ) {
 			array( 'su_namespace' => $title->getNamespace(), 'su_title' => $title->getDBkey() ),
 			__METHOD__ );
 		if ( $dbr->numRows( $query ) > 0 ) {
-			$entry = $dbr->fetchRow( $query );
-			$id = $entry['su_id'];
+			$entry = $dbr->fetchObject( $query );
+			$id = $entry->su_id;
 		} else {
 			$dbw = wfGetDB( DB_MASTER );
 			$row_data = array(
@@ -64,7 +64,7 @@ function shorturlDecode ( $data ) {
 			__METHOD__
 		);
 
-		$entry = $dbr->fetchRow( $query );
+		$entry = $dbr->fetchRow( $query ); // Less overhead on memcaching
 		$wgMemc->set( wfMemcKey( 'shorturls', 'id', $id ), $entry, 0 );
 	}
 	return Title::makeTitle( $entry['su_namespace'], $entry['su_title'] );

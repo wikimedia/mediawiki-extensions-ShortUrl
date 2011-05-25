@@ -24,19 +24,18 @@ class PopulateShortUrlsTable extends Maintenance {
 
     //FIXME: Refactor out code in ShortUrl.functions.php so it can be used here
 	public function execute() {
-		$rowCount = 1;
+		$rowCount = 0;
 		$dbr = wfGetDB( DB_SLAVE );
         $all_titles = $dbr->select(
 			"page",
 			array( "page_namespace", "page_title" )
 		);
 		$insert_buffer = array();
-		$row = $dbr->fetchRow( $all_titles );
 
-		while( $row ) {
+		foreach( $res as $row ) {
 			$row_data = array(
-				'su_namespace' => $row['page_namespace'],
-				'su_title' => $row['page_title']
+				'su_namespace' => $row->page_namespace,
+				'su_title' => $row->page_title
 			);
 			array_push( $insert_buffer, $row_data );
 			if( count( $insert_buffer ) % 100 == 0) {
@@ -45,7 +44,6 @@ class PopulateShortUrlsTable extends Maintenance {
 			}
 			$this->output( $rowCount . " titles done\n" );
 			
-			$row = $dbr->fetchRow( $all_titles );
 			$rowCount++;
 		}
 		if( count( $insert_buffer ) > 0 ) {
