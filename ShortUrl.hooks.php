@@ -22,8 +22,8 @@ class ShortUrlHooks {
 	 */
 	public static function AddToolboxLink( &$tpl ) {
 		global $wgOut, $wgShortUrlPrefix;
-		if ( ! $wgOut->getTitle()->equals( Title::newMainPage() ) ) {
-			$title = $wgOut->getTitle();
+		$title = $wgOut->getTitle();
+		if ( $title->exists() && ! $title->equals( Title::newMainPage() ) ) {
 			$shortId = shorturlEncode( $title );
 			$shortURL = $wgShortUrlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
