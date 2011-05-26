@@ -35,6 +35,7 @@ class ShortUrlHooks {
 			);
 
 			echo $html;
+			$wgOut->addModules( 'ext.ShortUrl' );
 		}
 		return true;
 	}

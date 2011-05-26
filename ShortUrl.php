@@ -35,5 +35,13 @@ $wgSpecialPages['ShortUrl'] = 'SpecialShortUrl';
 $wgHooks['SkinTemplateToolboxEnd'][] = 'ShortUrlHooks::AddToolboxLink';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::SetupSchema';
 
+$wgResourceModules['ext.ShortUrl'] = array(
+	'scripts' => 'js/ext.shortUrl.js',
+	'styles' => 'css/ext.shortUrl.css',
+	'dependencies' => array( 'jquery' ),
+	'localBasePath' => dirname( __FILE__ ),
+	'remoteExtPath' => 'ShortUrl'
+);
+
 // Configuration
 $wgShortUrlPrefix = '/wiki/Special:ShortUrl/';
