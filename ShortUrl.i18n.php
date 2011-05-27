@@ -55,6 +55,17 @@ $messages['gl'] = array(
 	'shorturl-toolbox-text' => 'Enderezo URL curto',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'shorturl' => 'כתובת קצרה',
+	'shorturl-desc' => '[[Special:ShortUrl|כתובת קצרה להפניות]]',
+	'shorturl-not-found' => 'סליחה, הכתובת שאתם מחפשים אינה נמצאת (אין כתובת קצרה עם המזהה $1)',
+	'shorturl-toolbox-title' => 'העתיקו את הקישור הקצר הזה בשביל שיתוף',
+	'shorturl-toolbox-text' => 'כתובת קצרה',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
@@ -64,6 +75,15 @@ $messages['ia'] = array(
 	'shorturl-not-found' => 'Le URL que tu cerca non ha essite trovate (nulle URL curte con le ID $1 existe).',
 	'shorturl-toolbox-title' => 'Copiar iste ligamine curte pro divulgation',
 	'shorturl-toolbox-text' => 'URL curte',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'shorturl' => 'Kuerz URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Kuerz URL fir Viruleedungen]]',
+	'shorturl-toolbox-text' => 'Kuerz URL',
 );
 
 /** Macedonian (Македонски)
