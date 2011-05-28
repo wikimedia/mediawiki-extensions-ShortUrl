@@ -34,8 +34,9 @@ $wgSpecialPages['ShortUrl'] = 'SpecialShortUrl';
 
 $wgHooks['SkinTemplateToolboxEnd'][] = 'ShortUrlHooks::AddToolboxLink';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::SetupSchema';
+$wgHooks['OutputPageBeforeHTML'][] = 'ShortUrlHooks::OutputPageBeforeHTML';
 
-$wgResourceModules['ext.ShortUrl'] = array(
+$wgResourceModules['ext.shortUrl'] = array(
 	'scripts' => 'js/ext.shortUrl.js',
 	'styles' => 'css/ext.shortUrl.css',
 	'dependencies' => array( 'jquery' ),

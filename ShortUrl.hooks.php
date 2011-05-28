@@ -23,7 +23,7 @@ class ShortUrlHooks {
 	public static function AddToolboxLink( &$tpl ) {
 		global $wgOut, $wgShortUrlPrefix;
 		$title = $wgOut->getTitle();
-		if ( $title->exists() && ! $title->equals( Title::newMainPage() ) ) {
+		if ( needsShortUrl( $title ) ) {
 			$shortId = shorturlEncode( $title );
 			$shortURL = $wgShortUrlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
@@ -35,7 +35,20 @@ class ShortUrlHooks {
 			);
 
 			echo $html;
-			$wgOut->addModules( 'ext.ShortUrl' );
+	//		echo '<script type="text/javascript">mediaWiki.loader.load( "ext.shortUrl" );</script>';
+		}
+		return true;
+	}
+
+	/**
+	 * @param $out OutputPage
+	 * @param $text the HTML text to be added 
+	 */
+	public static function OutputPageBeforeHTML( &$out, &$text ) {
+		global $wgOut;
+		$title = $wgOut->getTitle();
+		if ( needsShortUrl( $title ) ) {
+			$wgOut->addModules( 'ext.shortUrl' );	
 		}
 		return true;
 	}

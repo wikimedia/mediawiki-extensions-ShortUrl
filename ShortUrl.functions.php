@@ -69,3 +69,11 @@ function shorturlDecode ( $data ) {
 	}
 	return Title::makeTitle( $entry['su_namespace'], $entry['su_title'] );
 }
+
+/**
+ * @param $title Title 
+ * @return True if a shorturl needs to be displayed
+ */
+function needsShortUrl( $title ) {
+	return $title->exists() && ! $title->equals( Title::newMainPage() );
+}
