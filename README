@@ -4,11 +4,6 @@ Copyright © 2011 Yuvi Panda
 Licenses: GNU General Public Licence (GPL)
 --------------------------------------------------------------------------
 
-The ShortUrl extension implements a URL Shortener
-creates a special page Special:Contact, which is similar to
-Special:Emailuser, but it has a fixed recipient, and can be used
-anonymously.
-
 <http://mediawiki.org/wiki/Extension:ShortUrl>
 
 == Installing ==
@@ -21,4 +16,6 @@ LocalSettings.php file (near the end):
 
 == Configuration ==
 
-There are no configuration options available as of now.
+$wgShortUrlPrefix specifies the prefix to use before the shorturl. 
+Defaults to using the longer form (with Special:ShortUrl). Can be
+condensed down to use anything else, via mod_rewrite rules

@@ -45,4 +45,4 @@ $wgResourceModules['ext.shortUrl'] = array(
 );
 
 // Configuration
-$wgShortUrlPrefix = '/wiki/Special:ShortUrl/';
+$wgShortUrlPrefix = NULL; 
