@@ -33,17 +33,6 @@ $messages['de'] = array(
 	'shorturl-toolbox-text' => 'Kurz-URL',
 );
 
-/** British English (British English)
- * @author Surya Prakash.S.A.
- */
-$messages['en-gb'] = array(
-	'shorturl' => 'குறுந்தொடுப்பு',
-	'shorturl-desc' => '[[Special:ShortUrl|வழிமாற்றுகளுக்கான குறுந்தொடுப்பு]]',
-	'shorturl-not-found' => 'மன்னிக்கவும், நீங்கள் எதிர்பார்க்கும் உரலி கிடைக்கவில்லை ($1 என்ற அடையாளத்துடன் கூடிய குறுந்தொடுப்பு ஏதுமில்லை)',
-	'shorturl-toolbox-title' => 'பகிர்வதற்காக இக்குறுந்தொடுப்பை நகலெடுக்கவும்',
-	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
-);
-
 /** Galician (Galego)
  * @author Toliño
  */
@@ -64,6 +53,13 @@ $messages['he'] = array(
 	'shorturl-not-found' => 'סליחה, הכתובת שאתם מחפשים אינה נמצאת (אין כתובת קצרה עם המזהה $1)',
 	'shorturl-toolbox-title' => 'העתיקו את הקישור הקצר הזה בשביל שיתוף',
 	'shorturl-toolbox-text' => 'כתובת קצרה',
+);
+
+/** Hindi (हिन्दी)
+ * @author Rsrikanth05
+ */
+$messages['hi'] = array(
+	'shorturl' => 'संक्षेप यूआरएल',
 );
 
 /** Interlingua (Interlingua)
@@ -139,5 +135,16 @@ $messages['ru'] = array(
 	'shorturl-not-found' => 'К сожалению, указанный URL-адрес не найден (нет короткой ссылки с идентификатором $1)',
 	'shorturl-toolbox-title' => 'Скопируйте эту короткую ссылку',
 	'shorturl-toolbox-text' => 'Короткая ссылка',
+);
+
+/** Tamil (தமிழ்)
+ * @author Surya Prakash.S.A.
+ */
+$messages['ta'] = array(
+	'shorturl' => 'குறுந்தொடுப்பு',
+	'shorturl-desc' => '[[Special:ShortUrl|வழிமாற்றுகளுக்கான குறுந்தொடுப்பு]]',
+	'shorturl-not-found' => 'மன்னிக்கவும், நீங்கள் எதிர்பார்க்கும் உரலி கிடைக்கவில்லை ($1 என்ற அடையாளத்துடன் கூடிய குறுந்தொடுப்பு ஏதுமில்லை)',
+	'shorturl-toolbox-title' => 'பகிர்வதற்காக இக்குறுந்தொடுப்பை நகலெடுக்கவும்',
+	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
 );
 
