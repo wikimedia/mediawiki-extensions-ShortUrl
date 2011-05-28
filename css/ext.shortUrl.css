@@ -1,4 +1,5 @@
 .title-shortlink {
 	font-size: small;
-	font-family: monospace;
+	display: Block;
+	margin: 0px;
 }
