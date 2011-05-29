@@ -22,6 +22,17 @@ $messages['en'] = array(
 	'shorturl-toolbox-text' => 'Short URL'
 );
 
+/** Breton (Brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'shorturl' => 'URL berr',
+	'shorturl-desc' => '[[Special:ShortUrl|URL berr evit adkasoù]]',
+	'shorturl-not-found' => "Digarezit, n'eo ket bet kavet an URL emaoc'h o klask (N'eus URL berr ebet gant an ID $1)",
+	'shorturl-toolbox-title' => 'Kopiit al liamm berr-mañ evit e rannañ',
+	'shorturl-toolbox-text' => 'URL berr',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
