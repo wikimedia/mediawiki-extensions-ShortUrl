@@ -47,4 +47,4 @@ $wgResourceModules['ext.shortUrl'] = array(
 );
 
 // Configuration
-$wgShortUrlPrefix = NULL; 
+$wgShortUrlPrefix = null; 
