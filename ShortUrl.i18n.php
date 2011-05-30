@@ -106,12 +106,13 @@ $messages['mk'] = array(
 
 /** Dutch (Nederlands)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['nl'] = array(
 	'shorturl' => 'Korte URL',
 	'shorturl-desc' => '[[Special:ShortUrl|Korte URL voor doorverwijzingen]]',
-	'shorturl-not-found' => 'Sorry, de URL waarnaar u zoekt is niet gevonden (er bestaat geen korte URL met ID $1)',
-	'shorturl-toolbox-title' => 'Kopieer deze korte link om te delen',
+	'shorturl-not-found' => 'De URL waarnaar u zoekt is niet gevonden. Er bestaat geen korte URL met ID $1',
+	'shorturl-toolbox-title' => 'Deze korte verwijzing kopiëren om te delen',
 	'shorturl-toolbox-text' => 'Korte URL',
 );
 
