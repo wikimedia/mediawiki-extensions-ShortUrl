@@ -29,6 +29,7 @@ $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['ShortUrl'] = $dir . 'ShortUrl.i18n.php';
 $wgExtensionAliasesFiles['ShortUrl'] = $dir . 'ShortUrl.alias.php';
 
+$wgAutoloadClasses['ShortUrlUtils'] = $dir . 'ShortUrl.utils.php';
 $wgAutoloadClasses['ShortUrlHooks'] = $dir . 'ShortUrl.hooks.php';
 $wgAutoloadClasses['SpecialShortUrl'] = $dir . 'SpecialShortUrl.php';
 $wgSpecialPages['ShortUrl'] = 'SpecialShortUrl';

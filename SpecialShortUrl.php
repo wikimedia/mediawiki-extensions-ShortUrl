@@ -15,8 +15,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-require_once "ShortUrl.functions.php";
-
 /**
  * Provides the actual redirection
  * @ingroup SpecialPage
@@ -38,7 +36,7 @@ class SpecialShortUrl extends SpecialPage {
 	public function execute( $par ) {
 		global $wgOut;
 
-		$title = shorturlDecode( $par );
+		$title = ShortUrlUtils::DecodeURL( $par );
 		if ( $title ) {
 			$wgOut->redirect( $title->getFullURL(), '301' );
 			return;

@@ -13,8 +13,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-require_once "ShortUrl.functions.php";
-
 class ShortUrlHooks {
 	/**
 	 * @param $tpl
@@ -22,15 +20,15 @@ class ShortUrlHooks {
 	 */
 	public static function AddToolboxLink( &$tpl ) {
 		global $wgOut, $wgShortUrlPrefix;
-		if ( $wgShortUrlPrefix == NULL) {
+		if ( $wgShortUrlPrefix == null ) {
 			$urlPrefix = SpecialPage::getTitleFor( 'ShortUrl' )->getFullURL() . '/';
 		} else {
 			$urlPrefix = $wgShortUrlPrefix;
 		}
 
 		$title = $wgOut->getTitle();
-		if ( needsShortUrl( $title ) ) {
-			$shortId = shorturlEncode( $title );
+		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
+			$shortId = ShortUrlUtils::EncodeTitle( $title );
 			$shortURL = $urlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
 				Html::Element( 'a', array(
@@ -47,12 +45,12 @@ class ShortUrlHooks {
 
 	/**
 	 * @param $out OutputPage
-	 * @param $text the HTML text to be added 
+	 * @param $text string the HTML text to be added
 	 */
 	public static function OutputPageBeforeHTML( &$out, &$text ) {
 		global $wgOut;
 		$title = $wgOut->getTitle();
-		if ( needsShortUrl( $title ) ) {
+		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
 			$wgOut->addModules( 'ext.shortUrl' );	
 		}
 		return true;
