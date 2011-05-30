@@ -22,44 +22,50 @@ class ShortUrlUtils {
 	 * @param $title Title
 	 * @return mixed|string
 	 */
-	public static function EncodeTitle ( $title ) {
+	public static function encodeTitle( $title ) {
 		global $wgMemc;
 
-		$id = $wgMemc->get( wfMemcKey( 'shorturls', 'title', $title->getFullText() ) );
+		$memcKey = wfMemcKey( 'shorturls', 'title', $title->getFullText() );
+		$id = $wgMemc->get( $memcKey );
 		if ( !$id ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$query = $dbr->select(
 				'shorturls',
 				array( 'su_id' ),
-				array( 'su_namespace' => $title->getNamespace(), 'su_title' => $title->getDBkey() ),
-				__METHOD__ );
+				array(
+					'su_namespace' => $title->getNamespace(),
+					'su_title' => $title->getDBkey()
+				),
+				__METHOD__
+			);
 			if ( $dbr->numRows( $query ) > 0 ) {
 				$entry = $dbr->fetchObject( $query );
 				$id = $entry->su_id;
 			} else {
 				$dbw = wfGetDB( DB_MASTER );
-				$row_data = array(
+				$rowData = array(
 					'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 					'su_namespace' => $title->getNamespace(),
 					'su_title' => $title->getDBkey()
 				);
-				$dbw->insert( 'shorturls', $row_data );
+				$dbw->insert( 'shorturls', $rowData, __METHOD__ );
 				$id = $dbw->insertId();
 			}
-			$wgMemc->set( wfMemcKey( 'shorturls', 'title', $title->getFullText() ), $id, 0 );
+			$wgMemc->set( $memcKey, $id, 0 );
 		}
 		return base_convert( $id, 10, 36 );
 	}
 
 	/**
-	 * @param $data string
+	 * @param $urlFragment String
 	 * @return Title
 	 */
-	public static function DecodeURL ( $urlfragment ) {
+	public static function decodeURL( $urlFragment ) {
 		global $wgMemc;
 
-		$id = intval( base_convert ( $urlfragment, 36, 10 ) );
-		$entry = $wgMemc->get( wfMemcKey( 'shorturls', 'id', $id ) );
+		$id = intval( base_convert( $urlFragment, 36, 10 ) );
+		$memcKey = wfMemcKey( 'shorturls', 'id', $id );
+		$entry = $wgMemc->get( $memcKey );
 		if ( !$entry ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$query = $dbr->select(
@@ -70,16 +76,16 @@ class ShortUrlUtils {
 			);
 
 			$entry = $dbr->fetchRow( $query ); // Less overhead on memcaching
-			$wgMemc->set( wfMemcKey( 'shorturls', 'id', $id ), $entry, 0 );
+			$wgMemc->set( $memcKey, $entry, 0 );
 		}
 		return Title::makeTitle( $entry['su_namespace'], $entry['su_title'] );
 	}
 
 	/**
 	 * @param $title Title 
-	 * @return True if a shorturl needs to be displayed
+	 * @return Boolean: true if a short URL needs to be displayed
 	 */
-	public static function NeedsShortUrl( $title ) {
-		return $title->exists() && ! $title->equals( Title::newMainPage() );
+	public static function needsShortUrl( $title ) {
+		return $title->exists() && !$title->equals( Title::newMainPage() );
 	}
 }

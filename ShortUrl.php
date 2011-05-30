@@ -19,6 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'ShortUrl',
+	'version' => '1.0',
 	'author' => 'Yuvi Panda',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ShortUrl',
 	'descriptionmsg' => 'shorturl-desc',
@@ -34,9 +35,9 @@ $wgAutoloadClasses['ShortUrlHooks'] = $dir . 'ShortUrl.hooks.php';
 $wgAutoloadClasses['SpecialShortUrl'] = $dir . 'SpecialShortUrl.php';
 $wgSpecialPages['ShortUrl'] = 'SpecialShortUrl';
 
-$wgHooks['SkinTemplateToolboxEnd'][] = 'ShortUrlHooks::AddToolboxLink';
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::SetupSchema';
-$wgHooks['OutputPageBeforeHTML'][] = 'ShortUrlHooks::OutputPageBeforeHTML';
+$wgHooks['SkinTemplateToolboxEnd'][] = 'ShortUrlHooks::addToolboxLink';
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::setupSchema';
+$wgHooks['OutputPageBeforeHTML'][] = 'ShortUrlHooks::onOutputPageBeforeHTML';
 
 $wgResourceModules['ext.shortUrl'] = array(
 	'scripts' => 'js/ext.shortUrl.js',

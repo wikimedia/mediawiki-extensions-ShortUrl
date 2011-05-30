@@ -9,7 +9,7 @@ require( "$IP/maintenance/Maintenance.php" );
 class PopulateShortUrlsTable extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = "Populates ShortUrls Table with all existing articles";
+		$this->mDescription = 'Populates ShortUrls Table with all existing articles';
 	}
 
 	private function insertRows( $a ) {
@@ -22,37 +22,37 @@ class PopulateShortUrlsTable extends Maintenance {
 		);
 	}
 
-	//FIXME: Refactor out code in ShortUrl.functions.php so it can be used here
+	// @todo FIXME: Refactor out code in ShortUrl.functions.php so it can be used here
 	public function execute() {
 		$rowCount = 0;
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select(
-			"page",
-			array( "page_namespace", "page_title" ),
+			'page',
+			array( 'page_namespace', 'page_title' ),
 			array(),
 			__METHOD__
 		);
-		$insert_buffer = array();
+		$insertBuffer = array();
 
 		foreach( $res as $row ) {
-			$row_data = array(
+			$rowData = array(
 				'su_namespace' => $row->page_namespace,
 				'su_title' => $row->page_title
 			);
-			array_push( $insert_buffer, $row_data );
-			if( count( $insert_buffer ) % 100 == 0) {
-				$this->insertRows( $insert_buffer );
-				$insert_buffer = array();
+			array_push( $insertBuffer, $rowData );
+			if( count( $insertBuffer ) % 100 == 0 ) {
+				$this->insertRows( $insertBuffer );
+				$insertBuffer = array();
 			}
 			$this->output( $rowCount . " titles done\n" );
 
 			$rowCount++;
 		}
-		if( count( $insert_buffer ) > 0 ) {
-			$this->insertRows( $insert_buffer );
+		if( count( $insertBuffer ) > 0 ) {
+			$this->insertRows( $insertBuffer );
 		}
 	}
 }
 
-$maintClass = "PopulateShortUrlsTable";
+$maintClass = 'PopulateShortUrlsTable';
 require_once( DO_MAINTENANCE );

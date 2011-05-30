@@ -1,7 +1,6 @@
 <?php
 /**
- * Setup for ShortUrl extension, a special page that provides redirects to articles
- * via their page IDs
+ * A special page that provides redirects to articles via their page IDs
  *
  * @file
  * @ingroup Extensions
@@ -36,13 +35,13 @@ class SpecialShortUrl extends SpecialPage {
 	public function execute( $par ) {
 		global $wgOut;
 
-		$title = ShortUrlUtils::DecodeURL( $par );
+		$title = ShortUrlUtils::decodeURL( $par );
 		if ( $title ) {
 			$wgOut->redirect( $title->getFullURL(), '301' );
 			return;
 		}
 		// Wrong ID
-		$notfound = Html::element( 'p', array(), wfMsg ( 'shorturl-not-found', $par ) );
-		$wgOut->addHTML( $notfound );
+		$notFound = Html::element( 'p', array(), wfMsg( 'shorturl-not-found', $par ) );
+		$wgOut->addHTML( $notFound );
 	}
 }

@@ -18,8 +18,9 @@ class ShortUrlHooks {
 	 * @param $tpl
 	 * @return bool
 	 */
-	public static function AddToolboxLink( &$tpl ) {
+	public static function addToolboxLink( &$tpl ) {
 		global $wgOut, $wgShortUrlPrefix;
+
 		if ( $wgShortUrlPrefix == null ) {
 			$urlPrefix = SpecialPage::getTitleFor( 'ShortUrl' )->getFullURL() . '/';
 		} else {
@@ -28,14 +29,14 @@ class ShortUrlHooks {
 
 		$title = $wgOut->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
-			$shortId = ShortUrlUtils::EncodeTitle( $title );
+			$shortId = ShortUrlUtils::encodeTitle( $title );
 			$shortURL = $urlPrefix . $shortId;
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
 				Html::Element( 'a', array(
 					'href' => $shortURL,
 					'title' => wfMsg( 'shorturl-toolbox-title' )
 				),
-				wfMsg ( 'shorturl-toolbox-text' ) )
+				wfMsg( 'shorturl-toolbox-text' ) )
 			);
 
 			echo $html;
@@ -47,7 +48,7 @@ class ShortUrlHooks {
 	 * @param $out OutputPage
 	 * @param $text string the HTML text to be added
 	 */
-	public static function OutputPageBeforeHTML( &$out, &$text ) {
+	public static function onOutputPageBeforeHTML( &$out, &$text ) {
 		global $wgOut;
 		$title = $wgOut->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
@@ -60,9 +61,9 @@ class ShortUrlHooks {
 	 * @param $du DatabaseUpdater
 	 * @return bool
 	 */
-	public static function SetupSchema( DatabaseUpdater $du ) {
+	public static function setupSchema( DatabaseUpdater $du ) {
 		$base = dirname( __FILE__ ) . '/schemas';
-		$du->addExtensionTable( "shorturls", "$base/shorturls.sql" );
+		$du->addExtensionTable( 'shorturls', "$base/shorturls.sql" );
 		return true;
 	}
 
