@@ -46,11 +46,13 @@ $messages['de'] = array(
 
 /** French (Français)
  * @author Jean-Frédéric
+ * @author Sherbrooke
  */
 $messages['fr'] = array(
 	'shorturl' => 'URL courte',
 	'shorturl-desc' => '[[Special:ShortUrl|URL courte pour les redirections]]',
 	'shorturl-not-found' => 'Désolé, l’URL que vous recherchez est introuvable (aucune URL courte avec l’ID $1)',
+	'shorturl-toolbox-title' => 'Copiez ce court lien pour le partager',
 	'shorturl-toolbox-text' => 'URL courte',
 );
 
