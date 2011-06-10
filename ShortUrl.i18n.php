@@ -22,6 +22,18 @@ $messages['en'] = array(
 	'shorturl-toolbox-text' => 'Short URL'
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author EugeneZelenko
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'shorturl' => 'Кароткія спасылкі',
+	'shorturl-desc' => '[[Special:ShortUrl|Кароткія спасылкі для перанакіраваньняў]]',
+	'shorturl-not-found' => 'На жаль, пазначаны URL-адрас ня знойдзены (кароткая спасылка з ідэнтыфікатарам $1 не існуе)',
+	'shorturl-toolbox-title' => 'Скапіюйце гэтую кароткую спасылку',
+	'shorturl-toolbox-text' => 'Кароткая спасылка',
+);
+
 /** Breton (Brezhoneg)
  * @author Y-M D
  */
