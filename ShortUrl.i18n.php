@@ -68,6 +68,15 @@ $messages['fr'] = array(
 	'shorturl-toolbox-text' => 'URL courte',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'shorturl' => 'URL côrta',
+	'shorturl-desc' => '[[Special:ShortUrl|URL côrta por les redirèccions]]',
+	'shorturl-toolbox-text' => 'URL côrta',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
