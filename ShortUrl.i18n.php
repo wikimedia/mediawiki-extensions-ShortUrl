@@ -137,6 +137,17 @@ $messages['mk'] = array(
 	'shorturl-toolbox-text' => 'Кратка URL-адреса',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'shorturl' => 'URL Ringkas',
+	'shorturl-desc' => '[[Special:ShortUrl|URL Ringkas untuk lencongan]]',
+	'shorturl-not-found' => 'Maaf, URL yang anda cari itu tidak dijumpai (Tidak wujudnya URL yang ber-ID $1)',
+	'shorturl-toolbox-title' => 'Salin pautan ringkas ini untuk dikongsi',
+	'shorturl-toolbox-text' => 'URL Ringkas',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
