@@ -123,6 +123,8 @@ $messages['ia'] = array(
 $messages['lb'] = array(
 	'shorturl' => 'Kuerz URL',
 	'shorturl-desc' => '[[Special:ShortUrl|Kuerz URL fir Viruleedungen]]',
+	'shorturl-not-found' => "Pardon, d'URL no där Dir sicht gouf net fonnt (Et gëtt keng Kuerz-URL mat der ID $1)",
+	'shorturl-toolbox-title' => 'Kopéiert dës Kuerz-URL fir se ze notzen',
 	'shorturl-toolbox-text' => 'Kuerz URL',
 );
 
