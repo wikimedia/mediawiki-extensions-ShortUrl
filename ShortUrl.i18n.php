@@ -195,6 +195,15 @@ $messages['ru'] = array(
 	'shorturl-toolbox-text' => 'Короткая ссылка',
 );
 
+/** Swedish (Svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'shorturl' => 'Kort URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Kort URL för omdirigeringar]]',
+	'shorturl-toolbox-text' => 'Kort URL',
+);
+
 /** Tamil (தமிழ்)
  * @author Surya Prakash.S.A.
  */
