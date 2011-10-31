@@ -22,6 +22,17 @@ $messages['en'] = array(
 	'shorturl-toolbox-text' => 'Short URL'
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'shorturl' => 'URL curtia',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curtia pa redireiciones]]',
+	'shorturl-not-found' => "Lo sentimos, nun s'alcontró la URL que tas buscando (Nun esiste denguna URL curtia con ID $1)",
+	'shorturl-toolbox-title' => 'Copia esti enllaz curtiu pa compartir',
+	'shorturl-toolbox-text' => 'URL curtia',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Wizardist
