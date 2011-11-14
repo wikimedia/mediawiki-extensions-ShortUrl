@@ -36,12 +36,10 @@ class SpecialShortUrl extends SpecialPage {
 		global $wgOut;
 
 		$title = ShortUrlUtils::decodeURL( $par );
-		if ( $title ) {
+		if ( $title !== false ) {
 			$wgOut->redirect( $title->getFullURL(), '301' );
-			return;
+		} else {
+			$wgOut->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $par ) );
 		}
-		// Wrong ID
-		$notFound = Html::element( 'p', array(), wfMsg( 'shorturl-not-found', $par ) );
-		$wgOut->addHTML( $notFound );
 	}
 }

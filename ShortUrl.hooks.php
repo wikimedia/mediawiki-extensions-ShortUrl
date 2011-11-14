@@ -21,8 +21,8 @@ class ShortUrlHooks {
 	public static function addToolboxLink( &$tpl ) {
 		global $wgOut, $wgShortUrlPrefix;
 
-		if ( $wgShortUrlPrefix == null ) {
-			$urlPrefix = SpecialPage::getTitleFor( 'ShortUrl' )->getFullURL() . '/';
+		if ( $wgShortUrlPrefix === null ) {
+			$urlPrefix = SpecialPage::getTitleFor( 'ShortUrl' )->getCanonicalUrl() . '/';
 		} else {
 			$urlPrefix = $wgShortUrlPrefix;
 		}
