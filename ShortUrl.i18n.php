@@ -63,18 +63,21 @@ $messages['br'] = array(
 $messages['de'] = array(
 	'shorturl' => 'Kurz-URL',
 	'shorturl-desc' => 'Ergänzt eine [[Special:ShortUrl|Spezialseite]] zum Erstellen von Kurz-URLs für Weiterleitungen',
+	'shorturl-not-found-title' => 'Die Kurz-URL wurde nicht gefunden',
 	'shorturl-not-found-message' => 'Die gesuchte Kurz-URL wurde leider nicht gefunden (Es ist keine Kurz-URL mit der Kennung $1 vorhanden)',
 	'shorturl-toolbox-title' => 'Kurz-URL kopieren, um sie zu nutzen',
 	'shorturl-toolbox-text' => 'Kurz-URL',
 );
 
 /** French (Français)
+ * @author Gomoko
  * @author Jean-Frédéric
  * @author Sherbrooke
  */
 $messages['fr'] = array(
 	'shorturl' => 'URL courte',
 	'shorturl-desc' => '[[Special:ShortUrl|URL courte pour les redirections]]',
+	'shorturl-not-found-title' => 'URL courte introuvable',
 	'shorturl-not-found-message' => 'Désolé, l’URL que vous recherchez est introuvable (aucune URL courte avec l’ID $1)',
 	'shorturl-toolbox-title' => 'Copiez ce court lien pour le partager',
 	'shorturl-toolbox-text' => 'URL courte',
@@ -95,6 +98,7 @@ $messages['frp'] = array(
 $messages['gl'] = array(
 	'shorturl' => 'Enderezo URL curto',
 	'shorturl-desc' => '[[Special:ShortUrl|Enderezo URL curto para as redireccións]]',
+	'shorturl-not-found-title' => 'Non se atopou o enderezo URL curto',
 	'shorturl-not-found-message' => 'Sentímolo, non se atopou o enderezo URL que está a buscar (non existe ningún enderezo URL curto co ID $1)',
 	'shorturl-toolbox-title' => 'Copie esta ligazón curta para compartir',
 	'shorturl-toolbox-text' => 'Enderezo URL curto',
@@ -146,6 +150,7 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'shorturl' => 'Кратка URL-адреса',
 	'shorturl-desc' => '[[Special:ShortUrl|Кратка URL-адреса за пренасочувања]]',
+	'shorturl-not-found-title' => 'Не ја пронајдов кратката URL-адреса',
 	'shorturl-not-found-message' => 'Нажалост, не ја најдов URL-адресата што ја барате (не постои кратка URL-адреса со назнаката $1)',
 	'shorturl-toolbox-title' => 'Ископирајте ја оваа кратка врска за да ја споделите',
 	'shorturl-toolbox-text' => 'Кратка URL-адреса',
@@ -169,6 +174,7 @@ $messages['ms'] = array(
 $messages['nl'] = array(
 	'shorturl' => 'Korte URL',
 	'shorturl-desc' => '[[Special:ShortUrl|Korte URL voor doorverwijzingen]]',
+	'shorturl-not-found-title' => 'Korte URL niet gevonden',
 	'shorturl-not-found-message' => 'De URL waarnaar u zoekt is niet gevonden. Er bestaat geen korte URL met ID $1',
 	'shorturl-toolbox-title' => 'Deze korte verwijzing kopiëren om te delen',
 	'shorturl-toolbox-text' => 'Korte URL',
