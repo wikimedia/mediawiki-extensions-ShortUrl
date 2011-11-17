@@ -128,6 +128,7 @@ $messages['hi'] = array(
 $messages['ia'] = array(
 	'shorturl' => 'URL curte',
 	'shorturl-desc' => '[[Special:ShortUrl|URL curte pro redirectiones]]',
+	'shorturl-not-found-title' => 'URL curte non trovate',
 	'shorturl-not-found-message' => 'Le URL que tu cerca non ha essite trovate (nulle URL curte con le ID $1 existe).',
 	'shorturl-toolbox-title' => 'Copiar iste ligamine curte pro divulgation',
 	'shorturl-toolbox-text' => 'URL curte',
