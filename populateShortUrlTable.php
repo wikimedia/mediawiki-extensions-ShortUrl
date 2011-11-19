@@ -26,31 +26,42 @@ class PopulateShortUrlsTable extends Maintenance {
 	public function execute() {
 		$rowCount = 0;
 		$dbr = wfGetDB( DB_SLAVE );
-		$res = $dbr->select(
-			'page',
-			array( 'page_namespace', 'page_title' ),
-			array(),
-			__METHOD__
-		);
+
+		$last_processed_id = 0;
+
 		$insertBuffer = array();
 
-		foreach( $res as $row ) {
-			$rowData = array(
-				'su_namespace' => $row->page_namespace,
-				'su_title' => $row->page_title
+		while( true ) {
+			$res = $dbr->select(
+				'page',
+				array( 'page_id', 'page_namespace', 'page_title' ),
+				array( "page_id > " . $last_processed_id ),
+				__METHOD__,
+				array( 'LIMIT' => 100 )
 			);
-			array_push( $insertBuffer, $rowData );
-			if( count( $insertBuffer ) % 100 == 0 ) {
-				$this->insertRows( $insertBuffer );
-				$insertBuffer = array();
-			}
-			$this->output( $rowCount . " titles done\n" );
+			if( $res->numRows() == 0 ) {
+				break;
+			}	
 
-			$rowCount++;
-		}
-		if( count( $insertBuffer ) > 0 ) {
+			foreach( $res as $row ) {
+				$rowCount++;
+
+				$rowData = array(
+					'su_namespace' => $row->page_namespace,
+					'su_title' => $row->page_title
+				);
+				$this->output( $insertBuffer );
+				array_push( $insertBuffer, $rowData );
+
+				$last_processed_id = $row->page_id;
+			}
+
 			$this->insertRows( $insertBuffer );
+            $insertBuffer = array();
+			wfWaitForSlaves(); // 'Kill' lag
+			$this->output( $rowCount . " titles done\n" );
 		}
+		$this->output( "Done\n" );
 	}
 }
 
