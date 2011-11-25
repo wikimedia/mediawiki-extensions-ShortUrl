@@ -29,15 +29,15 @@ class PopulateShortUrlsTable extends Maintenance {
 
 		$last_processed_id = 0;
 
-		$insertBuffer = array();
 
 		while( true ) {
+			$insertBuffer = array();
 			$res = $dbr->select(
 				'page',
 				array( 'page_id', 'page_namespace', 'page_title' ),
-				array( "page_id > " . $last_processed_id ),
+				array( 'page_id > ' . $last_processed_id ),
 				__METHOD__,
-				array( 'LIMIT' => 100 )
+				array( 'LIMIT' => 100, 'ORDER BY' => 'page_id' )
 			);
 			if( $res->numRows() == 0 ) {
 				break;
@@ -50,14 +50,12 @@ class PopulateShortUrlsTable extends Maintenance {
 					'su_namespace' => $row->page_namespace,
 					'su_title' => $row->page_title
 				);
-				$this->output( $insertBuffer );
-				array_push( $insertBuffer, $rowData );
+				$insertBuffer[] = $rowData;
 
 				$last_processed_id = $row->page_id;
 			}
 
 			$this->insertRows( $insertBuffer );
-            $insertBuffer = array();
 			wfWaitForSlaves(); // 'Kill' lag
 			$this->output( $rowCount . " titles done\n" );
 		}
