@@ -123,6 +123,18 @@ $messages['hi'] = array(
 	'shorturl' => 'संक्षेप यूआरएल',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'shorturl' => 'Krótki URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Krótke URL za dalesposrědkowanja]]',
+	'shorturl-not-found-title' => 'Krótki URL njeje so namakał',
+	'shorturl-not-found-message' => 'URL, kotryž sy pytał, njeje so namakał (krótki URL z ID $1 njeeksistuje)',
+	'shorturl-toolbox-title' => 'Tutón krótki wotkaz kopěrować, zo by so z druhimi wužiwał',
+	'shorturl-toolbox-text' => 'Krótki URL',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
