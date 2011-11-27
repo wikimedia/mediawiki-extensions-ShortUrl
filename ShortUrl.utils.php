@@ -13,7 +13,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-/** 
+/**
  * Utility functions for encoding and decoding short URLs
  */
 class ShortUrlUtils {
@@ -83,10 +83,10 @@ class ShortUrlUtils {
 	}
 
 	/**
-	 * @param $title Title 
+	 * @param $title Title
 	 * @return Boolean: true if a short URL needs to be displayed
 	 */
 	public static function needsShortUrl( $title ) {
-		return $title->exists() && !$title->equals( Title::newMainPage() );
+		return $title->exists() && !$title->isMainPage();
 	}
 }
