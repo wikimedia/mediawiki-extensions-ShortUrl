@@ -47,12 +47,13 @@ class ShortUrlHooks {
 	/**
 	 * @param $out OutputPage
 	 * @param $text string the HTML text to be added
+	 * @return bool
 	 */
 	public static function onOutputPageBeforeHTML( &$out, &$text ) {
 		global $wgOut;
 		$title = $wgOut->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
-			$wgOut->addModules( 'ext.shortUrl' );	
+			$wgOut->addModules( 'ext.shortUrl' );
 		}
 		return true;
 	}
