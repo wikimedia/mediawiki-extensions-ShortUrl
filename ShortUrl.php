@@ -30,7 +30,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'ShortUrl',
 	'version' => '1.0',
 	'author' => 'Yuvi Panda',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:ShortUrl',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:ShortUrl',
 	'descriptionmsg' => 'shorturl-desc',
 );
 
