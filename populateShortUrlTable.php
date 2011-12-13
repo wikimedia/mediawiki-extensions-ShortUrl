@@ -14,8 +14,8 @@ class PopulateShortUrlsTable extends Maintenance {
 
 	private function insertRows( $a ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->insert( 
-			'shorturls', 
+		$dbw->insert(
+			'shorturls',
 			$a,
 			__METHOD__,
 			array( 'IGNORE' )
@@ -29,7 +29,6 @@ class PopulateShortUrlsTable extends Maintenance {
 
 		$last_processed_id = 0;
 
-
 		while( true ) {
 			$insertBuffer = array();
 			$res = $dbr->select(
@@ -41,7 +40,7 @@ class PopulateShortUrlsTable extends Maintenance {
 			);
 			if( $res->numRows() == 0 ) {
 				break;
-			}	
+			}
 
 			foreach( $res as $row ) {
 				$rowCount++;
