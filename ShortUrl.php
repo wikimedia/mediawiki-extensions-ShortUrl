@@ -37,7 +37,7 @@ $wgExtensionCredits['specialpage'][] = array(
 // Set up the new special page
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['ShortUrl'] = $dir . 'ShortUrl.i18n.php';
-$wgExtensionAliasesFiles['ShortUrl'] = $dir . 'ShortUrl.alias.php';
+$wgExtensionMessagesFiles['ShortUrlAlias'] = $dir . 'ShortUrl.alias.php';
 
 $wgAutoloadClasses['ShortUrlUtils'] = $dir . 'ShortUrl.utils.php';
 $wgAutoloadClasses['ShortUrlHooks'] = $dir . 'ShortUrl.hooks.php';
