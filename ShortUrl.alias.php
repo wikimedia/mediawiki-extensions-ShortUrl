@@ -18,7 +18,7 @@ $specialPageAliases['ar'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'ShortUrl' => array( 'Saubere_URL' ),
+	'ShortUrl' => array( 'Kurze_URL' ),
 );
 
 /** Persian (فارسی) */
@@ -26,9 +26,19 @@ $specialPageAliases['fa'] = array(
 	'ShortUrl' => array( 'نشانی_کوتاه' ),
 );
 
+/** Interlingua (Interlingua) */
+$specialPageAliases['ia'] = array(
+	'ShortUrl' => array( 'URL_curte' ),
+);
+
 /** Indonesian (Bahasa Indonesia) */
 $specialPageAliases['id'] = array(
 	'ShortUrl' => array( 'UrlPendek' ),
+);
+
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'ShortUrl' => array( '短縮URL' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
@@ -55,8 +65,3 @@ $specialPageAliases['nl'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'ShortUrl' => array( '縮寫的URL' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
