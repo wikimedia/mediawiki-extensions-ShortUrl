@@ -111,11 +111,12 @@ $messages['gl'] = array(
  * @author Amire80
  */
 $messages['he'] = array(
-	'shorturl' => 'כתובת קצרה',
-	'shorturl-desc' => '[[Special:ShortUrl|כתובת קצרה להפניות]]',
-	'shorturl-not-found-message' => 'סליחה, הכתובת שאתם מחפשים אינה נמצאת (אין כתובת קצרה עם המזהה $1)',
+	'shorturl' => 'כתובת מקוצרת',
+	'shorturl-desc' => '[[Special:ShortUrl|כתובת מקוצרת להפניות]]',
+	'shorturl-not-found-title' => 'כתובת מקוצרת לא נמצאה',
+	'shorturl-not-found-message' => 'סליחה, הכתובת שאתם מחפשים אינה נמצאת (אין כתובת מקוצרת עם המזהה $1)',
 	'shorturl-toolbox-title' => 'העתיקו את הקישור הקצר הזה בשביל שיתוף',
-	'shorturl-toolbox-text' => 'כתובת קצרה',
+	'shorturl-toolbox-text' => 'כתובת מקוצרת',
 );
 
 /** Hindi (हिन्दी)
