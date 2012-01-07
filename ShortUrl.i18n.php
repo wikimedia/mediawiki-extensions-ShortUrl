@@ -252,3 +252,15 @@ $messages['ta'] = array(
 	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
 );
 
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Hzy980512
+ */
+$messages['zh-hans'] = array(
+	'shorturl' => '短链接',
+	'shorturl-desc' => '[[Special:ShortUrl|重定向短链接]]',
+	'shorturl-not-found-title' => '找不到短链接',
+	'shorturl-not-found-message' => '抱歉，请求的链接找不到（没有用ID$1的短链接）',
+	'shorturl-toolbox-title' => '复制该短链接来共享',
+	'shorturl-toolbox-text' => '短链接',
+);
+
