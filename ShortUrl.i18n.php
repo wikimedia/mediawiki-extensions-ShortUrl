@@ -210,6 +210,18 @@ $messages['or'] = array(
 	'shorturl-toolbox-text' => 'ଛୋଟ URL',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'shorturl' => 'Anliura curta',
+	'shorturl-desc' => '[[Special:ShortUrl|Anliura curta për ridiression]]',
+	'shorturl-not-found-title' => 'Anliura curta pa trovà',
+	'shorturl-not-found-message' => "Spiasent, l'anliura ch'it serche as treuva pa (Pa gnun-e anliure curte con ID $1 a esisto)",
+	'shorturl-toolbox-title' => 'Còpia sto colegament curt për condivision',
+	'shorturl-toolbox-text' => 'Anliura curta',
+);
+
 /** Portuguese (Português)
  * @author Hamilton Abreu
  */
