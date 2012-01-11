@@ -19,10 +19,10 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * Configuration variables
  * Prefix to use for the shortened URL. mod_rewrite (or equivalent) needs to be setup
  * to produce a shorter URL
- * Default is 'null' which just uses the (not so short) URL that all Special Pages get
+ * Default is false which just uses the (not so short) URL that all Special Pages get
  * Eg: http://en.wikipedia.org/wiki/Special:ShortUrl/5234
  */
-$wgShortUrlPrefix = null;
+$wgShortUrlPrefix = false;
 
 // Extension credits that will show up on Special:Version
 $wgExtensionCredits['specialpage'][] = array(
