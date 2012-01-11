@@ -239,6 +239,7 @@ $messages['pt'] = array(
 $messages['ru'] = array(
 	'shorturl' => 'Короткая ссылка',
 	'shorturl-desc' => '[[Special:ShortUrl|Короткая ссылка для перенаправлений]]',
+	'shorturl-not-found-title' => 'Короткий URL не найден',
 	'shorturl-not-found-message' => 'К сожалению, указанный URL-адрес не найден (нет короткой ссылки с идентификатором $1)',
 	'shorturl-toolbox-title' => 'Скопируйте эту короткую ссылку',
 	'shorturl-toolbox-text' => 'Короткая ссылка',
