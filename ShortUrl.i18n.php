@@ -211,14 +211,15 @@ $messages['or'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'shorturl' => 'Anliura curta',
-	'shorturl-desc' => '[[Special:ShortUrl|Anliura curta për ridiression]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Anliura curta për le ridiression]]',
 	'shorturl-not-found-title' => 'Anliura curta pa trovà',
-	'shorturl-not-found-message' => "Spiasent, l'anliura ch'it serche as treuva pa (Pa gnun-e anliure curte con ID $1 a esisto)",
-	'shorturl-toolbox-title' => 'Còpia sto colegament curt për condivision',
+	'shorturl-not-found-message' => "An dëspias, l'anliura ch'a sërca as treuva pa (a esisto gnun-e anliure curte con l'ID $1)",
+	'shorturl-toolbox-title' => "Ch'a còpia sa liura curta për partagela",
 	'shorturl-toolbox-text' => 'Anliura curta',
 );
 
