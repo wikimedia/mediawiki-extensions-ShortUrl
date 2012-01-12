@@ -29,7 +29,7 @@ class PopulateShortUrlsTable extends Maintenance {
 
 		$last_processed_id = 0;
 
-		while( true ) {
+		while ( true ) {
 			$insertBuffer = array();
 			$res = $dbr->select(
 				'page',
@@ -38,11 +38,11 @@ class PopulateShortUrlsTable extends Maintenance {
 				__METHOD__,
 				array( 'LIMIT' => 100, 'ORDER BY' => 'page_id' )
 			);
-			if( $res->numRows() == 0 ) {
+			if ( $res->numRows() == 0 ) {
 				break;
 			}
 
-			foreach( $res as $row ) {
+			foreach ( $res as $row ) {
 				$rowCount++;
 
 				$rowData = array(

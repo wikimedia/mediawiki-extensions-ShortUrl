@@ -8,7 +8,7 @@ Licenses: GNU General Public Licence (GPL)
 
 == Installing ==
 
-Copy the ShortUrl directory into the extensions folder of your 
+Copy the ShortUrl directory into the extensions folder of your
 MediaWiki installation. Then add the following lines to your
 LocalSettings.php file (near the end):
 
@@ -16,6 +16,6 @@ LocalSettings.php file (near the end):
 
 == Configuration ==
 
-$wgShortUrlPrefix specifies the prefix to use before the shorturl. 
+$wgShortUrlPrefix specifies the prefix to use before the shorturl.
 Defaults to using the longer form (with Special:ShortUrl). Can be
 condensed down to use anything else, via mod_rewrite rules
