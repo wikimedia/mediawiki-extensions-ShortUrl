@@ -176,6 +176,13 @@ $messages['mk'] = array(
 	'shorturl-toolbox-text' => 'Кратка URL-адреса',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'shorturl' => 'ചെറു യൂ.ആർ.എൽ.',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
