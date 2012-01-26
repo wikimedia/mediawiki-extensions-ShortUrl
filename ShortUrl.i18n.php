@@ -275,6 +275,18 @@ $messages['ta'] = array(
 	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
 );
 
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'shorturl' => 'URL ngắn gọn',
+	'shorturl-desc' => '[[Special:ShortUrl|URL ngắn gọn đổi hướng]]',
+	'shorturl-not-found-title' => 'Không tìm thấy URL ngắn gọn',
+	'shorturl-not-found-message' => 'Rất tiếc, không tìm thấy URL bạn đang tìm: không có URL ngắn gọn với ID $1',
+	'shorturl-toolbox-title' => 'Chép liên kết ngắn gọn này để chia sẻ',
+	'shorturl-toolbox-text' => 'URL ngắn gọn',
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Hzy980512
  */
