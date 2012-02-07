@@ -18,9 +18,11 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 /**
  * Configuration variables
  * Prefix to use for the shortened URL. mod_rewrite (or equivalent) needs to be setup
- * to produce a shorter URL
+ * to produce a shorter URL. See example redirect.htaccess file.
  * Default is false which just uses the (not so short) URL that all Special Pages get
  * Eg: http://en.wikipedia.org/wiki/Special:ShortUrl/5234
+ * An example value for this variable might be: 
+ * $wgShortUrlPrefix = '//en.wikipedia.org/r/';
  */
 $wgShortUrlPrefix = false;
 
@@ -53,5 +55,6 @@ $wgResourceModules['ext.shortUrl'] = array(
 	'scripts' => 'js/ext.shortUrl.js',
 	'styles' => 'css/ext.shortUrl.css',
 	'localBasePath' => dirname( __FILE__ ),
-	'remoteExtPath' => 'ShortUrl'
+	'remoteExtPath' => 'ShortUrl',
+	'dependencies' => array( 'mediawiki.Uri' ),
 );
