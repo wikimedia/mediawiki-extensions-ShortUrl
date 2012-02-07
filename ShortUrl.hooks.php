@@ -19,7 +19,7 @@ class ShortUrlHooks {
 	 * @return bool
 	 */
 	public static function addToolboxLink( &$tpl ) {
-		global $wgOut, $wgShortUrlPrefix;
+		global $wgShortUrlPrefix;
 
 		if ( !is_string( $wgShortUrlPrefix ) ) {
 			$urlPrefix = SpecialPage::getTitleFor( 'ShortUrl' )->getCanonicalUrl() . '/';
@@ -27,7 +27,7 @@ class ShortUrlHooks {
 			$urlPrefix = $wgShortUrlPrefix;
 		}
 
-		$title = $wgOut->getTitle();
+		$title = $tpl->getSkin()->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
 			$shortId = ShortUrlUtils::encodeTitle( $title );
 			$shortURL = $urlPrefix . $shortId;
@@ -50,10 +50,9 @@ class ShortUrlHooks {
 	 * @return bool
 	 */
 	public static function onOutputPageBeforeHTML( &$out, &$text ) {
-		global $wgOut;
-		$title = $wgOut->getTitle();
+		$title = $out->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
-			$wgOut->addModules( 'ext.shortUrl' );
+			$out->addModules( 'ext.shortUrl' );
 		}
 		return true;
 	}

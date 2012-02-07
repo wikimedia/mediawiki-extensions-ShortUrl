@@ -33,14 +33,14 @@ class SpecialShortUrl extends SpecialPage {
 	 * @param $par Mixed: Parameters passed to the page
 	 */
 	public function execute( $par ) {
-		global $wgOut;
+		$out = $this->getOutput();
 
 		$title = ShortUrlUtils::decodeURL( $par );
 		if ( $title !== false ) {
-			$wgOut->redirect( $title->getFullURL(), '301' );
+			$out->redirect( $title->getFullURL(), '301' );
 		} else {
 			$parEsc = wfEscapeWikiText( $par );
-			$wgOut->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $parEsc ) );
+			$out->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $parEsc ) );
 		}
 	}
 }
