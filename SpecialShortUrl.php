@@ -39,7 +39,8 @@ class SpecialShortUrl extends SpecialPage {
 		if ( $title !== false ) {
 			$wgOut->redirect( $title->getFullURL(), '301' );
 		} else {
-			$wgOut->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $par ) );
+			$parEsc = wfEscapeWikiText( $par );
+			$wgOut->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $parEsc ) );
 		}
 	}
 }
