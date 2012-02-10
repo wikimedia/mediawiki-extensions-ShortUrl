@@ -74,6 +74,18 @@ $messages['de'] = array(
 	'shorturl-toolbox-text' => 'Kurz-URL',
 );
 
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'shorturl' => 'URL corta',
+	'shorturl-desc' => '[[Special:ShortUrl|URL corta para redirecciones]]',
+	'shorturl-not-found-title' => 'URL corta no encontrada',
+	'shorturl-not-found-message' => 'Lo sentimos, la dirección URL que está buscando no se encuentra (No existe ninguna URL corta con la ID $1)',
+	'shorturl-toolbox-title' => 'Copie este enlace corto para compartirlo',
+	'shorturl-toolbox-text' => 'URL corta',
+);
+
 /** French (Français)
  * @author Gomoko
  * @author Jean-Frédéric
