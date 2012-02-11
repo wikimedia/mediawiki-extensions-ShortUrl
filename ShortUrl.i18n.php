@@ -311,3 +311,13 @@ $messages['zh-hans'] = array(
 	'shorturl-toolbox-text' => '短链接',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Oapbtommy
+ */
+$messages['zh-hant'] = array(
+	'shorturl' => '簡短的網址',
+	'shorturl-not-found-title' => '找不到簡短的網址',
+	'shorturl-toolbox-title' => '複製此短連結以分享',
+	'shorturl-toolbox-text' => '簡短的網址',
+);
+
