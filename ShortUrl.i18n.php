@@ -277,11 +277,13 @@ $messages['sv'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Logicwiki
  * @author Surya Prakash.S.A.
  */
 $messages['ta'] = array(
 	'shorturl' => 'குறுந்தொடுப்பு',
 	'shorturl-desc' => '[[Special:ShortUrl|வழிமாற்றுகளுக்கான குறுந்தொடுப்பு]]',
+	'shorturl-not-found-title' => 'குறுஞ்சுட்டி  காணப்படவில்லை',
 	'shorturl-not-found-message' => 'மன்னிக்கவும், நீங்கள் எதிர்பார்க்கும் உரலி கிடைக்கவில்லை ($1 என்ற அடையாளத்துடன் கூடிய குறுந்தொடுப்பு ஏதுமில்லை)',
 	'shorturl-toolbox-title' => 'பகிர்வதற்காக இக்குறுந்தொடுப்பை நகலெடுக்கவும்',
 	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
