@@ -86,6 +86,18 @@ $messages['es'] = array(
 	'shorturl-toolbox-text' => 'URL corta',
 );
 
+/** Finnish (Suomi)
+ * @author Nike
+ */
+$messages['fi'] = array(
+	'shorturl' => 'Lyhytosoite',
+	'shorturl-desc' => '[[Special:ShortUrl|Muodostaa lyhytosoitteita eli lyhykäisiä wikin sivuille]]',
+	'shorturl-not-found-title' => 'Tuntematon lyhytosoite',
+	'shorturl-not-found-message' => 'Hakemaasi osoitetta ei löydy (tuntematon lyhykäinen $1)',
+	'shorturl-toolbox-title' => 'Kopioi tästä lyhykäinen esimerkiksi twitteriin tai sähköpostiin',
+	'shorturl-toolbox-text' => 'Lyhytosoite',
+);
+
 /** French (Français)
  * @author Gomoko
  * @author Jean-Frédéric
