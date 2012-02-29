@@ -243,6 +243,18 @@ $messages['or'] = array(
 	'shorturl-toolbox-text' => 'ଛୋଟ URL',
 );
 
+/** Polish (Polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'shorturl' => 'Krótkie URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Krótkie URL do przekierowań]]',
+	'shorturl-not-found-title' => 'Nie znaleziono krótkiego URL',
+	'shorturl-not-found-message' => 'Niestety, nie znaleziono poszukiwanego adresu URL (nie istnieje krótki URL o identyfikatorze $1)',
+	'shorturl-toolbox-title' => 'Skopiuj to krótkie łącze by je udostępnić',
+	'shorturl-toolbox-text' => 'Krótki URL',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
