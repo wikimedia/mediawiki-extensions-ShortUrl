@@ -86,6 +86,18 @@ $messages['es'] = array(
 	'shorturl-toolbox-text' => 'URL corta',
 );
 
+/** Persian (فارسی)
+ * @author ZxxZxxZ
+ */
+$messages['fa'] = array(
+	'shorturl' => 'نشانی کوتاه',
+	'shorturl-desc' => '[[Special:ShortUrl|نشانی کوتاه برای تغییرمسیرها]]',
+	'shorturl-not-found-title' => 'نشانی کوتاه یافت نشد',
+	'shorturl-not-found-message' => 'شرمنده، نشانی‌ای که دنبالش می‌گردید یافت نشد (نشانی کوتاهی با آی‌دی $1 وجود ندارد)',
+	'shorturl-toolbox-title' => 'رونوشت این پیوند کوتاه برای به‌اشتراک‌گذاری',
+	'shorturl-toolbox-text' => 'نشانی کوتاه',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  */
