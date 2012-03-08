@@ -188,6 +188,14 @@ $messages['ia'] = array(
 	'shorturl-toolbox-text' => 'URL curte',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'shorturl' => 'მოკლე URL',
+	'shorturl-toolbox-text' => 'მოკლე URL',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
