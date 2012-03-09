@@ -312,12 +312,16 @@ $messages['ru'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Rotsee
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
-	'shorturl' => 'Kort URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Kort URL för omdirigeringar]]',
-	'shorturl-toolbox-text' => 'Kort URL',
+	'shorturl' => 'Kortlänk',
+	'shorturl-desc' => '[[Special:ShortUrl|Kortlänk för omdirigeringar]]',
+	'shorturl-not-found-title' => 'Kortlänken kunde inte hittas',
+	'shorturl-not-found-message' => 'Kortlänken du söker kunde inte hittas. (Det finns ingen kortlänk med ID $1)',
+	'shorturl-toolbox-title' => 'Kortlänk att kopiera',
+	'shorturl-toolbox-text' => 'Kortlänk',
 );
 
 /** Tamil (தமிழ்)
