@@ -337,6 +337,16 @@ $messages['ta'] = array(
 	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
 );
 
+/** Turkish (Türkçe)
+ * @author Emperyan
+ */
+$messages['tr'] = array(
+	'shorturl' => 'Kısa bağlantı',
+	'shorturl-desc' => '[[Special:ShortUrl|Yönlendirmeler için kısa bağlantı]]',
+	'shorturl-not-found-title' => 'Kısa bağlantı bulunamadı',
+	'shorturl-toolbox-text' => 'Kısa bağlantı',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
