@@ -74,6 +74,18 @@ $messages['de'] = array(
 	'shorturl-toolbox-text' => 'Kurz-URL',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'shorturl' => 'Krotki URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]]',
+	'shorturl-not-found-title' => 'Krotki URL njejo se namakał',
+	'shorturl-not-found-message' => 'URL, kótaryž sy pytał, njejo se namakał (krotki URL z ID $1 njeeksistěrujo)',
+	'shorturl-toolbox-title' => 'Toś ten krotki wótkaz kopěrowaś, aby se z drugimi wužywał',
+	'shorturl-toolbox-text' => 'Krotki URL',
+);
+
 /** Spanish (Español)
  * @author Armando-Martin
  */
@@ -357,6 +369,13 @@ $messages['vi'] = array(
 	'shorturl-not-found-message' => 'Rất tiếc, không tìm thấy URL bạn đang tìm: không có URL ngắn gọn với ID $1',
 	'shorturl-toolbox-title' => 'Chép liên kết ngắn gọn này để chia sẻ',
 	'shorturl-toolbox-text' => 'URL ngắn gọn',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'shorturl-toolbox-text' => 'קורץ URL',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
