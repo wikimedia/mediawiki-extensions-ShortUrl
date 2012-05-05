@@ -375,6 +375,9 @@ $messages['vi'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'shorturl' => 'קורץ URL',
+	'shorturl-desc' => '[[Special:ShortUrl|קורץ URL פאר ווייטערפירונגען]]',
+	'shorturl-not-found-title' => 'קורץ URL נישט געטראפן',
 	'shorturl-toolbox-text' => 'קורץ URL',
 );
 
