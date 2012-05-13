@@ -15,22 +15,38 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 class ShortUrlHooks {
 	/**
+	 * @param $router
+	 * @return bool
+	 *
+	 * Adds ShortURL rules to the URL router.
+	 */
+	public static function setupUrlRouting( $router ) {
+		global $wgShortUrlTemplate;
+		if ( $wgShortUrlTemplate ) {
+			$router->add( $wgShortUrlTemplate,
+				array( 'title' => SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getPrefixedText()  )
+			);
+		}
+		return true;
+	}
+
+	/**
 	 * @param $tpl
 	 * @return bool
 	 */
 	public static function addToolboxLink( &$tpl ) {
-		global $wgShortUrlPrefix;
+		global $wgShortUrlTemplate;
 
-		if ( !is_string( $wgShortUrlPrefix ) ) {
-			$urlPrefix = SpecialPage::getTitleFor( 'ShortUrl' )->getFullUrl() . '/';
+		if ( !is_string( $wgShortUrlTemplate ) ) {
+			$urlTemplate = SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getFullUrl();
 		} else {
-			$urlPrefix = $wgShortUrlPrefix;
+			$urlTemplate = $wgServer . $wgShortUrlTemplate;
 		}
 
 		$title = $tpl->getSkin()->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
 			$shortId = ShortUrlUtils::encodeTitle( $title );
-			$shortURL = $urlPrefix . $shortId;
+			$shortURL = str_replace( '$1', $shortId, $urlTemplate );
 			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
 				Html::Element( 'a', array(
 					'href' => $shortURL,

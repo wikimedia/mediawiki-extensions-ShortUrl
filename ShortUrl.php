@@ -17,20 +17,22 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 /**
  * Configuration variables
- * Prefix to use for the shortened URL. mod_rewrite (or equivalent) needs to be setup
- * to produce a shorter URL. See example redirect.htaccess file.
+ * Template to use for the shortened URL. $1 is replaced with the ShortURL id.
+ * $wgServer is prepended to $wgShortUrlTemplate for displaying the URL.
+ * mod_rewrite (or equivalent) needs to be setup to produce a shorter URL. 
+ * See example redirect.htaccess file.
  * Default is false which just uses the (not so short) URL that all Special Pages get
- * Eg: http://en.wikipedia.org/wiki/Special:ShortUrl/5234
+ * Eg: /wiki/Special:ShortUrl/5234
  * An example value for this variable might be: 
- * $wgShortUrlPrefix = '//en.wikipedia.org/r/';
+ * $wgShortUrlPrefix = '/r/$1';
  */
-$wgShortUrlPrefix = false;
+$wgShortUrlTemplate = false;
 
 // Extension credits that will show up on Special:Version
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'ShortUrl',
-	'version' => '1.0',
+	'version' => '1.1',
 	'author' => 'Yuvi Panda',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:ShortUrl',
 	'descriptionmsg' => 'shorturl-desc',
@@ -50,6 +52,7 @@ $wgSpecialPageGroups['ShortUrl'] = 'pagetools';
 $wgHooks['SkinTemplateToolboxEnd'][] = 'ShortUrlHooks::addToolboxLink';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::setupSchema';
 $wgHooks['OutputPageBeforeHTML'][] = 'ShortUrlHooks::onOutputPageBeforeHTML';
+$wgHooks['WebRequestPathInfoRouter'][] = 'ShortUrlHooks::setupUrlRouting';
 
 $wgResourceModules['ext.shortUrl'] = array(
 	'scripts' => 'js/ext.shortUrl.js',
