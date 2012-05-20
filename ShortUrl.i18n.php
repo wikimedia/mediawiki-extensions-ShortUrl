@@ -200,6 +200,18 @@ $messages['ia'] = array(
 	'shorturl-toolbox-text' => 'URL curte',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'shorturl' => 'URL breve',
+	'shorturl-desc' => '[[Special:ShortUrl|URL breve per redirect]]',
+	'shorturl-not-found-title' => 'URL breve non trovato',
+	'shorturl-not-found-message' => "Siamo spiacenti, non è possibile trovare l'URL che stai cercando (non esiste nessun URL breve con ID $1)",
+	'shorturl-toolbox-title' => 'Copia questo link breve per condividere',
+	'shorturl-toolbox-text' => 'URL breve',
+);
+
 /** Georgian (ქართული)
  * @author David1010
  */
