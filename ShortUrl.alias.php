@@ -16,6 +16,11 @@ $specialPageAliases['ar'] = array(
 	'ShortUrl' => array( 'مسار_قصير' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'ShortUrl' => array( 'UrlHandap' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'ShortUrl' => array( 'Kurze_URL' ),
@@ -24,6 +29,11 @@ $specialPageAliases['de'] = array(
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'ShortUrl' => array( 'نشانی_کوتاه' ),
+);
+
+/** Swiss German (Alemannisch) */
+$specialPageAliases['gsw'] = array(
+	'ShortUrl' => array( 'Churzi_URL' ),
 );
 
 /** Interlingua (Interlingua) */
@@ -51,6 +61,16 @@ $specialPageAliases['mk'] = array(
 	'ShortUrl' => array( 'КраткаUrl' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'ShortUrl' => array( 'ചെറുയൂആർഎൽ' ),
+);
+
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'ShortUrl' => array( 'Kurt_URL' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'ShortUrl' => array( 'Kort_webadres' ),
@@ -59,6 +79,11 @@ $specialPageAliases['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'ShortUrl' => array( 'KorteURL' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'ShortUrl' => array( '短链接' ),
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
