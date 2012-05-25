@@ -62,6 +62,18 @@ $messages['br'] = array(
 	'shorturl-toolbox-text' => 'URL berr',
 );
 
+/** Czech (Česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'shorturl' => 'Krátké URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Krátké URL pro přesměrování]]',
+	'shorturl-not-found-title' => 'Krátké URL nenalezeno',
+	'shorturl-not-found-message' => 'Je nám líto, ale URL, které hledáte, nebylo nalezeno (neexistuje krátké URL s ID $1)',
+	'shorturl-toolbox-title' => 'Kopírovat tento krátký odkaz pro sdílení',
+	'shorturl-toolbox-text' => 'Krátké URL',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
