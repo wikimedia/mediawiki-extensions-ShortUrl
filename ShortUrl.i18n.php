@@ -62,7 +62,7 @@ $messages['br'] = array(
 	'shorturl-toolbox-text' => 'URL berr',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
