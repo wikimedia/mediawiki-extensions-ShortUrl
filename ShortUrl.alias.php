@@ -26,6 +26,11 @@ $specialPageAliases['de'] = array(
 	'ShortUrl' => array( 'Kurze_URL' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'ShortUrl' => array( 'GreyoKılm' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'ShortUrl' => array( 'نشانی_کوتاه' ),
@@ -36,7 +41,7 @@ $specialPageAliases['gsw'] = array(
 	'ShortUrl' => array( 'Churzi_URL' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'ShortUrl' => array( 'URL_curte' ),
 );
@@ -51,12 +56,17 @@ $specialPageAliases['ja'] = array(
 	'ShortUrl' => array( '短縮URL' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'ShortUrl' => array( '짧은Url', '짧은url', '짧은URL' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'ShortUrl' => array( 'Kuerz_URL' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'ShortUrl' => array( 'КраткаUrl' ),
 );
@@ -66,7 +76,7 @@ $specialPageAliases['ml'] = array(
 	'ShortUrl' => array( 'ചെറുയൂആർഎൽ' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'ShortUrl' => array( 'Kurt_URL' ),
 );
@@ -81,12 +91,12 @@ $specialPageAliases['nl'] = array(
 	'ShortUrl' => array( 'KorteURL' ),
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文（简体）‬) */
 $specialPageAliases['zh-hans'] = array(
 	'ShortUrl' => array( '短链接' ),
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $specialPageAliases['zh-hant'] = array(
 	'ShortUrl' => array( '縮寫的URL' ),
 );
