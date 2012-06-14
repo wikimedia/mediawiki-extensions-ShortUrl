@@ -23,7 +23,7 @@ $messages['en'] = array(
 	'shorturl-toolbox-text' => 'Short URL'
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -49,7 +49,7 @@ $messages['be-tarask'] = array(
 	'shorturl-toolbox-text' => 'Кароткая спасылка',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -98,7 +98,7 @@ $messages['dsb'] = array(
 	'shorturl-toolbox-text' => 'Krotki URL',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -122,7 +122,7 @@ $messages['fa'] = array(
 	'shorturl-toolbox-text' => 'نشانی کوتاه',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Nike
  */
 $messages['fi'] = array(
@@ -134,7 +134,7 @@ $messages['fi'] = array(
 	'shorturl-toolbox-text' => 'Lyhytosoite',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Jean-Frédéric
  * @author Sherbrooke
@@ -148,7 +148,7 @@ $messages['fr'] = array(
 	'shorturl-toolbox-text' => 'URL courte',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -200,7 +200,7 @@ $messages['hsb'] = array(
 	'shorturl-toolbox-text' => 'Krótki URL',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -212,7 +212,7 @@ $messages['ia'] = array(
 	'shorturl-toolbox-text' => 'URL curte',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
@@ -244,7 +244,7 @@ $messages['lb'] = array(
 	'shorturl-toolbox-text' => 'Kuerz URL',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -304,7 +304,7 @@ $messages['or'] = array(
 	'shorturl-toolbox-text' => 'ଛୋଟ URL',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
@@ -329,7 +329,7 @@ $messages['pms'] = array(
 	'shorturl-toolbox-text' => 'Anliura curta',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
@@ -340,7 +340,7 @@ $messages['pt'] = array(
 	'shorturl-toolbox-text' => 'URL Curta',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -352,7 +352,7 @@ $messages['ru'] = array(
 	'shorturl-toolbox-text' => 'Короткая ссылка',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Rotsee
  * @author WikiPhoenix
  */
@@ -410,7 +410,7 @@ $messages['yi'] = array(
 	'shorturl-toolbox-text' => 'קורץ URL',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hzy980512
  */
 $messages['zh-hans'] = array(
@@ -422,7 +422,7 @@ $messages['zh-hans'] = array(
 	'shorturl-toolbox-text' => '短链接',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Oapbtommy
  */
 $messages['zh-hant'] = array(
