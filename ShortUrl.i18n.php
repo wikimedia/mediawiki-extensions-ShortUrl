@@ -35,7 +35,7 @@ $messages['ast'] = array(
 	'shorturl-toolbox-text' => 'URL curtia',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Renessaince
  * @author Wizardist
@@ -86,7 +86,7 @@ $messages['de'] = array(
 	'shorturl-toolbox-text' => 'Kurz-URL',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -157,7 +157,7 @@ $messages['frp'] = array(
 	'shorturl-toolbox-text' => 'URL côrta',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -188,7 +188,7 @@ $messages['hi'] = array(
 	'shorturl' => 'संक्षेप यूआरएल',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
