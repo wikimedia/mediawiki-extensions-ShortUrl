@@ -232,6 +232,18 @@ $messages['ka'] = array(
 	'shorturl-toolbox-text' => 'მოკლე URL',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'shorturl' => '짧은 URL',
+	'shorturl-desc' => '[[Special:ShortUrl|넘겨주기에 대한 짧은 URL]]',
+	'shorturl-not-found-title' => '짧은 URL을 찾을 수 없음',
+	'shorturl-not-found-message' => '죄송합니다, 찾으려는 URL을 찾을 수 없습니다 (존재하는 $1 ID에 대한 짧은 URL 없음)',
+	'shorturl-toolbox-title' => '공유하기 위해 이 짧은 링크 복사',
+	'shorturl-toolbox-text' => '짧은 URL',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
