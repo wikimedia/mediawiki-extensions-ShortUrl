@@ -23,6 +23,14 @@ $messages['en'] = array(
 	'shorturl-toolbox-text' => 'Short URL'
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'shorturl' => 'চমু ইউ.আৰ.এল.',
+	'shorturl-toolbox-text' => 'চমু ইউ.আৰ.এল.',
+);
+
 /** Asturian (asturianu)
  * @author Xuacu
  */
