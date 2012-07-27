@@ -18,7 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * Provides the actual redirection
  * @ingroup SpecialPage
  */
-class SpecialShortUrl extends SpecialPage {
+class SpecialShortUrl extends UnlistedSpecialPage {
 
 	/**
 	 * Constructor
