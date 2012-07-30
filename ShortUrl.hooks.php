@@ -15,7 +15,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 class ShortUrlHooks {
 	/**
-	 * @param $router
+	 * @param $router PathRouter
 	 * @return bool
 	 *
 	 * Adds ShortURL rules to the URL router.
@@ -31,11 +31,11 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * @param $tpl
+	 * @param $tpl SkinTemplate
 	 * @return bool
 	 */
 	public static function addToolboxLink( &$tpl ) {
-		global $wgShortUrlTemplate;
+		global $wgShortUrlTemplate, $wgServer;
 
 		if ( !is_string( $wgShortUrlTemplate ) ) {
 			$urlTemplate = SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getFullUrl();
