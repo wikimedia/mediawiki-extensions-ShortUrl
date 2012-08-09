@@ -360,6 +360,17 @@ $messages['pt'] = array(
 	'shorturl-toolbox-text' => 'URL Curta',
 );
 
+/** Romanian (română)
+ * @author Firilacroco
+ */
+$messages['ro'] = array(
+	'shorturl' => 'URL scurt',
+	'shorturl-desc' => '[[Special:ShortUrl|URL scurt pentru redirecționări]]',
+	'shorturl-not-found-title' => 'URL scurt negăsit',
+	'shorturl-toolbox-title' => 'Copiați această legătură scurtă pentru partajare',
+	'shorturl-toolbox-text' => 'URL scurt',
+);
+
 /** Russian (русский)
  * @author Александр Сигачёв
  */
