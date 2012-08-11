@@ -395,6 +395,14 @@ $messages['ru'] = array(
 	'shorturl-toolbox-text' => 'Короткая ссылка',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'shorturl' => 'කෙටි URL',
+	'shorturl-toolbox-text' => 'කෙටි URL',
+);
+
 /** Swedish (svenska)
  * @author Rotsee
  * @author WikiPhoenix
