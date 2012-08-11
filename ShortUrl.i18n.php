@@ -252,6 +252,18 @@ $messages['ko'] = array(
 	'shorturl-toolbox-text' => '짧은 URL',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'shorturl' => 'Koote <i lang="en">URLs</i>',
+	'shorturl-desc' => 'Brängk [[Special:ShortUrl|Koote <i lang="en">URLs</i> för Ömleidonge]] en et Wiki.',
+	'shorturl-not-found-title' => 'Koote <i lang="en">URL</i> nit jefonge',
+	'shorturl-not-found-message' => 'Dä koote <i lang="en">URL</i> es nit jefonge woode. Ene koote <i lang="en">URL</i> met dä Kännong „$1“ jidd_et nit.',
+	'shorturl-toolbox-title' => 'Don heh dä koote Lengk kopeere, öm en wigger ze jävve.',
+	'shorturl-toolbox-text' => 'Koote <i lang="en">URL</i>',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -407,6 +419,18 @@ $messages['ta'] = array(
 	'shorturl-not-found-message' => 'மன்னிக்கவும், நீங்கள் எதிர்பார்க்கும் உரலி கிடைக்கவில்லை ($1 என்ற அடையாளத்துடன் கூடிய குறுந்தொடுப்பு ஏதுமில்லை)',
 	'shorturl-toolbox-title' => 'பகிர்வதற்காக இக்குறுந்தொடுப்பை நகலெடுக்கவும்',
 	'shorturl-toolbox-text' => 'குறுந்தொடுப்பு',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'shorturl' => 'Maiksing URL',
+	'shorturl-desc' => '[[Special:ShortUrl|Maiksing URL para sa mga pagpapapunta sa ibang pook]]',
+	'shorturl-not-found-title' => 'Hindi natagpuan ang maiksing URL',
+	'shorturl-not-found-message' => 'Paumanhin, hindi natagpuan ang hinahanap mong URL (Walang umiiral na URL na mayroong ID na $1)',
+	'shorturl-toolbox-title' => 'Kopyahin ang maikling kawing na ito para sa pagpapamahagi',
+	'shorturl-toolbox-text' => 'Maikling URL',
 );
 
 /** Turkish (Türkçe)
