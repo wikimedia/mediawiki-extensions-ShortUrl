@@ -400,6 +400,7 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'shorturl' => 'කෙටි URL',
+	'shorturl-not-found-title' => 'කෙටි URL හමු නොවුණි',
 	'shorturl-toolbox-text' => 'කෙටි URL',
 );
 
