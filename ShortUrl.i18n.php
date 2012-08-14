@@ -383,6 +383,15 @@ $messages['ro'] = array(
 	'shorturl-toolbox-text' => 'URL scurt',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'shorturl' => 'URL corte',
+	'shorturl-not-found-title' => 'URL corte none acchiate',
+	'shorturl-toolbox-text' => 'URL corte',
+);
+
 /** Russian (русский)
  * @author Александр Сигачёв
  */
