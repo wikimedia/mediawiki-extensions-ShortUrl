@@ -232,6 +232,17 @@ $messages['it'] = array(
 	'shorturl-toolbox-text' => 'URL breve',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'shorturl' => '短縮 URL',
+	'shorturl-desc' => '[[Special:ShortUrl|リダイレクト用の短縮 URL]]',
+	'shorturl-not-found-title' => '短縮 URL が見つかりません',
+	'shorturl-toolbox-title' => 'この短縮 URL をコピーして共有',
+	'shorturl-toolbox-text' => '短縮 URL',
+);
+
 /** Georgian (ქართული)
  * @author David1010
  */
