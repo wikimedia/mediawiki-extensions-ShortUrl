@@ -81,7 +81,7 @@ $specialPageAliases['ml'] = array(
 	'ShortUrl' => array( 'ചെറുയൂആർഎൽ' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'ShortUrl' => array( 'Kurt_URL' ),
 );
@@ -96,12 +96,12 @@ $specialPageAliases['nl'] = array(
 	'ShortUrl' => array( 'KorteURL' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'ShortUrl' => array( '短链接' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'ShortUrl' => array( '縮寫的URL' ),
 );
