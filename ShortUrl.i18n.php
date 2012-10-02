@@ -43,7 +43,7 @@ $messages['ast'] = array(
 	'shorturl-toolbox-text' => 'URL curtia',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Renessaince
  * @author Wizardist
@@ -494,7 +494,7 @@ $messages['yi'] = array(
 	'shorturl-toolbox-text' => 'קורץ URL',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hzy980512
  */
 $messages['zh-hans'] = array(
