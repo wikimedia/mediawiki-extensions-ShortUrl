@@ -9,10 +9,6 @@
  * @licence Modified BSD License
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	exit( 1 );
-}
-
 class ShortUrlHooks {
 	/**
 	 * @param $router PathRouter
@@ -24,7 +20,7 @@ class ShortUrlHooks {
 		global $wgShortUrlTemplate;
 		if ( $wgShortUrlTemplate ) {
 			$router->add( $wgShortUrlTemplate,
-				array( 'title' => SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getPrefixedText()  )
+				array( 'title' => SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getPrefixedText() )
 			);
 		}
 		return true;
@@ -47,12 +43,12 @@ class ShortUrlHooks {
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
 			$shortId = ShortUrlUtils::encodeTitle( $title );
 			$shortURL = str_replace( '$1', $shortId, $urlTemplate );
-			$html = Html::rawElement( 'li',	array( 'id' => 't-shorturl' ),
+			$html = Html::rawElement( 'li', array( 'id' => 't-shorturl' ),
 				Html::Element( 'a', array(
 					'href' => $shortURL,
-					'title' => wfMsg( 'shorturl-toolbox-title' )
+					'title' => wfMessage( 'shorturl-toolbox-title' )->text()
 				),
-				wfMsg( 'shorturl-toolbox-text' ) )
+				wfMessage( 'shorturl-toolbox-text' )->text() )
 			);
 
 			echo $html;
@@ -78,10 +74,8 @@ class ShortUrlHooks {
 	 * @return bool
 	 */
 	public static function setupSchema( DatabaseUpdater $du ) {
-		$base = dirname( __FILE__ ) . '/schemas';
+		$base = __DIR__ . '/schemas';
 		$du->addExtensionTable( 'shorturls', "$base/shorturls.sql" );
 		return true;
 	}
-
 }
-

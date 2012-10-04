@@ -19,11 +19,11 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * Configuration variables
  * Template to use for the shortened URL. $1 is replaced with the ShortURL id.
  * $wgServer is prepended to $wgShortUrlTemplate for displaying the URL.
- * mod_rewrite (or equivalent) needs to be setup to produce a shorter URL. 
+ * mod_rewrite (or equivalent) needs to be setup to produce a shorter URL.
  * See example redirect.htaccess file.
  * Default is false which just uses the (not so short) URL that all Special Pages get
  * Eg: /wiki/Special:ShortUrl/5234
- * An example value for this variable might be: 
+ * An example value for this variable might be:
  * $wgShortUrlPrefix = '/r/$1';
  */
 $wgShortUrlTemplate = false;

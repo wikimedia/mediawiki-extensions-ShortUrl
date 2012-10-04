@@ -1,4 +1,6 @@
 jQuery( function( $ ) {
+	'use strict';
+
 	if( $( '#t-shorturl' ).length ) {
 		var url = $( '#t-shorturl a' ).attr( 'href' );
 		/* Add protocol for proto-relative urls */
