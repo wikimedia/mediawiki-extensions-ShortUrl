@@ -517,4 +517,3 @@ $messages['zh-hant'] = array(
 	'shorturl-toolbox-title' => '複製此短連結以分享',
 	'shorturl-toolbox-text' => '簡短的網址',
 );
-
