@@ -383,6 +383,18 @@ $messages['pt'] = array(
 	'shorturl-toolbox-text' => 'URL Curta',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author 555
+ */
+$messages['pt-br'] = array(
+	'shorturl' => 'URL curta',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]',
+	'shorturl-not-found-title' => 'URL curta não localizada',
+	'shorturl-not-found-message' => 'Desculpe-nos, a URL procurada não foi encontrada (não há URLs reduzidas com a ID $1)',
+	'shorturl-toolbox-title' => 'Copiar link curto para compartilhar',
+	'shorturl-toolbox-text' => 'URL curta',
+);
+
 /** Romanian (română)
  * @author Firilacroco
  */
