@@ -291,12 +291,12 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'shorturl' => 'Кратка URL-адреса',
+	'shorturl' => 'Кратка URL',
 	'shorturl-desc' => '[[Special:ShortUrl|Кратка URL-адреса за пренасочувања]]',
 	'shorturl-not-found-title' => 'Не ја пронајдов кратката URL-адреса',
 	'shorturl-not-found-message' => 'Нажалост, не ја најдов URL-адресата што ја барате (не постои кратка URL-адреса со назнаката $1)',
 	'shorturl-toolbox-title' => 'Ископирајте ја оваа кратка врска за да ја споделите',
-	'shorturl-toolbox-text' => 'Кратка URL-адреса',
+	'shorturl-toolbox-text' => 'Кратка URL',
 );
 
 /** Malayalam (മലയാളം)
