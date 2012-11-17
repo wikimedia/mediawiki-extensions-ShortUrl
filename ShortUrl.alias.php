@@ -56,6 +56,11 @@ $specialPageAliases['id'] = array(
 	'ShortUrl' => array( 'UrlPendek' ),
 );
 
+/** Italian (italiano) */
+$specialPageAliases['it'] = array(
+	'ShortUrl' => array( 'UrlCorto' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'ShortUrl' => array( '短縮URL' ),
