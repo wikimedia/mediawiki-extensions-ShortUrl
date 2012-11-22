@@ -101,6 +101,11 @@ $specialPageAliases['nl'] = array(
 	'ShortUrl' => array( 'KorteURL' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'ShortUrl' => array( 'UrlCorto' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'ShortUrl' => array( '短链接' ),
