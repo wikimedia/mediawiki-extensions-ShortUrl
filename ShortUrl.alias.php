@@ -101,6 +101,11 @@ $specialPageAliases['nl'] = array(
 	'ShortUrl' => array( 'KorteURL' ),
 );
 
+/** Punjabi (ਪੰਜਾਬੀ) */
+$specialPageAliases['pa'] = array(
+	'ShortUrl' => array( 'ਛੋਟਾ_ਯੂ॰ਆਰ॰ਐਲ' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'ShortUrl' => array( 'UrlCorto' ),
