@@ -103,7 +103,7 @@ $specialPageAliases['nl'] = array(
 
 /** Punjabi (ਪੰਜਾਬੀ) */
 $specialPageAliases['pa'] = array(
-	'ShortUrl' => array( 'ਛੋਟਾ_ਯੂ॰ਆਰ॰ਐਲ' ),
+	'ShortUrl' => array( 'ਛੋਟਾ_ਯੂ_ਆਰ_ਐੱਲ' ),
 );
 
 /** Sicilian (sicilianu) */
