@@ -41,6 +41,11 @@ $specialPageAliases['fa'] = array(
 	'ShortUrl' => array( 'نشانی_کوتاه' ),
 );
 
+/** French (français) */
+$specialPageAliases['fr'] = array(
+	'ShortUrl' => array( 'UrlCourt', 'Url_court' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'ShortUrl' => array( 'Churzi_URL' ),
@@ -91,7 +96,7 @@ $specialPageAliases['nb'] = array(
 	'ShortUrl' => array( 'Kurt_URL' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'ShortUrl' => array( 'Kort_webadres' ),
 );

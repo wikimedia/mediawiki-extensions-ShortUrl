@@ -484,6 +484,18 @@ $messages['tr'] = array(
 	'shorturl-toolbox-text' => 'Kısa bağlantı',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'shorturl' => 'Коротке посилання',
+	'shorturl-desc' => '[[Special:ShortUrl|Коротке посилання для перенаправлень]]',
+	'shorturl-not-found-title' => 'Коротку URL-адресу не знайдено',
+	'shorturl-not-found-message' => 'Вибачте, вказану Вами URL-адресу не знайдено (Нема короткого посилання із ідентифікатором $1)',
+	'shorturl-toolbox-title' => 'Скопіюйте це коротке посилання для того щоб поділитись',
+	'shorturl-toolbox-text' => 'Коротке посилання',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
