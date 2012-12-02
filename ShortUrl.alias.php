@@ -76,6 +76,11 @@ $specialPageAliases['ko'] = array(
 	'ShortUrl' => array( '짧은Url', '짧은url', '짧은URL' ),
 );
 
+/** Cornish (kernowek) */
+$specialPageAliases['kw'] = array(
+	'ShortUrl' => array( 'UrlCot' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'ShortUrl' => array( 'Kuerz_URL' ),
