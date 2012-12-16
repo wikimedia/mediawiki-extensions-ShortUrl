@@ -23,6 +23,13 @@ $messages['en'] = array(
 	'shorturl-toolbox-text' => 'Short URL'
 );
 
+/** Message documentation (Message documentation)
+ * @author Shirayuki
+ */
+$messages['qqq'] = array(
+	'shorturl-desc' => '{{desc|name=Short Url|url=http://www.mediawiki.org/wiki/Extension:ShortUrl}}',
+);
+
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
