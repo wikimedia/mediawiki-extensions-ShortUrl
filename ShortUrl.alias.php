@@ -121,6 +121,11 @@ $specialPageAliases['scn'] = array(
 	'ShortUrl' => array( 'UrlCorto' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'ShortUrl' => array( 'URL_ngắn' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'ShortUrl' => array( '短链接' ),
