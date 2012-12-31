@@ -339,7 +339,7 @@ $messages['nl'] = array(
 	'shorturl-desc' => '[[Special:ShortUrl|Korte URL voor doorverwijzingen]]',
 	'shorturl-not-found-title' => 'Korte URL niet gevonden',
 	'shorturl-not-found-message' => 'De URL waarnaar u zoekt is niet gevonden. Er bestaat geen korte URL met ID $1',
-	'shorturl-toolbox-title' => 'Deze korte verwijzing kopiëren om te delen',
+	'shorturl-toolbox-title' => 'Deze korte koppeling kopiëren om te delen',
 	'shorturl-toolbox-text' => 'Korte URL',
 );
 
@@ -439,7 +439,9 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'shorturl' => 'කෙටි URL',
+	'shorturl-desc' => '[[Special:ShortUrl|යළියොමුකිරීම් සඳහා කෙටි URL]]',
 	'shorturl-not-found-title' => 'කෙටි URL හමු නොවුණි',
+	'shorturl-toolbox-title' => 'හුවමාරු කිරීම සඳහා මෙම කෙටි සබැඳිය පිටපත් කරන්න',
 	'shorturl-toolbox-text' => 'කෙටි URL',
 );
 
