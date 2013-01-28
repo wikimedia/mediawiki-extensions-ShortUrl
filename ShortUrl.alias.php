@@ -101,7 +101,7 @@ $specialPageAliases['nb'] = array(
 	'ShortUrl' => array( 'Kurt_URL' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'ShortUrl' => array( 'Kort_webadres' ),
 );
