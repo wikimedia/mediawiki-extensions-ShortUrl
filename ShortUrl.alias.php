@@ -96,7 +96,7 @@ $specialPageAliases['ml'] = array(
 	'ShortUrl' => array( 'ചെറുയൂആർഎൽ' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'ShortUrl' => array( 'Kurt_URL' ),
 );
