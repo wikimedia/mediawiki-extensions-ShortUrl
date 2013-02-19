@@ -418,7 +418,10 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'shorturl' => 'URL corte',
+	'shorturl-desc' => '[[Special:ShortUrl|URL corte pe redirezionaminde]]',
 	'shorturl-not-found-title' => 'URL corte none acchiate',
+	'shorturl-not-found-message' => "Ne dispiace, l'URL ca tu ste cirche non ge l'amme acchiate (Non g'esiste nisciuna URL corte cu ID $1)",
+	'shorturl-toolbox-title' => 'Copie stu collegamende curte pe condivisione',
 	'shorturl-toolbox-text' => 'URL corte',
 );
 
