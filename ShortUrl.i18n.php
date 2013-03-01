@@ -294,6 +294,18 @@ $messages['lb'] = array(
 	'shorturl-toolbox-text' => 'Kuerz URL',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'shorturl' => 'URL pendek',
+	'shorturl-desc' => '[[Special:ShortUrl|URL pendek untuak pangaliahan]]',
+	'shorturl-not-found-title' => 'URL pendek indak basobok',
+	'shorturl-not-found-message' => 'Maaf, URL nan Sanak cari indak basobok (Indak ado URL pendek jo ID $1)',
+	'shorturl-toolbox-title' => 'Kopi URL pendek ko untuak dibagian',
+	'shorturl-toolbox-text' => 'URL pendek',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
