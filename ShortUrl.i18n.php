@@ -28,6 +28,8 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'shorturl-desc' => '{{desc|name=Short Url|url=http://www.mediawiki.org/wiki/Extension:ShortUrl}}',
+	'shorturl-not-found-message' => 'Used as error message in Special:ShortUrl. Parameters:
+* $1 - short URL ID',
 );
 
 /** Assamese (অসমীয়া)
