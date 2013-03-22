@@ -36,6 +36,11 @@ $specialPageAliases['diq'] = array(
 	'ShortUrl' => array( 'GreyoKılm' ),
 );
 
+/** Esperanto (Esperanto) */
+$specialPageAliases['eo'] = array(
+	'ShortUrl' => array( 'Mallonga_URL' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'ShortUrl' => array( 'نشانی_کوتاه' ),
