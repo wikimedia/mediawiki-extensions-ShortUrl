@@ -27,6 +27,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
+	'shorturl' => '{{doc-special|ShortUrl}}',
 	'shorturl-desc' => '{{desc|name=Short Url|url=http://www.mediawiki.org/wiki/Extension:ShortUrl}}',
 	'shorturl-not-found-message' => 'Used as error message in Special:ShortUrl. Parameters:
 * $1 - short URL ID',
