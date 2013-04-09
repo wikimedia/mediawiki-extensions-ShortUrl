@@ -16,7 +16,7 @@ $specialPageAliases['ar'] = array(
 	'ShortUrl' => array( 'مسار_قصير' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'ShortUrl' => array( 'চমু_ইউ.আৰ.এল.' ),
 );
