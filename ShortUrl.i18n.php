@@ -33,7 +33,7 @@ $messages['qqq'] = array(
 * $1 - short URL ID',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
@@ -370,7 +370,7 @@ $messages['nl'] = array(
 	'shorturl-toolbox-text' => 'Korte URL',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Psubhashish
  */
 $messages['or'] = array(
