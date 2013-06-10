@@ -83,7 +83,7 @@ $specialPageAliases['ko'] = array(
 
 /** Cornish (kernowek) */
 $specialPageAliases['kw'] = array(
-	'ShortUrl' => array( 'UrlCot' ),
+	'ShortUrl' => array( 'UrlBerr' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
