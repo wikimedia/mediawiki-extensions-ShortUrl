@@ -78,7 +78,7 @@ $specialPageAliases['ja'] = array(
 
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
-	'ShortUrl' => array( '짧은Url', '짧은url', '짧은URL' ),
+	'ShortUrl' => array( '짧은Url', '짧은URL' ),
 );
 
 /** Cornish (kernowek) */
