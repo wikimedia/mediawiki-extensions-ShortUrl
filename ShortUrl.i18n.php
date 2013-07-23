@@ -408,10 +408,11 @@ $messages['pms'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  */
 $messages['pt'] = array(
 	'shorturl' => 'URL Curta',
-	'shorturl-desc' => '[[Special:ShortUrl|URL Curta para redireccionamentos]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]',
 	'shorturl-not-found-message' => 'A URL que pretende não foi encontrada (não existe nenhuma URL Curta com a identificação $1)',
 	'shorturl-toolbox-title' => 'Copie este link curto para partilhar',
 	'shorturl-toolbox-text' => 'URL Curta',
