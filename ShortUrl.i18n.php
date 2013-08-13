@@ -213,9 +213,15 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Rsrikanth05
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
-	'shorturl' => 'संक्षेप यूआरएल',
+	'shorturl' => 'छोटे यू॰आर॰एल',
+	'shorturl-desc' => '[[Special:ShortUrl|छोटे यू॰आर॰एल पुनर्निर्देशन]]',
+	'shorturl-not-found-title' => 'छोटा यू॰आर॰एल नहीं मिला',
+	'shorturl-not-found-message' => 'क्षमा करें, आप जो यू॰आर॰एल खोज रहे हैं, वह नहीं मिला। ($1 आइ॰डी का कोई छोटा यू॰आर॰एल नहीं है)',
+	'shorturl-toolbox-title' => 'शेयर करने के लिए ये छोटा यू॰आर॰एल कॉपी करें',
+	'shorturl-toolbox-text' => 'छोटा यू॰आर॰एल',
 );
 
 /** Upper Sorbian (hornjoserbsce)
