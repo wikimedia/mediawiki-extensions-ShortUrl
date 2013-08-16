@@ -92,6 +92,14 @@ $messages['br'] = array(
 	'shorturl-toolbox-text' => 'URL berr',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'shorturl' => 'Йоца хьажориг',
+	'shorturl-toolbox-text' => 'Йоца хьажориг',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
