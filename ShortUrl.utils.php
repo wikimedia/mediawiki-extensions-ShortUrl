@@ -27,22 +27,6 @@ class ShortUrlUtils {
 
 		$memcKey = wfMemcKey( 'shorturls', 'title', md5( $title->getPrefixedText() ) );
 		$id = $wgMemc->get( $memcKey );
-
-		// Bug 43269: Some Extension:ShortUrl memcached keys exceed key length limit
-		// In the past, the title text was not hashed, and thus sometime
-		// exceeded the key length limit. This if-block migrates old keys.
-		// This can and and should be removed after spending a day or so in
-		// production.
-		if ( !$id ) {
-			$oldKey = wfMemcKey( 'shorturls', 'title', $title->getPrefixedText() );
-			$id = $wgMemc->get( $oldKey );
-			if ( $id ) {
-				// Migrate
-				$wgMemc->set( $memcKey, $id, 0 );
-				$wgMemc->delete( $oldKey );
-			}
-		}
-
 		if ( !$id ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$entry = $dbr->selectRow(
