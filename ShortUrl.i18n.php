@@ -16,7 +16,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'shorturl' => 'Short URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Short URL for redirects]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Short redirect URLs]] for all content pages',
 	'shorturl-not-found-title' => 'Short URL not found',
 	'shorturl-not-found-message' => 'Sorry, the URL you are looking for is not found (No short URL with ID $1 exists)',
 	'shorturl-toolbox-title' => 'Copy this short link for sharing',
