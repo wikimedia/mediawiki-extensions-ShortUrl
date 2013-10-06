@@ -11,7 +11,7 @@
 
 $messages = array();
 
-/** English (English)
+/** English
  * @author Yuvi Panda
  */
 $messages['en'] = array(
@@ -20,7 +20,7 @@ $messages['en'] = array(
 	'shorturl-not-found-title' => 'Short URL not found',
 	'shorturl-not-found-message' => 'Sorry, the URL you are looking for is not found (No short URL with ID $1 exists)',
 	'shorturl-toolbox-title' => 'Copy this short link for sharing',
-	'shorturl-toolbox-text' => 'Short URL',
+	'shorturl-toolbox-text' => 'Short URL'
 );
 
 /** Message documentation (Message documentation)
@@ -116,11 +116,10 @@ $messages['cs'] = array(
 
 /** German (Deutsch)
  * @author Kghbln
- * @author Metalhead64
  */
 $messages['de'] = array(
 	'shorturl' => 'Kurz-URL',
-	'shorturl-desc' => 'Ergänzt eine [[Special:ShortUrl|Spezialseite]] zum Erstellen von kurzen Weiterleitungs-URLs für alle Inhaltsseiten',
+	'shorturl-desc' => 'Ergänzt eine [[Special:ShortUrl|Spezialseite]] zum Erstellen von Kurz-URLs für Weiterleitungen',
 	'shorturl-not-found-title' => 'Die Kurz-URL wurde nicht gefunden',
 	'shorturl-not-found-message' => 'Die gesuchte Kurz-URL wurde leider nicht gefunden (Es ist keine Kurz-URL mit der Kennung $1 vorhanden)',
 	'shorturl-toolbox-title' => 'Kurz-URL kopieren, um sie zu nutzen',
@@ -176,14 +175,13 @@ $messages['fi'] = array(
 );
 
 /** French (français)
- * @author DavidL
  * @author Gomoko
  * @author Jean-Frédéric
  * @author Sherbrooke
  */
 $messages['fr'] = array(
 	'shorturl' => 'URL courte',
-	'shorturl-desc' => '[[Special:ShortUrl|URL de redirection courte]] pour toutes les pages de contenu',
+	'shorturl-desc' => '[[Special:ShortUrl|URL courte pour les redirections]]',
 	'shorturl-not-found-title' => 'URL courte introuvable',
 	'shorturl-not-found-message' => 'Désolé, l’URL que vous recherchez est introuvable (aucune URL courte avec l’ID $1)',
 	'shorturl-toolbox-title' => 'Copiez ce court lien pour le partager',
@@ -277,7 +275,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'shorturl' => '短縮 URL',
-	'shorturl-desc' => 'すべてのコンテンツ ページのための[[Special:ShortUrl|リダイレクト用の短縮 URL]]',
+	'shorturl-desc' => '[[Special:ShortUrl|リダイレクト用の短縮 URL]]',
 	'shorturl-not-found-title' => '短縮 URL が見つかりません',
 	'shorturl-toolbox-title' => 'この短縮 URL をコピーして共有',
 	'shorturl-toolbox-text' => '短縮 URL',
@@ -320,7 +318,7 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'shorturl' => 'Kuerz URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Kuerz URL fir Viruleedunge]] fir all Säite mat Inhalt',
+	'shorturl-desc' => '[[Special:ShortUrl|Kuerz URL fir Viruleedungen]]',
 	'shorturl-not-found-title' => 'Kuerz URL gouf net fonnt',
 	'shorturl-not-found-message' => "Pardon, d'URL no där Dir sicht gouf net fonnt (Et gëtt keng Kuerz-URL mat der ID $1)",
 	'shorturl-toolbox-title' => 'Kopéiert dës Kuerz-URL fir se ze notzen',
@@ -344,7 +342,7 @@ $messages['min'] = array(
  */
 $messages['mk'] = array(
 	'shorturl' => 'Кратка URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Кратка URL-адреса за пренасочувања]] на сите содржински страници',
+	'shorturl-desc' => '[[Special:ShortUrl|Кратка URL-адреса за пренасочувања]]',
 	'shorturl-not-found-title' => 'Не ја пронајдов кратката URL-адреса',
 	'shorturl-not-found-message' => 'Нажалост, не ја најдов URL-адресата што ја барате (не постои кратка URL-адреса со назнаката $1)',
 	'shorturl-toolbox-title' => 'Ископирајте ја оваа кратка врска за да ја споделите',
@@ -472,12 +470,11 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (русский)
- * @author Okras
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'shorturl' => 'Короткая ссылка',
-	'shorturl-desc' => '[[Special:ShortUrl|Короткие ссылки перенаправлений]] для всех страниц',
+	'shorturl-desc' => '[[Special:ShortUrl|Короткая ссылка для перенаправлений]]',
 	'shorturl-not-found-title' => 'Короткий URL не найден',
 	'shorturl-not-found-message' => 'К сожалению, указанный URL-адрес не найден (нет короткой ссылки с идентификатором $1)',
 	'shorturl-toolbox-title' => 'Скопируйте эту короткую ссылку',
@@ -544,12 +541,11 @@ $messages['tr'] = array(
 );
 
 /** Ukrainian (українська)
- * @author Andriykopanytsia
  * @author Base
  */
 $messages['uk'] = array(
 	'shorturl' => 'Коротке посилання',
-	'shorturl-desc' => '[[Special:ShortUrl|Коротке посилання для перенаправлень]] на сторінки з вмістом',
+	'shorturl-desc' => '[[Special:ShortUrl|Коротке посилання для перенаправлень]]',
 	'shorturl-not-found-title' => 'Коротку URL-адресу не знайдено',
 	'shorturl-not-found-message' => 'Вибачте, вказану Вами URL-адресу не знайдено (Нема короткого посилання із ідентифікатором $1)',
 	'shorturl-toolbox-title' => 'Скопіюйте це коротке посилання для того щоб поділитись',
@@ -580,11 +576,10 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hzy980512
- * @author Liuxinyu970226
  */
 $messages['zh-hans'] = array(
 	'shorturl' => '短链接',
-	'shorturl-desc' => '所有内容页的[[Special:ShortUrl|重定向短链接]]',
+	'shorturl-desc' => '[[Special:ShortUrl|重定向短链接]]',
 	'shorturl-not-found-title' => '找不到短链接',
 	'shorturl-not-found-message' => '抱歉，请求的链接找不到（没有用ID$1的短链接）',
 	'shorturl-toolbox-title' => '复制该短链接来共享',
