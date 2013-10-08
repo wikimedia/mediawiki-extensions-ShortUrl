@@ -48,7 +48,7 @@ $messages['as'] = array(
  */
 $messages['ast'] = array(
 	'shorturl' => 'URL curtia',
-	'shorturl-desc' => '[[Special:ShortUrl|URL curtia pa redireiciones]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curtia pa redireiciones]]', # Fuzzy
 	'shorturl-not-found-title' => "Nun s'alcontró la URL curtia",
 	'shorturl-not-found-message' => "Lo sentimos, nun s'alcontró la URL que tas buscando (Nun esiste denguna URL curtia con ID $1)",
 	'shorturl-toolbox-title' => 'Copia esti enllaz curtiu pa compartir',
@@ -62,7 +62,7 @@ $messages['ast'] = array(
  */
 $messages['be-tarask'] = array(
 	'shorturl' => 'Кароткія спасылкі',
-	'shorturl-desc' => '[[Special:ShortUrl|Кароткія спасылкі для перанакіраваньняў]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Кароткія спасылкі для перанакіраваньняў]]', # Fuzzy
 	'shorturl-not-found-title' => 'Кароткі URL-адрас ня знойдзены',
 	'shorturl-not-found-message' => 'На жаль, пазначаны URL-адрас ня знойдзены (кароткая спасылка з ідэнтыфікатарам $1 не існуе)',
 	'shorturl-toolbox-title' => 'Скапіюйце гэтую кароткую спасылку',
@@ -74,7 +74,7 @@ $messages['be-tarask'] = array(
  */
 $messages['bn'] = array(
 	'shorturl' => 'সংক্ষিপ্ত ইউআরএল',
-	'shorturl-desc' => '[[Special:ShortUrl|পুনঃনির্দেশনার জন্য সংক্ষিপ্ত ইউআরএল]]',
+	'shorturl-desc' => '[[Special:ShortUrl|পুনঃনির্দেশনার জন্য সংক্ষিপ্ত ইউআরএল]]', # Fuzzy
 	'shorturl-not-found-title' => 'সংক্ষিপ্ত ইউআরএল পাওয়া যায়নি',
 	'shorturl-not-found-message' => 'দুঃখিত, আপনি যে ইউআরএল চাইছেন পাওয়া যায়নি ($1 আইডি সম্বলিত কোনো সংক্ষিপ্ত ইউআরএল নাই)',
 	'shorturl-toolbox-title' => 'বন্টনের জন্য এই সংক্ষিপ্ত ইউআরএল কপি করো',
@@ -87,7 +87,7 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'shorturl' => 'URL berr',
-	'shorturl-desc' => '[[Special:ShortUrl|URL berr evit adkasoù]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL berr evit adkasoù]]', # Fuzzy
 	'shorturl-not-found-title' => "N'eo ket bet kavet an URL berr",
 	'shorturl-not-found-message' => "Digarezit, n'eo ket bet kavet an URL emaoc'h o klask (N'eus URL berr ebet gant an ID $1)",
 	'shorturl-toolbox-title' => 'Kopiit al liamm berr-mañ evit e rannañ',
@@ -107,7 +107,7 @@ $messages['ce'] = array(
  */
 $messages['cs'] = array(
 	'shorturl' => 'Krátké URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Krátké URL pro přesměrování]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Krátké URL pro přesměrování]]', # Fuzzy
 	'shorturl-not-found-title' => 'Krátké URL nenalezeno',
 	'shorturl-not-found-message' => 'Je nám líto, ale URL, které hledáte, nebylo nalezeno (neexistuje krátké URL s ID $1)',
 	'shorturl-toolbox-title' => 'Kopírovat tento krátký odkaz pro sdílení',
@@ -132,7 +132,7 @@ $messages['de'] = array(
  */
 $messages['dsb'] = array(
 	'shorturl' => 'Krotki URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]]', # Fuzzy
 	'shorturl-not-found-title' => 'Krotki URL njejo se namakał',
 	'shorturl-not-found-message' => 'URL, kótaryž sy pytał, njejo se namakał (krotki URL z ID $1 njeeksistěrujo)',
 	'shorturl-toolbox-title' => 'Toś ten krotki wótkaz kopěrowaś, aby se z drugimi wužywał',
@@ -144,7 +144,7 @@ $messages['dsb'] = array(
  */
 $messages['es'] = array(
 	'shorturl' => 'URL corta',
-	'shorturl-desc' => '[[Special:ShortUrl|URL corta para redirecciones]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL corta para redirecciones]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL corta no encontrada',
 	'shorturl-not-found-message' => 'Lo sentimos, la dirección URL que está buscando no se encuentra (No existe ninguna URL corta con la ID $1)',
 	'shorturl-toolbox-title' => 'Copie este enlace corto para compartirlo',
@@ -156,7 +156,7 @@ $messages['es'] = array(
  */
 $messages['fa'] = array(
 	'shorturl' => 'نشانی کوتاه',
-	'shorturl-desc' => '[[Special:ShortUrl|نشانی کوتاه برای تغییرمسیرها]]',
+	'shorturl-desc' => '[[Special:ShortUrl|نشانی کوتاه برای تغییرمسیرها]]', # Fuzzy
 	'shorturl-not-found-title' => 'نشانی کوتاه یافت نشد',
 	'shorturl-not-found-message' => 'شرمنده، نشانی‌ای که دنبالش می‌گردید یافت نشد (نشانی کوتاهی با آی‌دی $1 وجود ندارد)',
 	'shorturl-toolbox-title' => 'رونوشت این پیوند کوتاه برای به‌اشتراک‌گذاری',
@@ -168,7 +168,7 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'shorturl' => 'Lyhytosoite',
-	'shorturl-desc' => '[[Special:ShortUrl|Muodostaa lyhytosoitteita eli lyhykäisiä wikin sivuille]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Muodostaa lyhytosoitteita eli lyhykäisiä wikin sivuille]]', # Fuzzy
 	'shorturl-not-found-title' => 'Tuntematon lyhytosoite',
 	'shorturl-not-found-message' => 'Hakemaasi osoitetta ei löydy (tuntematon lyhykäinen $1)',
 	'shorturl-toolbox-title' => 'Kopioi tästä lyhykäinen esimerkiksi twitteriin tai sähköpostiin',
@@ -195,7 +195,7 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'shorturl' => 'URL côrta',
-	'shorturl-desc' => '[[Special:ShortUrl|URL côrta por les redirèccions]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL côrta por les redirèccions]]', # Fuzzy
 	'shorturl-toolbox-text' => 'URL côrta',
 );
 
@@ -204,7 +204,7 @@ $messages['frp'] = array(
  */
 $messages['gl'] = array(
 	'shorturl' => 'Enderezo URL curto',
-	'shorturl-desc' => '[[Special:ShortUrl|Enderezo URL curto para as redireccións]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Enderezo URL curto para as redireccións]]', # Fuzzy
 	'shorturl-not-found-title' => 'Non se atopou o enderezo URL curto',
 	'shorturl-not-found-message' => 'Sentímolo, non se atopou o enderezo URL que está a buscar (non existe ningún enderezo URL curto co ID $1)',
 	'shorturl-toolbox-title' => 'Copie esta ligazón curta para compartir',
@@ -216,7 +216,7 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'shorturl' => 'כתובת מקוצרת',
-	'shorturl-desc' => '[[Special:ShortUrl|כתובת מקוצרת להפניות]]',
+	'shorturl-desc' => '[[Special:ShortUrl|כתובת מקוצרת להפניות]]', # Fuzzy
 	'shorturl-not-found-title' => 'כתובת מקוצרת לא נמצאה',
 	'shorturl-not-found-message' => 'סליחה, הכתובת שאתם מחפשים אינה נמצאת (אין כתובת מקוצרת עם המזהה $1)',
 	'shorturl-toolbox-title' => 'העתיקו את הקישור הקצר הזה בשביל שיתוף',
@@ -229,7 +229,7 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'shorturl' => 'छोटे यू॰आर॰एल',
-	'shorturl-desc' => '[[Special:ShortUrl|छोटे यू॰आर॰एल पुनर्निर्देशन]]',
+	'shorturl-desc' => '[[Special:ShortUrl|छोटे यू॰आर॰एल पुनर्निर्देशन]]', # Fuzzy
 	'shorturl-not-found-title' => 'छोटा यू॰आर॰एल नहीं मिला',
 	'shorturl-not-found-message' => 'क्षमा करें, आप जो यू॰आर॰एल खोज रहे हैं, वह नहीं मिला। ($1 आइ॰डी का कोई छोटा यू॰आर॰एल नहीं है)',
 	'shorturl-toolbox-title' => 'शेयर करने के लिए ये छोटा यू॰आर॰एल कॉपी करें',
@@ -241,7 +241,7 @@ $messages['hi'] = array(
  */
 $messages['hsb'] = array(
 	'shorturl' => 'Krótki URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Krótke URL za dalesposrědkowanja]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Krótke URL za dalesposrědkowanja]]', # Fuzzy
 	'shorturl-not-found-title' => 'Krótki URL njeje so namakał',
 	'shorturl-not-found-message' => 'URL, kotryž sy pytał, njeje so namakał (krótki URL z ID $1 njeeksistuje)',
 	'shorturl-toolbox-title' => 'Tutón krótki wotkaz kopěrować, zo by so z druhimi wužiwał',
@@ -253,7 +253,7 @@ $messages['hsb'] = array(
  */
 $messages['ia'] = array(
 	'shorturl' => 'URL curte',
-	'shorturl-desc' => '[[Special:ShortUrl|URL curte pro redirectiones]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curte pro redirectiones]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL curte non trovate',
 	'shorturl-not-found-message' => 'Le URL que tu cerca non ha essite trovate (nulle URL curte con le ID $1 existe).',
 	'shorturl-toolbox-title' => 'Copiar iste ligamine curte pro divulgation',
@@ -265,7 +265,7 @@ $messages['ia'] = array(
  */
 $messages['it'] = array(
 	'shorturl' => 'URL breve',
-	'shorturl-desc' => '[[Special:ShortUrl|URL breve per redirect]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL breve per redirect]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL breve non trovato',
 	'shorturl-not-found-message' => "Siamo spiacenti, non è possibile trovare l'URL che stai cercando (non esiste nessun URL breve con ID $1)",
 	'shorturl-toolbox-title' => 'Copia questo link breve per condividere',
@@ -309,7 +309,7 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'shorturl' => 'Koote <i lang="en">URLs</i>',
-	'shorturl-desc' => 'Brängk [[Special:ShortUrl|Koote <i lang="en">URLs</i> för Ömleidonge]] en et Wiki.',
+	'shorturl-desc' => 'Brängk [[Special:ShortUrl|Koote <i lang="en">URLs</i> för Ömleidonge]] en et Wiki.', # Fuzzy
 	'shorturl-not-found-title' => 'Koote <i lang="en">URL</i> nit jefonge',
 	'shorturl-not-found-message' => 'Dä koote <i lang="en">URL</i> es nit jefonge woode. Ene koote <i lang="en">URL</i> met dä Kännong „$1“ jidd_et nit.',
 	'shorturl-toolbox-title' => 'Don heh dä koote Lengk kopeere, öm en wigger ze jävve.',
@@ -333,7 +333,7 @@ $messages['lb'] = array(
  */
 $messages['min'] = array(
 	'shorturl' => 'URL pendek',
-	'shorturl-desc' => '[[Special:ShortUrl|URL pendek untuak pangaliahan]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL pendek untuak pangaliahan]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL pendek indak basobok',
 	'shorturl-not-found-message' => 'Maaf, URL nan Sanak cari indak basobok (Indak ado URL pendek jo ID $1)',
 	'shorturl-toolbox-title' => 'Kopi URL pendek ko untuak dibagian',
@@ -357,7 +357,7 @@ $messages['mk'] = array(
  */
 $messages['ml'] = array(
 	'shorturl' => 'ചെറു യൂ.ആർ.എൽ.',
-	'shorturl-desc' => '[[Special:ShortUrl|ചെറു യൂ.ആർ.എൽ. തിരിച്ചുവിടലുകൾ]]',
+	'shorturl-desc' => '[[Special:ShortUrl|ചെറു യൂ.ആർ.എൽ. തിരിച്ചുവിടലുകൾ]]', # Fuzzy
 	'shorturl-not-found-title' => 'ചെറു യൂ.ആർ.എൽ. കണ്ടെത്താനായില്ല',
 	'shorturl-not-found-message' => 'ക്ഷമിക്കുക, താങ്കൾ നോക്കുന്ന യൂ.ആർ.എൽ. കണ്ടെത്താനായില്ല ($1 എന്ന ഐ.ഡി. ഉള്ള ചെറു യൂ.ആർ.എൽ. നിലവിലില്ല)',
 	'shorturl-toolbox-title' => 'ഈ ചെറു കണ്ണി പങ്ക് വെയ്ക്കാനായി പകർത്തുക',
@@ -369,7 +369,7 @@ $messages['ml'] = array(
  */
 $messages['ms'] = array(
 	'shorturl' => 'URL Ringkas',
-	'shorturl-desc' => '[[Special:ShortUrl|URL Ringkas untuk lencongan]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL Ringkas untuk lencongan]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL ringkas tidak dijumpai',
 	'shorturl-not-found-message' => 'Maaf, URL yang anda cari itu tidak dijumpai (Tidak wujudnya URL yang ber-ID $1)',
 	'shorturl-toolbox-title' => 'Salin pautan ringkas ini untuk dikongsi',
@@ -394,7 +394,7 @@ $messages['nl'] = array(
  */
 $messages['or'] = array(
 	'shorturl' => 'ଛୋଟ URL',
-	'shorturl-desc' => '[[Special:ShortUrl|ଆଉଥରେ ଫେରନ୍ତା ଲିଙ୍କପାଇଁ ଛୋଟ URL]]',
+	'shorturl-desc' => '[[Special:ShortUrl|ଆଉଥରେ ଫେରନ୍ତା ଲିଙ୍କପାଇଁ ଛୋଟ URL]]', # Fuzzy
 	'shorturl-not-found-message' => 'କ୍ଷମା କରିବେ, ଆପଣ ଦେଇଥିବା URLଟି  ମିଳିଲା ନାହିଁ  ($1 ନାଆଁରେ କିଛି ଛୋଟ  URL ମିଳିଲା ନାହିଁ)',
 	'shorturl-toolbox-title' => 'ଏହି ଛୋଟ ଲିଙ୍କଟି ବାଣ୍ଟିବା ପାଇଁ ନକଲ କରନ୍ତୁ',
 	'shorturl-toolbox-text' => 'ଛୋଟ URL',
@@ -405,7 +405,7 @@ $messages['or'] = array(
  */
 $messages['pl'] = array(
 	'shorturl' => 'Krótkie URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Krótkie URL do przekierowań]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Krótkie URL do przekierowań]]', # Fuzzy
 	'shorturl-not-found-title' => 'Nie znaleziono krótkiego URL',
 	'shorturl-not-found-message' => 'Niestety, nie znaleziono poszukiwanego adresu URL (nie istnieje krótki URL o identyfikatorze $1)',
 	'shorturl-toolbox-title' => 'Skopiuj to krótkie łącze by je udostępnić',
@@ -418,7 +418,7 @@ $messages['pl'] = array(
  */
 $messages['pms'] = array(
 	'shorturl' => 'Anliura curta',
-	'shorturl-desc' => '[[Special:ShortUrl|Anliura curta për le ridiression]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Anliura curta për le ridiression]]', # Fuzzy
 	'shorturl-not-found-title' => 'Anliura curta pa trovà',
 	'shorturl-not-found-message' => "An dëspias, l'anliura ch'a sërca as treuva pa (a esisto gnun-e anliure curte con l'ID $1)",
 	'shorturl-toolbox-title' => "Ch'a còpia sa liura curta për partagela",
@@ -431,7 +431,7 @@ $messages['pms'] = array(
  */
 $messages['pt'] = array(
 	'shorturl' => 'URL Curta',
-	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]', # Fuzzy
 	'shorturl-not-found-message' => 'A URL que pretende não foi encontrada (não existe nenhuma URL Curta com a identificação $1)',
 	'shorturl-toolbox-title' => 'Copie este link curto para partilhar',
 	'shorturl-toolbox-text' => 'URL Curta',
@@ -442,7 +442,7 @@ $messages['pt'] = array(
  */
 $messages['pt-br'] = array(
 	'shorturl' => 'URL curta',
-	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL curta não localizada',
 	'shorturl-not-found-message' => 'Desculpe-nos, a URL procurada não foi encontrada (não há URLs reduzidas com a ID $1)',
 	'shorturl-toolbox-title' => 'Copiar link curto para compartilhar',
@@ -454,7 +454,7 @@ $messages['pt-br'] = array(
  */
 $messages['ro'] = array(
 	'shorturl' => 'URL scurt',
-	'shorturl-desc' => '[[Special:ShortUrl|URL scurt pentru redirecționări]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL scurt pentru redirecționări]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL scurt negăsit',
 	'shorturl-toolbox-title' => 'Copiați această legătură scurtă pentru partajare',
 	'shorturl-toolbox-text' => 'URL scurt',
@@ -465,7 +465,7 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'shorturl' => 'URL corte',
-	'shorturl-desc' => '[[Special:ShortUrl|URL corte pe redirezionaminde]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL corte pe redirezionaminde]]', # Fuzzy
 	'shorturl-not-found-title' => 'URL corte none acchiate',
 	'shorturl-not-found-message' => "Ne dispiace, l'URL ca tu ste cirche non ge l'amme acchiate (Non g'esiste nisciuna URL corte cu ID $1)",
 	'shorturl-toolbox-title' => 'Copie stu collegamende curte pe condivisione',
@@ -490,7 +490,7 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'shorturl' => 'කෙටි URL',
-	'shorturl-desc' => '[[Special:ShortUrl|යළියොමුකිරීම් සඳහා කෙටි URL]]',
+	'shorturl-desc' => '[[Special:ShortUrl|යළියොමුකිරීම් සඳහා කෙටි URL]]', # Fuzzy
 	'shorturl-not-found-title' => 'කෙටි URL හමු නොවුණි',
 	'shorturl-toolbox-title' => 'හුවමාරු කිරීම සඳහා මෙම කෙටි සබැඳිය පිටපත් කරන්න',
 	'shorturl-toolbox-text' => 'කෙටි URL',
@@ -502,7 +502,7 @@ $messages['si'] = array(
  */
 $messages['sv'] = array(
 	'shorturl' => 'Kortlänk',
-	'shorturl-desc' => '[[Special:ShortUrl|Kortlänk för omdirigeringar]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Kortlänk för omdirigeringar]]', # Fuzzy
 	'shorturl-not-found-title' => 'Kortlänken kunde inte hittas',
 	'shorturl-not-found-message' => 'Kortlänken du söker kunde inte hittas. (Det finns ingen kortlänk med ID $1)',
 	'shorturl-toolbox-title' => 'Kortlänk att kopiera',
@@ -515,7 +515,7 @@ $messages['sv'] = array(
  */
 $messages['ta'] = array(
 	'shorturl' => 'குறுந்தொடுப்பு',
-	'shorturl-desc' => '[[Special:ShortUrl|வழிமாற்றுகளுக்கான குறுந்தொடுப்பு]]',
+	'shorturl-desc' => '[[Special:ShortUrl|வழிமாற்றுகளுக்கான குறுந்தொடுப்பு]]', # Fuzzy
 	'shorturl-not-found-title' => 'குறுஞ்சுட்டி  காணப்படவில்லை',
 	'shorturl-not-found-message' => 'மன்னிக்கவும், நீங்கள் எதிர்பார்க்கும் உரலி கிடைக்கவில்லை ($1 என்ற அடையாளத்துடன் கூடிய குறுந்தொடுப்பு ஏதுமில்லை)',
 	'shorturl-toolbox-title' => 'பகிர்வதற்காக இக்குறுந்தொடுப்பை நகலெடுக்கவும்',
@@ -527,7 +527,7 @@ $messages['ta'] = array(
  */
 $messages['tl'] = array(
 	'shorturl' => 'Maiksing URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Maiksing URL para sa mga pagpapapunta sa ibang pook]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Maiksing URL para sa mga pagpapapunta sa ibang pook]]', # Fuzzy
 	'shorturl-not-found-title' => 'Hindi natagpuan ang maiksing URL',
 	'shorturl-not-found-message' => 'Paumanhin, hindi natagpuan ang hinahanap mong URL (Walang umiiral na URL na mayroong ID na $1)',
 	'shorturl-toolbox-title' => 'Kopyahin ang maikling kawing na ito para sa pagpapamahagi',
@@ -539,7 +539,7 @@ $messages['tl'] = array(
  */
 $messages['tr'] = array(
 	'shorturl' => 'Kısa bağlantı',
-	'shorturl-desc' => '[[Special:ShortUrl|Yönlendirmeler için kısa bağlantı]]',
+	'shorturl-desc' => '[[Special:ShortUrl|Yönlendirmeler için kısa bağlantı]]', # Fuzzy
 	'shorturl-not-found-title' => 'Kısa bağlantı bulunamadı',
 	'shorturl-toolbox-text' => 'Kısa bağlantı',
 );
@@ -562,7 +562,7 @@ $messages['uk'] = array(
  */
 $messages['vi'] = array(
 	'shorturl' => 'URL ngắn gọn',
-	'shorturl-desc' => '[[Special:ShortUrl|URL ngắn gọn đổi hướng]]',
+	'shorturl-desc' => '[[Special:ShortUrl|URL ngắn gọn đổi hướng]]', # Fuzzy
 	'shorturl-not-found-title' => 'Không tìm thấy URL ngắn gọn',
 	'shorturl-not-found-message' => 'Rất tiếc, không tìm thấy URL bạn đang tìm: không có URL ngắn gọn với ID $1',
 	'shorturl-toolbox-title' => 'Chép liên kết ngắn gọn này để chia sẻ',
@@ -574,7 +574,7 @@ $messages['vi'] = array(
  */
 $messages['yi'] = array(
 	'shorturl' => 'קורץ URL',
-	'shorturl-desc' => '[[Special:ShortUrl|קורץ URL פאר ווייטערפירונגען]]',
+	'shorturl-desc' => '[[Special:ShortUrl|קורץ URL פאר ווייטערפירונגען]]', # Fuzzy
 	'shorturl-not-found-title' => 'קורץ URL נישט געטראפן',
 	'shorturl-toolbox-text' => 'קורץ URL',
 );
@@ -597,7 +597,7 @@ $messages['zh-hans'] = array(
  */
 $messages['zh-hant'] = array(
 	'shorturl' => '簡短的網址',
-	'shorturl-desc' => '[[Special:ShortUrl|重定向短鏈接]]',
+	'shorturl-desc' => '[[Special:ShortUrl|重定向短鏈接]]', # Fuzzy
 	'shorturl-not-found-title' => '找不到簡短的網址',
 	'shorturl-not-found-message' => '抱歉，請求的鏈接找不到（沒有用ID$1的短鏈接）',
 	'shorturl-toolbox-title' => '複製此短連結以分享',
