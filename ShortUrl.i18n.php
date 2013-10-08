@@ -574,7 +574,7 @@ $messages['vi'] = array(
  */
 $messages['yi'] = array(
 	'shorturl' => 'קורץ URL',
-	'shorturl-desc' => '[[Special:ShortUrl|קורץ URL פאר ווייטערפירונגען]]', # Fuzzy
+	'shorturl-desc' => "[[Special:ShortUrl|קורץ ווייטערפירן URL'ס]] פאר אלע אינהאלט בלעטער",
 	'shorturl-not-found-title' => 'קורץ URL נישט געטראפן',
 	'shorturl-toolbox-text' => 'קורץ URL',
 );
