@@ -265,7 +265,7 @@ $messages['ia'] = array(
  */
 $messages['it'] = array(
 	'shorturl' => 'URL breve',
-	'shorturl-desc' => '[[Special:ShortUrl|URL breve per redirect]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|URL brevi di reindirizzamento]] a tutte le pagine di contenuto',
 	'shorturl-not-found-title' => 'URL breve non trovato',
 	'shorturl-not-found-message' => "Siamo spiacenti, non è possibile trovare l'URL che stai cercando (non esiste nessun URL breve con ID $1)",
 	'shorturl-toolbox-title' => 'Copia questo link breve per condividere',
