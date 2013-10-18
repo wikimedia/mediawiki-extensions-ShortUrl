@@ -229,7 +229,7 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'shorturl' => 'छोटे यू॰आर॰एल',
-	'shorturl-desc' => '[[Special:ShortUrl|छोटे यू॰आर॰एल पुनर्निर्देशन]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|छोटे पुनर्निर्देश यू॰आर॰एल]] सभी सामग्री पृष्ठों के लिए',
 	'shorturl-not-found-title' => 'छोटा यू॰आर॰एल नहीं मिला',
 	'shorturl-not-found-message' => 'क्षमा करें, आप जो यू॰आर॰एल खोज रहे हैं, वह नहीं मिला। ($1 आइ॰डी का कोई छोटा यू॰आर॰एल नहीं है)',
 	'shorturl-toolbox-title' => 'शेयर करने के लिए ये छोटा यू॰आर॰एल कॉपी करें',
