@@ -216,7 +216,7 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'shorturl' => 'כתובת מקוצרת',
-	'shorturl-desc' => '[[Special:ShortUrl|כתובת מקוצרת להפניות]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|כתובת מקוצרת להפניות]] לכל דפי התוכן',
 	'shorturl-not-found-title' => 'כתובת מקוצרת לא נמצאה',
 	'shorturl-not-found-message' => 'סליחה, הכתובת שאתם מחפשים אינה נמצאת (אין כתובת מקוצרת עם המזהה $1)',
 	'shorturl-toolbox-title' => 'העתיקו את הקישור הקצר הזה בשביל שיתוף',
