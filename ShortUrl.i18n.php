@@ -98,8 +98,8 @@ $messages['br'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
-	'shorturl' => 'Йоца хьажориг',
-	'shorturl-toolbox-text' => 'Йоца хьажориг',
+	'shorturl' => 'Йоца хьажораг',
+	'shorturl-toolbox-text' => 'Йоца хьажораг',
 );
 
 /** Czech (česky)
@@ -497,12 +497,13 @@ $messages['si'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author Rotsee
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'shorturl' => 'Kortlänk',
-	'shorturl-desc' => '[[Special:ShortUrl|Kortlänk för omdirigeringar]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|Kortlänk för omdirigeringar]] för alla innehållssidor',
 	'shorturl-not-found-title' => 'Kortlänken kunde inte hittas',
 	'shorturl-not-found-message' => 'Kortlänken du söker kunde inte hittas. (Det finns ingen kortlänk med ID $1)',
 	'shorturl-toolbox-title' => 'Kortlänk att kopiera',
