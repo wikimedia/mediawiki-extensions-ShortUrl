@@ -152,11 +152,12 @@ $messages['es'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'shorturl' => 'نشانی کوتاه',
-	'shorturl-desc' => '[[Special:ShortUrl|نشانی کوتاه برای تغییرمسیرها]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|نشانی کوتاه اینترنتی]] برای همهٔ صفحه‌های محتوایی',
 	'shorturl-not-found-title' => 'نشانی کوتاه یافت نشد',
 	'shorturl-not-found-message' => 'شرمنده، نشانی‌ای که دنبالش می‌گردید یافت نشد (نشانی کوتاهی با آی‌دی $1 وجود ندارد)',
 	'shorturl-toolbox-title' => 'رونوشت این پیوند کوتاه برای به‌اشتراک‌گذاری',
