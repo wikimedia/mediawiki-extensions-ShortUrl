@@ -102,7 +102,7 @@ $messages['ce'] = array(
 	'shorturl-toolbox-text' => 'Йоца хьажораг',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  */
 $messages['cs'] = array(
