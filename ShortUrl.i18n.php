@@ -274,12 +274,14 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  */
 $messages['ja'] = array(
 	'shorturl' => '短縮 URL',
 	'shorturl-desc' => 'すべてのコンテンツ ページのための[[Special:ShortUrl|リダイレクト用の短縮 URL]]',
 	'shorturl-not-found-title' => '短縮 URL が見つかりません',
+	'shorturl-not-found-message' => '申し訳ありませんが、探している URL が見つかりません（ID $1 の短縮 URL は存在しません）',
 	'shorturl-toolbox-title' => 'この短縮 URL をコピーして共有',
 	'shorturl-toolbox-text' => '短縮 URL',
 );
