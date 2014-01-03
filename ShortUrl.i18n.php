@@ -566,7 +566,7 @@ $messages['uk'] = array(
  */
 $messages['vi'] = array(
 	'shorturl' => 'URL ngắn gọn',
-	'shorturl-desc' => '[[Special:ShortUrl|URL ngắn gọn đổi hướng]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|URL ngắn gọn đổi hướng]] cho mọi trang nội dung',
 	'shorturl-not-found-title' => 'Không tìm thấy URL ngắn gọn',
 	'shorturl-not-found-message' => 'Rất tiếc, không tìm thấy URL bạn đang tìm: không có URL ngắn gọn với ID $1',
 	'shorturl-toolbox-title' => 'Chép liên kết ngắn gọn này để chia sẻ',
