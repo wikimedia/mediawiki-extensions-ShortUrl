@@ -48,7 +48,7 @@ $messages['as'] = array(
  */
 $messages['ast'] = array(
 	'shorturl' => 'URL curtia',
-	'shorturl-desc' => '[[Special:ShortUrl|URL curtia pa redireiciones]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|URLs de redireición curtia]] pa toles páxines de conteníu',
 	'shorturl-not-found-title' => "Nun s'alcontró la URL curtia",
 	'shorturl-not-found-message' => "Lo sentimos, nun s'alcontró la URL que tas buscando (Nun esiste denguna URL curtia con ID $1)",
 	'shorturl-toolbox-title' => 'Copia esti enllaz curtiu pa compartir',
