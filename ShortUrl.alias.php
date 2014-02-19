@@ -12,8 +12,18 @@ $specialPageAliases['en'] = array(
 	'ShortUrl' => array( 'ShortUrl' ),
 );
 
+/** Afrikaans (Afrikaans) */
+$specialPageAliases['af'] = array(
+	'ShortUrl' => array( 'KortUrl' ),
+);
+
 /** Arabic (العربية) */
 $specialPageAliases['ar'] = array(
+	'ShortUrl' => array( 'مسار_قصير' ),
+);
+
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
 	'ShortUrl' => array( 'مسار_قصير' ),
 );
 
