@@ -132,7 +132,7 @@ $messages['de'] = array(
  */
 $messages['dsb'] = array(
 	'shorturl' => 'Krotki URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]] za wšykne wopśimjeśowe boki',
 	'shorturl-not-found-title' => 'Krotki URL njejo se namakał',
 	'shorturl-not-found-message' => 'URL, kótaryž sy pytał, njejo se namakał (krotki URL z ID $1 njeeksistěrujo)',
 	'shorturl-toolbox-title' => 'Toś ten krotki wótkaz kopěrowaś, aby se z drugimi wužywał',
@@ -242,7 +242,7 @@ $messages['hi'] = array(
  */
 $messages['hsb'] = array(
 	'shorturl' => 'Krótki URL',
-	'shorturl-desc' => '[[Special:ShortUrl|Krótke URL za dalesposrědkowanja]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|Krótke URL za dalesposrědkowanja]] za wšě wobsahowe strony',
 	'shorturl-not-found-title' => 'Krótki URL njeje so namakał',
 	'shorturl-not-found-message' => 'URL, kotryž sy pytał, njeje so namakał (krótki URL z ID $1 njeeksistuje)',
 	'shorturl-toolbox-title' => 'Tutón krótki wotkaz kopěrować, zo by so z druhimi wužiwał',
