@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "පසිඳු කාවින්ද"
+        ]
+    },
+    "shorturl": "කෙටි URL",
+    "shorturl-desc": "[[Special:ShortUrl|යළියොමුකිරීම් සඳහා කෙටි URL]]",
+    "shorturl-not-found-title": "කෙටි URL හමු නොවුණි",
+    "shorturl-toolbox-title": "හුවමාරු කිරීම සඳහා මෙම කෙටි සබැඳිය පිටපත් කරන්න",
+    "shorturl-toolbox-text": "කෙටි URL"
+}

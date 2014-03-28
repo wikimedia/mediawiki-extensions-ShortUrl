@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Jopparn",
+            "Rotsee",
+            "WikiPhoenix"
+        ]
+    },
+    "shorturl": "Kortlänk",
+    "shorturl-desc": "[[Special:ShortUrl|Kortlänk för omdirigeringar]] för alla innehållssidor",
+    "shorturl-not-found-title": "Kortlänken kunde inte hittas",
+    "shorturl-not-found-message": "Kortlänken du söker kunde inte hittas. (Det finns ingen kortlänk med ID $1)",
+    "shorturl-toolbox-title": "Kortlänk att kopiera",
+    "shorturl-toolbox-text": "Kortlänk"
+}

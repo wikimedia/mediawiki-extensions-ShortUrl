@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "DavidL",
+            "Gomoko",
+            "Jean-Frédéric",
+            "Sherbrooke"
+        ]
+    },
+    "shorturl": "URL courte",
+    "shorturl-desc": "[[Special:ShortUrl|URL de redirection courte]] pour toutes les pages de contenu",
+    "shorturl-not-found-title": "URL courte introuvable",
+    "shorturl-not-found-message": "Désolé, l’URL que vous recherchez est introuvable (aucune URL courte avec l’ID $1)",
+    "shorturl-toolbox-title": "Copiez ce court lien pour le partager",
+    "shorturl-toolbox-text": "URL courte"
+}

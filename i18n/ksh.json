@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Purodha"
+        ]
+    },
+    "shorturl": "Koote <i lang=\"en\">URLs</i>",
+    "shorturl-desc": "Brängk [[Special:ShortUrl|Koote <i lang=\"en\">URLs</i> för Ömleidonge]] en et Wiki.",
+    "shorturl-not-found-title": "Koote <i lang=\"en\">URL</i> nit jefonge",
+    "shorturl-not-found-message": "Dä koote <i lang=\"en\">URL</i> es nit jefonge woode. Ene koote <i lang=\"en\">URL</i> met dä Kännong „$1“ jidd_et nit.",
+    "shorturl-toolbox-title": "Don heh dä koote Lengk kopeere, öm en wigger ze jävve.",
+    "shorturl-toolbox-text": "Koote <i lang=\"en\">URL</i>"
+}

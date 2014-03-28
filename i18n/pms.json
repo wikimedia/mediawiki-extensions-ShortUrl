@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Borichèt",
+            "Dragonòt"
+        ]
+    },
+    "shorturl": "Anliura curta",
+    "shorturl-desc": "[[Special:ShortUrl|Anliura curta për le ridiression]]",
+    "shorturl-not-found-title": "Anliura curta pa trovà",
+    "shorturl-not-found-message": "An dëspias, l'anliura ch'a sërca as treuva pa (a esisto gnun-e anliure curte con l'ID $1)",
+    "shorturl-toolbox-title": "Ch'a còpia sa liura curta për partagela",
+    "shorturl-toolbox-text": "Anliura curta"
+}

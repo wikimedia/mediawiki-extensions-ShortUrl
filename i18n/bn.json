@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bellayet"
+        ]
+    },
+    "shorturl": "সংক্ষিপ্ত ইউআরএল",
+    "shorturl-desc": "[[Special:ShortUrl|পুনঃনির্দেশনার জন্য সংক্ষিপ্ত ইউআরএল]]",
+    "shorturl-not-found-title": "সংক্ষিপ্ত ইউআরএল পাওয়া যায়নি",
+    "shorturl-not-found-message": "দুঃখিত, আপনি যে ইউআরএল চাইছেন পাওয়া যায়নি ($1 আইডি সম্বলিত কোনো সংক্ষিপ্ত ইউআরএল নাই)",
+    "shorturl-toolbox-title": "বন্টনের জন্য এই সংক্ষিপ্ত ইউআরএল কপি করো",
+    "shorturl-toolbox-text": "সংক্ষিপ্ত ইউআরএল"
+}

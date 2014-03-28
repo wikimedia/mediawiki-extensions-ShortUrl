@@ -32,14 +32,15 @@ $wgShortUrlTemplate = false;
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'ShortUrl',
-	'version' => '1.1',
+	'version' => '1.2.0',
 	'author' => 'Yuvi Panda',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:ShortUrl',
 	'descriptionmsg' => 'shorturl-desc',
 );
 
 // Set up the new special page
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
+$wgMessagesDirs['ShortUrl'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['ShortUrl'] = $dir . 'ShortUrl.i18n.php';
 $wgExtensionMessagesFiles['ShortUrlAlias'] = $dir . 'ShortUrl.alias.php';
 

@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anakmalaysia"
+        ]
+    },
+    "shorturl": "URL Ringkas",
+    "shorturl-desc": "[[Special:ShortUrl|URL Ringkas untuk lencongan]]",
+    "shorturl-not-found-title": "URL ringkas tidak dijumpai",
+    "shorturl-not-found-message": "Maaf, URL yang anda cari itu tidak dijumpai (Tidak wujudnya URL yang ber-ID $1)",
+    "shorturl-toolbox-title": "Salin pautan ringkas ini untuk dikongsi",
+    "shorturl-toolbox-text": "URL Ringkas"
+}

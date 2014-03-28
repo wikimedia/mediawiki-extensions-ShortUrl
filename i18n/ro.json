@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Firilacroco"
+        ]
+    },
+    "shorturl": "URL scurt",
+    "shorturl-desc": "[[Special:ShortUrl|URL scurt pentru redirecționări]]",
+    "shorturl-not-found-title": "URL scurt negăsit",
+    "shorturl-toolbox-title": "Copiați această legătură scurtă pentru partajare",
+    "shorturl-toolbox-text": "URL scurt"
+}

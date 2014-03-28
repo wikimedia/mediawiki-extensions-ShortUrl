@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "shorturl": "Enderezo URL curto",
+    "shorturl-desc": "[[Special:ShortUrl|Enderezos URL de redirección curtos]] para todas as páxinas de contido",
+    "shorturl-not-found-title": "Non se atopou o enderezo URL curto",
+    "shorturl-not-found-message": "Sentímolo, non se atopou o enderezo URL que está a buscar (non existe ningún enderezo URL curto co ID $1)",
+    "shorturl-toolbox-title": "Copie esta ligazón curta para compartir",
+    "shorturl-toolbox-text": "Enderezo URL curto"
+}

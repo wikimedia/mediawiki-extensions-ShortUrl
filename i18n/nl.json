@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "SPQRobin",
+            "Siebrand"
+        ]
+    },
+    "shorturl": "Korte URL",
+    "shorturl-desc": "[[Special:ShortUrl|Korte doorverwijs-URL]] voor alle inhoudspagina's",
+    "shorturl-not-found-title": "Korte URL niet gevonden",
+    "shorturl-not-found-message": "De URL waarnaar u zoekt is niet gevonden. Er bestaat geen korte URL met ID $1",
+    "shorturl-toolbox-title": "Deze korte koppeling kopiëren om te delen",
+    "shorturl-toolbox-text": "Korte URL"
+}
