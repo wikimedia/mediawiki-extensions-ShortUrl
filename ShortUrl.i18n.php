@@ -441,11 +441,12 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author 555
  */
 $messages['pt-br'] = array(
 	'shorturl' => 'URL curta',
-	'shorturl-desc' => '[[Special:ShortUrl|URL curta para redirecionamentos]]', # Fuzzy
+	'shorturl-desc' => '[[Special:ShortUrl|URLs de redirecionamentos]] para todas as páginas de conteúdo',
 	'shorturl-not-found-title' => 'URL curta não localizada',
 	'shorturl-not-found-message' => 'Desculpe-nos, a URL procurada não foi encontrada (não há URLs reduzidas com a ID $1)',
 	'shorturl-toolbox-title' => 'Copiar link curto para compartilhar',
