@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "AnakngAraw"
-        ]
-    },
-    "shorturl": "Maiksing URL",
-    "shorturl-desc": "[[Special:ShortUrl|Maiksing URL para sa mga pagpapapunta sa ibang pook]]",
-    "shorturl-not-found-title": "Hindi natagpuan ang maiksing URL",
-    "shorturl-not-found-message": "Paumanhin, hindi natagpuan ang hinahanap mong URL (Walang umiiral na URL na mayroong ID na $1)",
-    "shorturl-toolbox-title": "Kopyahin ang maikling kawing na ito para sa pagpapamahagi",
-    "shorturl-toolbox-text": "Maikling URL"
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"shorturl": "Maiksing URL",
+	"shorturl-desc": "[[Special:ShortUrl|Maiksing URL para sa mga pagpapapunta sa ibang pook]]",
+	"shorturl-not-found-title": "Hindi natagpuan ang maiksing URL",
+	"shorturl-not-found-message": "Paumanhin, hindi natagpuan ang hinahanap mong URL (Walang umiiral na URL na mayroong ID na $1)",
+	"shorturl-toolbox-title": "Kopyahin ang maikling kawing na ito para sa pagpapamahagi",
+	"shorturl-toolbox-text": "Maikling URL"
 }

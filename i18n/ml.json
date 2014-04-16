@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Praveenp"
-        ]
-    },
-    "shorturl": "ചെറു യൂ.ആർ.എൽ.",
-    "shorturl-desc": "[[Special:ShortUrl|ചെറു യൂ.ആർ.എൽ. തിരിച്ചുവിടലുകൾ]]",
-    "shorturl-not-found-title": "ചെറു യൂ.ആർ.എൽ. കണ്ടെത്താനായില്ല",
-    "shorturl-not-found-message": "ക്ഷമിക്കുക, താങ്കൾ നോക്കുന്ന യൂ.ആർ.എൽ. കണ്ടെത്താനായില്ല ($1 എന്ന ഐ.ഡി. ഉള്ള ചെറു യൂ.ആർ.എൽ. നിലവിലില്ല)",
-    "shorturl-toolbox-title": "ഈ ചെറു കണ്ണി പങ്ക് വെയ്ക്കാനായി പകർത്തുക",
-    "shorturl-toolbox-text": "ചെറു യൂ.ആർ.എൽ."
+	"@metadata": {
+		"authors": [
+			"Praveenp"
+		]
+	},
+	"shorturl": "ചെറു യൂ.ആർ.എൽ.",
+	"shorturl-desc": "[[Special:ShortUrl|ചെറു യൂ.ആർ.എൽ. തിരിച്ചുവിടലുകൾ]]",
+	"shorturl-not-found-title": "ചെറു യൂ.ആർ.എൽ. കണ്ടെത്താനായില്ല",
+	"shorturl-not-found-message": "ക്ഷമിക്കുക, താങ്കൾ നോക്കുന്ന യൂ.ആർ.എൽ. കണ്ടെത്താനായില്ല ($1 എന്ന ഐ.ഡി. ഉള്ള ചെറു യൂ.ആർ.എൽ. നിലവിലില്ല)",
+	"shorturl-toolbox-title": "ഈ ചെറു കണ്ണി പങ്ക് വെയ്ക്കാനായി പകർത്തുക",
+	"shorturl-toolbox-text": "ചെറു യൂ.ആർ.എൽ."
 }

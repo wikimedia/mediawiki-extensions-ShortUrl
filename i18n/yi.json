@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "פוילישער"
-        ]
-    },
-    "shorturl": "קורץ URL",
-    "shorturl-desc": "[[Special:ShortUrl|קורץ ווייטערפירן URL'ס]] פאר אלע אינהאלט בלעטער",
-    "shorturl-not-found-title": "קורץ URL נישט געטראפן",
-    "shorturl-toolbox-text": "קורץ URL"
+	"@metadata": {
+		"authors": [
+			"פוילישער"
+		]
+	},
+	"shorturl": "קורץ URL",
+	"shorturl-desc": "[[Special:ShortUrl|קורץ ווייטערפירן URL'ס]] פאר אלע אינהאלט בלעטער",
+	"shorturl-not-found-title": "קורץ URL נישט געטראפן",
+	"shorturl-toolbox-text": "קורץ URL"
 }

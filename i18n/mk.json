@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "shorturl": "Кратка URL",
-    "shorturl-desc": "[[Special:ShortUrl|Кратка URL-адреса за пренасочувања]] на сите содржински страници",
-    "shorturl-not-found-title": "Не ја пронајдов кратката URL-адреса",
-    "shorturl-not-found-message": "Нажалост, не ја најдов URL-адресата што ја барате (не постои кратка URL-адреса со назнаката $1)",
-    "shorturl-toolbox-title": "Ископирајте ја оваа кратка врска за да ја споделите",
-    "shorturl-toolbox-text": "Кратка URL"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"shorturl": "Кратка URL",
+	"shorturl-desc": "[[Special:ShortUrl|Кратка URL-адреса за пренасочувања]] на сите содржински страници",
+	"shorturl-not-found-title": "Не ја пронајдов кратката URL-адреса",
+	"shorturl-not-found-message": "Нажалост, не ја најдов URL-адресата што ја барате (не постои кратка URL-адреса со назнаката $1)",
+	"shorturl-toolbox-title": "Ископирајте ја оваа кратка врска за да ја споделите",
+	"shorturl-toolbox-text": "Кратка URL"
 }

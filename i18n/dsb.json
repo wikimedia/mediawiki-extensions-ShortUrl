@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "shorturl": "Krotki URL",
-    "shorturl-desc": "[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]] za wšykne wopśimjeśowe boki",
-    "shorturl-not-found-title": "Krotki URL njejo se namakał",
-    "shorturl-not-found-message": "URL, kótaryž sy pytał, njejo se namakał (krotki URL z ID $1 njeeksistěrujo)",
-    "shorturl-toolbox-title": "Toś ten krotki wótkaz kopěrowaś, aby se z drugimi wužywał",
-    "shorturl-toolbox-text": "Krotki URL"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"shorturl": "Krotki URL",
+	"shorturl-desc": "[[Special:ShortUrl|Krotke URL za dalejpósrědnjenja]] za wšykne wopśimjeśowe boki",
+	"shorturl-not-found-title": "Krotki URL njejo se namakał",
+	"shorturl-not-found-message": "URL, kótaryž sy pytał, njejo se namakał (krotki URL z ID $1 njeeksistěrujo)",
+	"shorturl-toolbox-title": "Toś ten krotki wótkaz kopěrowaś, aby se z drugimi wužywał",
+	"shorturl-toolbox-text": "Krotki URL"
 }

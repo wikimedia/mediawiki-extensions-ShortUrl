@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Okras",
-            "Александр Сигачёв"
-        ]
-    },
-    "shorturl": "Короткая ссылка",
-    "shorturl-desc": "[[Special:ShortUrl|Короткие ссылки перенаправлений]] для всех страниц",
-    "shorturl-not-found-title": "Короткий URL не найден",
-    "shorturl-not-found-message": "К сожалению, указанный URL-адрес не найден (нет короткой ссылки с идентификатором $1)",
-    "shorturl-toolbox-title": "Скопируйте эту короткую ссылку",
-    "shorturl-toolbox-text": "Короткая ссылка"
+	"@metadata": {
+		"authors": [
+			"Okras",
+			"Александр Сигачёв"
+		]
+	},
+	"shorturl": "Короткая ссылка",
+	"shorturl-desc": "[[Special:ShortUrl|Короткие ссылки перенаправлений]] для всех страниц",
+	"shorturl-not-found-title": "Короткий URL не найден",
+	"shorturl-not-found-message": "К сожалению, указанный URL-адрес не найден (нет короткой ссылки с идентификатором $1)",
+	"shorturl-toolbox-title": "Скопируйте эту короткую ссылку",
+	"shorturl-toolbox-text": "Короткая ссылка"
 }

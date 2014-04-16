@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hzy980512",
-            "Liuxinyu970226"
-        ]
-    },
-    "shorturl": "短链接",
-    "shorturl-desc": "所有内容页的[[Special:ShortUrl|重定向短链接]]",
-    "shorturl-not-found-title": "找不到短链接",
-    "shorturl-not-found-message": "抱歉，请求的链接找不到（没有用ID$1的短链接）",
-    "shorturl-toolbox-title": "复制该短链接来共享",
-    "shorturl-toolbox-text": "短链接"
+	"@metadata": {
+		"authors": [
+			"Hzy980512",
+			"Liuxinyu970226"
+		]
+	},
+	"shorturl": "短链接",
+	"shorturl-desc": "所有内容页的[[Special:ShortUrl|重定向短链接]]",
+	"shorturl-not-found-title": "找不到短链接",
+	"shorturl-not-found-message": "抱歉，请求的链接找不到（没有用ID$1的短链接）",
+	"shorturl-toolbox-title": "复制该短链接来共享",
+	"shorturl-toolbox-text": "短链接"
 }

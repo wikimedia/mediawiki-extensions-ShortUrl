@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Psubhashish"
-        ]
-    },
-    "shorturl": "ଛୋଟ URL",
-    "shorturl-desc": "[[Special:ShortUrl|ଆଉଥରେ ଫେରନ୍ତା ଲିଙ୍କପାଇଁ ଛୋଟ URL]]",
-    "shorturl-not-found-message": "କ୍ଷମା କରିବେ, ଆପଣ ଦେଇଥିବା URLଟି  ମିଳିଲା ନାହିଁ  ($1 ନାଆଁରେ କିଛି ଛୋଟ  URL ମିଳିଲା ନାହିଁ)",
-    "shorturl-toolbox-title": "ଏହି ଛୋଟ ଲିଙ୍କଟି ବାଣ୍ଟିବା ପାଇଁ ନକଲ କରନ୍ତୁ",
-    "shorturl-toolbox-text": "ଛୋଟ URL"
+	"@metadata": {
+		"authors": [
+			"Psubhashish"
+		]
+	},
+	"shorturl": "ଛୋଟ URL",
+	"shorturl-desc": "[[Special:ShortUrl|ଆଉଥରେ ଫେରନ୍ତା ଲିଙ୍କପାଇଁ ଛୋଟ URL]]",
+	"shorturl-not-found-message": "କ୍ଷମା କରିବେ, ଆପଣ ଦେଇଥିବା URLଟି  ମିଳିଲା ନାହିଁ  ($1 ନାଆଁରେ କିଛି ଛୋଟ  URL ମିଳିଲା ନାହିଁ)",
+	"shorturl-toolbox-title": "ଏହି ଛୋଟ ଲିଙ୍କଟି ବାଣ୍ଟିବା ପାଇଁ ନକଲ କରନ୍ତୁ",
+	"shorturl-toolbox-text": "ଛୋଟ URL"
 }
