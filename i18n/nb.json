@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Danmichaelo"
+		]
+	},
+	"shorturl": "Kort-URL",
+	"shorturl-desc": "[[Special:ShortUrl|Korte omdirigerings-URLer]] for alle innholdssider",
+	"shorturl-not-found-title": "Kort-URL ikke funnet",
+	"shorturl-not-found-message": "Beklager, URL-en du så etter ble ikke funnet (Det eksisterer ingen URL med ID $1)",
+	"shorturl-toolbox-title": "Kopier denne kortlenken for deling",
+	"shorturl-toolbox-text": "Kort-URL"
+}
