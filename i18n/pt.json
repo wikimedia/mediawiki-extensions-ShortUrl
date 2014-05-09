@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"Luckas"
+			"Luckas",
+			"Vitorvicentevalente"
 		]
 	},
-	"shorturl": "URL Curta",
-	"shorturl-desc": "[[Special:ShortUrl|URL curta para redirecionamentos]]",
-	"shorturl-not-found-message": "A URL que pretende não foi encontrada (não existe nenhuma URL Curta com a identificação $1)",
-	"shorturl-toolbox-title": "Copie este link curto para partilhar",
-	"shorturl-toolbox-text": "URL Curta"
+	"shorturl": "URL encurtado",
+	"shorturl-desc": "[[Special:ShortUrl|URL encurtado para redireccionamentos]]",
+	"shorturl-not-found-title": "URL encurtado não encontrada",
+	"shorturl-not-found-message": "Desculpe, o URL que pretende não foi encontrado (não existe nenhum URL encurtado com a identificação $1)",
+	"shorturl-toolbox-title": "Copie esta ligação curta para partilhar",
+	"shorturl-toolbox-text": "URL encurtado"
 }
