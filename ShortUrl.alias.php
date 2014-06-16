@@ -67,6 +67,11 @@ $specialPageAliases['gsw'] = array(
 	'ShortUrl' => array( 'Churzi_URL' ),
 );
 
+/** Upper Sorbian (hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'ShortUrl' => array( 'Krótki_URL' ),
+);
+
 /** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'ShortUrl' => array( 'URL_curte' ),
