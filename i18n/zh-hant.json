@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Oapbtommy"
+			"Oapbtommy",
+			"LNDDYL"
 		]
 	},
 	"shorturl": "簡短的網址",
-	"shorturl-desc": "[[Special:ShortUrl|重定向短鏈接]]",
+	"shorturl-desc": "[[Special:ShortUrl|重新導向短連結]]",
 	"shorturl-not-found-title": "找不到簡短的網址",
-	"shorturl-not-found-message": "抱歉，請求的鏈接找不到（沒有用ID$1的短鏈接）",
+	"shorturl-not-found-message": "抱歉，請求的連結找不到（沒有用ID$1的短連結）",
 	"shorturl-toolbox-title": "複製此短連結以分享",
 	"shorturl-toolbox-text": "簡短的網址"
 }
