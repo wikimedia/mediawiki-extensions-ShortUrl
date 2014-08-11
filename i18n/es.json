@@ -5,10 +5,10 @@
 			"Fitoschido"
 		]
 	},
-	"shorturl": "URL corta",
-	"shorturl-desc": "[[Special:ShortUrl|URL cortas de redirección para todas las páginas de contenido]]",
-	"shorturl-not-found-title": "URL corta no encontrada",
-	"shorturl-not-found-message": "Lo sentimos, la dirección URL que está buscando no se encuentra (No existe ninguna URL corta con la ID $1)",
+	"shorturl": "URL corto",
+	"shorturl-desc": "[[Special:ShortUrl|URL cortos de redirección]] para todas las páginas de contenido",
+	"shorturl-not-found-title": "No se encontró el URL corto",
+	"shorturl-not-found-message": "No se encontró el URL que estabas buscando (no existe ningún URL corto con el identificador $1)",
 	"shorturl-toolbox-title": "Copie este enlace corto para compartirlo",
-	"shorturl-toolbox-text": "URL corta"
+	"shorturl-toolbox-text": "URL corto"
 }
