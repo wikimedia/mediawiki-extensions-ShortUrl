@@ -39,14 +39,13 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 // Set up the new special page
-$dir = __DIR__ . '/';
 $wgMessagesDirs['ShortUrl'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['ShortUrl'] = $dir . 'ShortUrl.i18n.php';
-$wgExtensionMessagesFiles['ShortUrlAlias'] = $dir . 'ShortUrl.alias.php';
+$wgExtensionMessagesFiles['ShortUrl'] = __DIR__ . '/ShortUrl.i18n.php';
+$wgExtensionMessagesFiles['ShortUrlAlias'] = __DIR__ . '/ShortUrl.alias.php';
 
-$wgAutoloadClasses['ShortUrlUtils'] = $dir . 'ShortUrl.utils.php';
-$wgAutoloadClasses['ShortUrlHooks'] = $dir . 'ShortUrl.hooks.php';
-$wgAutoloadClasses['SpecialShortUrl'] = $dir . 'SpecialShortUrl.php';
+$wgAutoloadClasses['ShortUrlUtils'] = __DIR__ . '/ShortUrl.utils.php';
+$wgAutoloadClasses['ShortUrlHooks'] = __DIR__ . '/ShortUrl.hooks.php';
+$wgAutoloadClasses['SpecialShortUrl'] = __DIR__ . '/SpecialShortUrl.php';
 $wgSpecialPages['ShortUrl'] = 'SpecialShortUrl';
 $wgSpecialPageGroups['ShortUrl'] = 'pagetools';
 
@@ -58,7 +57,7 @@ $wgHooks['WebRequestPathInfoRouter'][] = 'ShortUrlHooks::setupUrlRouting';
 $wgResourceModules['ext.shortUrl'] = array(
 	'scripts' => 'js/ext.shortUrl.js',
 	'styles' => 'css/ext.shortUrl.css',
-	'localBasePath' => dirname( __FILE__ ),
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'ShortUrl',
 	'dependencies' => array( 'mediawiki.Uri' ),
 );
