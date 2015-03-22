@@ -67,6 +67,11 @@ $specialPageAliases['gsw'] = array(
 	'ShortUrl' => array( 'Churzi_URL' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'ShortUrl' => array( 'כתובת_קצרה' ),
+);
+
 /** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'ShortUrl' => array( 'Krótki_URL' ),
