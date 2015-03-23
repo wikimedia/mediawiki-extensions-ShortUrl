@@ -159,5 +159,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'ShortUrl' => array( 'URL_縮寫' ),
+	'ShortUrl' => array( 'URL_縮寫', '短網址' ),
 );
