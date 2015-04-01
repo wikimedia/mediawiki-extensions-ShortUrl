@@ -44,7 +44,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'ShortUrl' => array( 'GreyoKılm' ),
+	'ShortUrl' => array( 'GıreyoKılm' ),
 );
 
 /** Esperanto (Esperanto) */
