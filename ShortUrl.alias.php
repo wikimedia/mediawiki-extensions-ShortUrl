@@ -62,6 +62,11 @@ $specialPageAliases['fr'] = array(
 	'ShortUrl' => array( 'UrlCourt', 'Url_court' ),
 );
 
+/** Western Frisian (Frysk) */
+$specialPageAliases['fy'] = array(
+	'ShortUrl' => array( 'KoarteURL' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'ShortUrl' => array( 'Churzi_URL' ),
