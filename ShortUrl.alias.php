@@ -32,6 +32,11 @@ $specialPageAliases['as'] = array(
 	'ShortUrl' => array( 'চমু_ইউ.আৰ.এল.' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'ShortUrl' => array( 'گۆنڈ_ادرس' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'ShortUrl' => array( 'UrlHandap' ),
