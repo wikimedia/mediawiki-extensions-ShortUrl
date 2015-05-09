@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"shorturl": "छोटो युआरयल",
+	"shorturl-desc": "सबै पृष्ठ सामग्रीहरूको लागि [[Special:ShortUrl|छोटो अनुप्रेषित युआरयलहरू]]",
+	"shorturl-not-found-title": "संक्षिप्त यूआरएल भेटिएन",
+	"shorturl-not-found-message": "क्षमा गर्नुहोस, तपाईंले खोज्नु भएको युआरयल भेटिएन (कुनै पनि छोटो युआरयल ID $1 भएको छैन)",
+	"shorturl-toolbox-title": "साझा गर्नका लागि छोटो लिङ्क कपी गर्नुहोस",
+	"shorturl-toolbox-text": "छोटो युआरयल"
+}

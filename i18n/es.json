@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"Fitoschido"
+			"Fitoschido",
+			"MarcoAurelio"
 		]
 	},
-	"shorturl": "URL corto",
-	"shorturl-desc": "[[Special:ShortUrl|URL cortos de redirección]] para todas las páginas de contenido",
-	"shorturl-not-found-title": "No se encontró el URL corto",
+	"shorturl": "Enlace corto",
+	"shorturl-desc": "[[Special:ShortUrl|Enlaces cortos de redirección]] para todas las páginas de contenido",
+	"shorturl-not-found-title": "No se encontró el enlace corto",
 	"shorturl-not-found-message": "No se encontró el URL que estabas buscando (no existe ningún URL corto con el identificador $1)",
 	"shorturl-toolbox-title": "Copie este enlace corto para compartirlo",
-	"shorturl-toolbox-text": "URL corto"
+	"shorturl-toolbox-text": "Enlace corto"
 }
