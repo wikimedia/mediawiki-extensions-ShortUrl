@@ -22,7 +22,7 @@ $specialPageAliases['ar'] = array(
 	'ShortUrl' => array( 'مسار_قصير' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'ShortUrl' => array( 'مسار_قصير' ),
 );
