@@ -43,4 +43,8 @@ class SpecialShortUrl extends UnlistedSpecialPage {
 			$out->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $parEsc ) );
 		}
 	}
+
+	protected function getGroupName() {
+		return 'pagetools';
+	}
 }

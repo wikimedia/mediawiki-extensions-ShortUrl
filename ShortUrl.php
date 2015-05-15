@@ -47,7 +47,6 @@ $wgAutoloadClasses['ShortUrlUtils'] = __DIR__ . '/ShortUrl.utils.php';
 $wgAutoloadClasses['ShortUrlHooks'] = __DIR__ . '/ShortUrl.hooks.php';
 $wgAutoloadClasses['SpecialShortUrl'] = __DIR__ . '/SpecialShortUrl.php';
 $wgSpecialPages['ShortUrl'] = 'SpecialShortUrl';
-$wgSpecialPageGroups['ShortUrl'] = 'pagetools';
 
 $wgHooks['SkinTemplateToolboxEnd'][] = 'ShortUrlHooks::addToolboxLink';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::setupSchema';
