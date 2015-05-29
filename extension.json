@@ -49,5 +49,6 @@
 	},
 	"config": {
 		"ShortUrlTemplate": false
-	}
+	},
+	"manifest_version": 1
 }
