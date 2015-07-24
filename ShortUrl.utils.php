@@ -22,36 +22,57 @@ class ShortUrlUtils {
 	 * @param $title Title
 	 * @return mixed|string
 	 */
-	public static function encodeTitle( $title ) {
+	public static function encodeTitle( Title $title ) {
 		global $wgMemc;
 
 		$memcKey = wfMemcKey( 'shorturls', 'title', md5( $title->getPrefixedText() ) );
+
 		$id = $wgMemc->get( $memcKey );
 		if ( !$id ) {
-			$dbr = wfGetDB( DB_SLAVE );
-			$entry = $dbr->selectRow(
+			$id = wfGetDB( DB_SLAVE )->selectField(
 				'shorturls',
-				array( 'su_id' ),
+				'su_id',
 				array(
 					'su_namespace' => $title->getNamespace(),
 					'su_title' => $title->getDBkey()
 				),
 				__METHOD__
 			);
-			if ( $entry !== false ) {
-				$id = $entry->su_id;
-			} else {
+
+			// Automatically create an ID for this title if missing...
+			if ( !$id ) {
 				$dbw = wfGetDB( DB_MASTER );
-				$rowData = array(
-					'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
-					'su_namespace' => $title->getNamespace(),
-					'su_title' => $title->getDBkey()
+				$dbw->insert(
+					'shorturls',
+					array(
+						'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
+						'su_namespace' => $title->getNamespace(),
+						'su_title' => $title->getDBkey()
+					),
+					__METHOD__,
+					array( 'IGNORE' )
 				);
-				$dbw->insert( 'shorturls', $rowData, __METHOD__ );
-				$id = $dbw->insertId();
+
+				if ( $dbw->affectedRows() ) {
+					$id = $dbw->insertId();
+				} else {
+					// Raced out; get the winning ID
+					$id = $dbw->selectField(
+						'shorturls',
+						'su_id',
+						array(
+							'su_namespace' => $title->getNamespace(),
+							'su_title' => $title->getDBkey()
+						),
+						__METHOD__,
+						array( 'LOCK IN SHARE MODE' ) // ignore snapshot
+					);
+				}
 			}
-			$wgMemc->set( $memcKey, $id, 0 );
+
+			$wgMemc->set( $memcKey, $id );
 		}
+
 		return base_convert( $id, 10, 36 );
 	}
 
@@ -79,6 +100,7 @@ class ShortUrlUtils {
 			}
 			$wgMemc->set( $memcKey, $entry, 0 );
 		}
+
 		return Title::makeTitle( $entry->su_namespace, $entry->su_title );
 	}
 
