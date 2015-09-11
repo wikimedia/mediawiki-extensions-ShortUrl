@@ -7,6 +7,8 @@
 	},
 	"shorturl": "{{doc-special|ShortUrl}}\n{{Identical|Short URL}}",
 	"shorturl-desc": "{{desc|name=Short Url|url=https://www.mediawiki.org/wiki/Extension:ShortUrl}}",
+	"shorturl-not-found-title": "Labels the inexistent URL",
 	"shorturl-not-found-message": "Used as error message in Special:ShortUrl. Parameters:\n* $1 - short URL ID",
+	"shorturl-toolbox-title": "Title for Shorturl",
 	"shorturl-toolbox-text": "{{Identical|Short URL}}"
 }
