@@ -4,5 +4,7 @@
 			"V.narsikar"
 		]
 	},
-	"shorturl": "लघु यूआरएल(URL)"
+	"shorturl": "लघु यूआरएल(URL)",
+	"shorturl-not-found-title": "लघु यूआरएल सापडली नाही",
+	"shorturl-toolbox-text": "लघु यूआरएल(Short URL)"
 }
