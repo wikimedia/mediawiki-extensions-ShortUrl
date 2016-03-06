@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Bellayet",
-			"Aftabuzzaman"
+			"Aftabuzzaman",
+			"Bodhisattwa"
 		]
 	},
 	"shorturl": "সংক্ষিপ্ত ইউআরএল",
-	"shorturl-desc": "[[Special:ShortUrl|পুনঃনির্দেশনার জন্য সংক্ষিপ্ত ইউআরএল]]",
+	"shorturl-desc": "সব বিষয়বস্তুর পাতার জন্য [[Special:ShortUrl|সংক্ষিপ্ত পুনঃনির্দেশনার ইউআরএল]]",
 	"shorturl-not-found-title": "সংক্ষিপ্ত ইউআরএল পাওয়া যায়নি",
-	"shorturl-not-found-message": "দুঃখিত, আপনি যে ইউআরএল চাইছেন পাওয়া যায়নি ($1 আইডি সম্বলিত কোনো সংক্ষিপ্ত ইউআরএল নাই)",
-	"shorturl-toolbox-title": "বন্টনের জন্য এই সংক্ষিপ্ত ইউআরএল অনুলিপি করো",
+	"shorturl-not-found-message": "দুঃখিত, আপনি যে ইউআরএল চাইছেন তা পাওয়া যায়নি ($1 আইডি সম্বলিত কোনো সংক্ষিপ্ত ইউআরএল নাই)",
+	"shorturl-toolbox-title": "বন্টনের জন্য এই সংক্ষিপ্ত ইউআরএল অনুলিপি করুন",
 	"shorturl-toolbox-text": "সংক্ষিপ্ত ইউআরএল"
 }
