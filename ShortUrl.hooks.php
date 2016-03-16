@@ -41,17 +41,23 @@ class ShortUrlHooks {
 
 		$title = $tpl->getSkin()->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
-			$shortId = ShortUrlUtils::encodeTitle( $title );
-			$shortURL = str_replace( '$1', $shortId, $urlTemplate );
-			$html = Html::rawElement( 'li', array( 'id' => 't-shorturl' ),
-				Html::Element( 'a', array(
-					'href' => $shortURL,
-					'title' => wfMessage( 'shorturl-toolbox-title' )->text()
-				),
-				wfMessage( 'shorturl-toolbox-text' )->text() )
-			);
+			try {
+				$shortId = ShortUrlUtils::encodeTitle( $title );
+			} catch ( DBReadOnlyError $e ) {
+				$shortId = null;
+			}
+			if ( $shortId !== null ) {
+				$shortURL = str_replace( '$1', $shortId, $urlTemplate );
+				$html = Html::rawElement( 'li', array( 'id' => 't-shorturl' ),
+					Html::Element( 'a', array(
+						'href' => $shortURL,
+						'title' => wfMessage( 'shorturl-toolbox-title' )->text()
+					),
+						wfMessage( 'shorturl-toolbox-text' )->text() )
+				);
 
-			echo $html;
+				echo $html;
+			}
 		}
 		return true;
 	}
