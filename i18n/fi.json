@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nike"
+			"Nike",
+			"Stryn"
 		]
 	},
 	"shorturl": "Lyhytosoite",
 	"shorturl-desc": "[[Special:ShortUrl|Muodostaa lyhytosoitteita eli lyhykäisiä wikin sivuille]]",
 	"shorturl-not-found-title": "Tuntematon lyhytosoite",
-	"shorturl-not-found-message": "Hakemaasi osoitetta ei löydy (tuntematon lyhykäinen $1)",
-	"shorturl-toolbox-title": "Kopioi tästä lyhykäinen esimerkiksi twitteriin tai sähköpostiin",
+	"shorturl-not-found-message": "Hakemaasi osoitetta ei löydy (tuntematon linkkilyhenne $1)",
+	"shorturl-toolbox-title": "Kopioi tämä linkkilyhenne jakamista varten",
 	"shorturl-toolbox-text": "Lyhytosoite"
 }
