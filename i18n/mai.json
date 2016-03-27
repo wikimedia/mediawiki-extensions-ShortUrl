@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"shorturl": "छोट युआरयल",
+	"shorturl-desc": "[[Special:ShortUrl|छोट पुनर्निर्देश युआरयल]] सब सामग्री पृष्ठसभक लेल",
+	"shorturl-not-found-title": "छोट युआरयल नै भेटल",
+	"shorturl-not-found-message": "क्षमा करी, अहाँ जे युआरयल खोजि रहल छी, ओ नै मिलल । ($1 आइडीक कोनो छोट युआरयल नै अछि)",
+	"shorturl-toolbox-title": "सेयर करैक लेल ई छोट युआरयल कपी करी",
+	"shorturl-toolbox-text": "छोट युआरयल"
+}
