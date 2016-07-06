@@ -28,6 +28,15 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  */
 $wgShortUrlTemplate = false;
 
+/**
+ * If read-only mode is enabled,
+ * no new short URLs will be created, but existing
+ * ones will continue to be routed properly
+ *
+ * @var bool
+ */
+$wgShortUrlReadOnly = false;
+
 // Extension credits that will show up on Special:Version
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,

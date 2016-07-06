@@ -20,10 +20,10 @@ class ShortUrlUtils {
 
 	/**
 	 * @param $title Title
-	 * @return mixed|string
+	 * @return string|bool false if read-only mode
 	 */
 	public static function encodeTitle( Title $title ) {
-		global $wgMemc;
+		global $wgMemc, $wgShortUrlReadOnly;
 
 		$memcKey = wfMemcKey( 'shorturls', 'title', md5( $title->getPrefixedText() ) );
 
@@ -38,6 +38,11 @@ class ShortUrlUtils {
 				),
 				__METHOD__
 			);
+
+			if ( $wgShortUrlReadOnly ) {
+				// Not creating any new ids
+				return false;
+			}
 
 			// Automatically create an ID for this title if missing...
 			if ( !$id ) {

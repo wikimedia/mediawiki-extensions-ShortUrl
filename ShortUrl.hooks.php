@@ -31,7 +31,10 @@ class ShortUrlHooks {
 	 * @return bool
 	 */
 	public static function addToolboxLink( &$tpl ) {
-		global $wgShortUrlTemplate, $wgServer;
+		global $wgShortUrlTemplate, $wgServer, $wgShortUrlReadOnly;
+		if ( $wgShortUrlReadOnly ) {
+			return true;
+		}
 
 		if ( !is_string( $wgShortUrlTemplate ) ) {
 			$urlTemplate = SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getFullUrl();
@@ -44,9 +47,9 @@ class ShortUrlHooks {
 			try {
 				$shortId = ShortUrlUtils::encodeTitle( $title );
 			} catch ( DBReadOnlyError $e ) {
-				$shortId = null;
+				$shortId = false;
 			}
-			if ( $shortId !== null ) {
+			if ( $shortId !== false ) {
 				$shortURL = str_replace( '$1', $shortId, $urlTemplate );
 				$html = Html::rawElement( 'li', array( 'id' => 't-shorturl' ),
 					Html::Element( 'a', array(
@@ -68,8 +71,9 @@ class ShortUrlHooks {
 	 * @return bool
 	 */
 	public static function onOutputPageBeforeHTML( &$out, &$text ) {
+		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
-		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
+		if ( !$wgShortUrlReadOnly && ShortUrlUtils::needsShortUrl( $title ) ) {
 			$out->addModules( 'ext.shortUrl' );
 		}
 		return true;
