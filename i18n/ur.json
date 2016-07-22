@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Muhammad Shuaib"
+		]
+	},
+	"shorturl": "مختصر یوآرایل",
+	"shorturl-desc": "جملہ صفحات کے لیے [[Special:ShortUrl|مختصر رجوع مکرر یوآرایل]]",
+	"shorturl-not-found-title": "مختصر یوآرایل نہیں مل سکا",
+	"shorturl-not-found-message": "معذرت، آپ جس یوآرایل کو تلاش کر رہے ہیں وہ نہیں مل سکا (مختصر یوآرایل نہیں، یہ $1 شناخت کے تحت موجود ہے)",
+	"shorturl-toolbox-title": "اس مختصر ربط کو نقل کریں",
+	"shorturl-toolbox-text": "مختصر یوآرایل"
+}
