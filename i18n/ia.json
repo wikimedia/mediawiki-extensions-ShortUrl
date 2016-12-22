@@ -5,7 +5,7 @@
 		]
 	},
 	"shorturl": "URL curte",
-	"shorturl-desc": "[[Special:ShortUrl|URL curte pro redirectiones]]",
+	"shorturl-desc": "[[Special:ShortUrl|URLs curte de redirection]] pro tote le paginas de contento",
 	"shorturl-not-found-title": "URL curte non trovate",
 	"shorturl-not-found-message": "Le URL que tu cerca non ha essite trovate (nulle URL curte con le ID $1 existe).",
 	"shorturl-toolbox-title": "Copiar iste ligamine curte pro divulgation",
