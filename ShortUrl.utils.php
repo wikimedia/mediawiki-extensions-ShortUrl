@@ -32,10 +32,10 @@ class ShortUrlUtils {
 			$id = wfGetDB( DB_SLAVE )->selectField(
 				'shorturls',
 				'su_id',
-				array(
+				[
 					'su_namespace' => $title->getNamespace(),
 					'su_title' => $title->getDBkey()
-				),
+				],
 				__METHOD__
 			);
 
@@ -49,13 +49,13 @@ class ShortUrlUtils {
 				$dbw = wfGetDB( DB_MASTER );
 				$dbw->insert(
 					'shorturls',
-					array(
+					[
 						'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 						'su_namespace' => $title->getNamespace(),
 						'su_title' => $title->getDBkey()
-					),
+					],
 					__METHOD__,
-					array( 'IGNORE' )
+					[ 'IGNORE' ]
 				);
 
 				if ( $dbw->affectedRows() ) {
@@ -65,12 +65,12 @@ class ShortUrlUtils {
 					$id = $dbw->selectField(
 						'shorturls',
 						'su_id',
-						array(
+						[
 							'su_namespace' => $title->getNamespace(),
 							'su_title' => $title->getDBkey()
-						),
+						],
 						__METHOD__,
-						array( 'LOCK IN SHARE MODE' ) // ignore snapshot
+						[ 'LOCK IN SHARE MODE' ] // ignore snapshot
 					);
 				}
 			}
@@ -95,8 +95,8 @@ class ShortUrlUtils {
 			$dbr = wfGetDB( DB_SLAVE );
 			$entry = $dbr->selectRow(
 				'shorturls',
-				array( 'su_namespace', 'su_title' ),
-				array( 'su_id' => $id ),
+				[ 'su_namespace', 'su_title' ],
+				[ 'su_id' => $id ],
 				__METHOD__
 			);
 

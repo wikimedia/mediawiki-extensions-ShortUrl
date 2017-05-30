@@ -10,7 +10,7 @@
  */
 
 if ( !defined( 'MEDIAWIKI' ) ) {
-	echo( "not a valid entry point.\n" );
+	echo "not a valid entry point.\n";
 	die( 1 );
 }
 
@@ -40,7 +40,7 @@ class SpecialShortUrl extends UnlistedSpecialPage {
 			$out->redirect( $title->getFullURL(), '301' );
 		} else {
 			$parEsc = wfEscapeWikiText( $par );
-			$out->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', array( $parEsc ) );
+			$out->showErrorPage( 'shorturl-not-found-title', 'shorturl-not-found-message', [ $parEsc ] );
 		}
 	}
 

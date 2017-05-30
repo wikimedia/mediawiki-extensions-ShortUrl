@@ -2,9 +2,9 @@
 
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
-	$IP = dirname( __FILE__ ) . '/../..';
+	$IP = __DIR__ . '/../..';
 }
-require_once( "$IP/maintenance/Maintenance.php" );
+require_once "$IP/maintenance/Maintenance.php";
 
 class PopulateShortUrlsTable extends Maintenance {
 	public function __construct() {
@@ -18,7 +18,7 @@ class PopulateShortUrlsTable extends Maintenance {
 			'shorturls',
 			$a,
 			__METHOD__,
-			array( 'IGNORE' )
+			[ 'IGNORE' ]
 		);
 	}
 
@@ -30,13 +30,13 @@ class PopulateShortUrlsTable extends Maintenance {
 		$last_processed_id = 0;
 
 		while ( true ) {
-			$insertBuffer = array();
+			$insertBuffer = [];
 			$res = $dbr->select(
 				'page',
-				array( 'page_id', 'page_namespace', 'page_title' ),
-				array( 'page_id > ' . $last_processed_id ),
+				[ 'page_id', 'page_namespace', 'page_title' ],
+				[ 'page_id > ' . $last_processed_id ],
 				__METHOD__,
-				array( 'LIMIT' => 100, 'ORDER BY' => 'page_id' )
+				[ 'LIMIT' => 100, 'ORDER BY' => 'page_id' ]
 			);
 			if ( $res->numRows() == 0 ) {
 				break;
@@ -45,10 +45,10 @@ class PopulateShortUrlsTable extends Maintenance {
 			foreach ( $res as $row ) {
 				$rowCount++;
 
-				$rowData = array(
+				$rowData = [
 					'su_namespace' => $row->page_namespace,
 					'su_title' => $row->page_title
-				);
+				];
 				$insertBuffer[] = $rowData;
 
 				$last_processed_id = $row->page_id;
@@ -63,4 +63,4 @@ class PopulateShortUrlsTable extends Maintenance {
 }
 
 $maintClass = 'PopulateShortUrlsTable';
-require_once( DO_MAINTENANCE );
+require_once DO_MAINTENANCE;

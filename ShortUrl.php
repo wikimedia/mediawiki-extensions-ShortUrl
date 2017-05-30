@@ -11,7 +11,7 @@
  */
 
 if ( !defined( 'MEDIAWIKI' ) ) {
-	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
+	echo "This file is an extension to the MediaWiki software and cannot be used standalone.\n";
 	die( 1 );
 }
 
@@ -38,14 +38,14 @@ $wgShortUrlTemplate = false;
 $wgShortUrlReadOnly = false;
 
 // Extension credits that will show up on Special:Version
-$wgExtensionCredits['specialpage'][] = array(
+$wgExtensionCredits['specialpage'][] = [
 	'path' => __FILE__,
 	'name' => 'ShortUrl',
 	'version' => '1.2.0',
 	'author' => 'Yuvi Panda',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:ShortUrl',
 	'descriptionmsg' => 'shorturl-desc',
-);
+];
 
 // Set up the new special page
 $wgMessagesDirs['ShortUrl'] = __DIR__ . '/i18n';
@@ -62,10 +62,10 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'ShortUrlHooks::setupSchema';
 $wgHooks['OutputPageBeforeHTML'][] = 'ShortUrlHooks::onOutputPageBeforeHTML';
 $wgHooks['WebRequestPathInfoRouter'][] = 'ShortUrlHooks::setupUrlRouting';
 
-$wgResourceModules['ext.shortUrl'] = array(
+$wgResourceModules['ext.shortUrl'] = [
 	'scripts' => 'js/ext.shortUrl.js',
 	'styles' => 'css/ext.shortUrl.css',
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'ShortUrl',
-	'dependencies' => array( 'mediawiki.Uri' ),
-);
+	'dependencies' => [ 'mediawiki.Uri' ],
+];

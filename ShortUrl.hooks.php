@@ -20,7 +20,7 @@ class ShortUrlHooks {
 		global $wgShortUrlTemplate;
 		if ( $wgShortUrlTemplate ) {
 			$router->add( $wgShortUrlTemplate,
-				array( 'title' => SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getPrefixedText() )
+				[ 'title' => SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getPrefixedText() ]
 			);
 		}
 		return true;
@@ -51,11 +51,11 @@ class ShortUrlHooks {
 			}
 			if ( $shortId !== false ) {
 				$shortURL = str_replace( '$1', $shortId, $urlTemplate );
-				$html = Html::rawElement( 'li', array( 'id' => 't-shorturl' ),
-					Html::Element( 'a', array(
+				$html = Html::rawElement( 'li', [ 'id' => 't-shorturl' ],
+					Html::Element( 'a', [
 						'href' => $shortURL,
 						'title' => wfMessage( 'shorturl-toolbox-title' )->text()
-					),
+					],
 						wfMessage( 'shorturl-toolbox-text' )->text() )
 				);
 
