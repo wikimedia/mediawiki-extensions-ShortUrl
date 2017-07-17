@@ -14,7 +14,6 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"ShortUrl": "ShortUrl.i18n.php",
 		"ShortUrlAlias": "ShortUrl.alias.php"
 	},
 	"AutoloadClasses": {
