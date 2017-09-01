@@ -111,7 +111,7 @@ class ShortUrlUtils {
 
 	/**
 	 * @param $title Title
-	 * @return Boolean: true if a short URL needs to be displayed
+	 * @return Boolean true if a short URL needs to be displayed
 	 */
 	public static function needsShortUrl( $title ) {
 		return $title->exists() && !$title->isMainPage();
