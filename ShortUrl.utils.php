@@ -29,7 +29,7 @@ class ShortUrlUtils {
 
 		$id = $wgMemc->get( $memcKey );
 		if ( !$id ) {
-			$id = wfGetDB( DB_SLAVE )->selectField(
+			$id = wfGetDB( DB_REPLICA )->selectField(
 				'shorturls',
 				'su_id',
 				[
@@ -92,7 +92,7 @@ class ShortUrlUtils {
 		$memcKey = wfMemcKey( 'shorturls', 'id', $id );
 		$entry = $wgMemc->get( $memcKey );
 		if ( !$entry ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$entry = $dbr->selectRow(
 				'shorturls',
 				[ 'su_namespace', 'su_title' ],

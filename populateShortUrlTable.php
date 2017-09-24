@@ -25,7 +25,7 @@ class PopulateShortUrlsTable extends Maintenance {
 	// @todo FIXME: Refactor out code in ShortUrl.functions.php so it can be used here
 	public function execute() {
 		$rowCount = 0;
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$last_processed_id = 0;
 
