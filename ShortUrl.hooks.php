@@ -11,7 +11,7 @@
 
 class ShortUrlHooks {
 	/**
-	 * @param $router PathRouter
+	 * @param PathRouter $router
 	 * @return bool
 	 *
 	 * Adds ShortURL rules to the URL router.
@@ -27,7 +27,7 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * @param $tpl SkinTemplate
+	 * @param SkinTemplate &$tpl
 	 * @return bool
 	 */
 	public static function addToolboxLink( &$tpl ) {
@@ -66,8 +66,8 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * @param $out OutputPage
-	 * @param $text string the HTML text to be added
+	 * @param OutputPage &$out
+	 * @param string &$text the HTML text to be added
 	 * @return bool
 	 */
 	public static function onOutputPageBeforeHTML( &$out, &$text ) {
@@ -80,7 +80,7 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * @param $du DatabaseUpdater
+	 * @param DatabaseUpdater $du
 	 * @return bool
 	 */
 	public static function setupSchema( DatabaseUpdater $du ) {

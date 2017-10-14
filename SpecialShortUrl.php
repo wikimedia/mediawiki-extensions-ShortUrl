@@ -30,7 +30,7 @@ class SpecialShortUrl extends UnlistedSpecialPage {
 	/**
 	 * Main execution function
 	 *
-	 * @param $par Mixed: Parameters passed to the page
+	 * @param string|null $par Parameters passed to the page
 	 */
 	public function execute( $par ) {
 		$out = $this->getOutput();

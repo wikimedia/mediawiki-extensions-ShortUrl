@@ -19,7 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 class ShortUrlUtils {
 
 	/**
-	 * @param $title Title
+	 * @param Title $title
 	 * @return string|bool false if read-only mode
 	 */
 	public static function encodeTitle( Title $title ) {
@@ -82,7 +82,7 @@ class ShortUrlUtils {
 	}
 
 	/**
-	 * @param $urlFragment String
+	 * @param string $urlFragment
 	 * @return Title
 	 */
 	public static function decodeURL( $urlFragment ) {
@@ -110,8 +110,8 @@ class ShortUrlUtils {
 	}
 
 	/**
-	 * @param $title Title
-	 * @return Boolean true if a short URL needs to be displayed
+	 * @param Title $title
+	 * @return bool true if a short URL needs to be displayed
 	 */
 	public static function needsShortUrl( $title ) {
 		return $title->exists() && !$title->isMainPage();
