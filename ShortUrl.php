@@ -49,7 +49,6 @@ $wgExtensionCredits['specialpage'][] = [
 
 // Set up the new special page
 $wgMessagesDirs['ShortUrl'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['ShortUrl'] = __DIR__ . '/ShortUrl.i18n.php';
 $wgExtensionMessagesFiles['ShortUrlAlias'] = __DIR__ . '/ShortUrl.alias.php';
 
 $wgAutoloadClasses['ShortUrlUtils'] = __DIR__ . '/ShortUrl.utils.php';
