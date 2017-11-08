@@ -19,9 +19,9 @@ class ShortUrlHooks {
 	public static function setupUrlRouting( $router ) {
 		global $wgShortUrlTemplate;
 		if ( $wgShortUrlTemplate ) {
-			$router->add( $wgShortUrlTemplate,
-				[ 'title' => SpecialPage::getTitleFor( 'ShortUrl', '$1' )->getPrefixedText() ]
-			);
+			// Hardcode full title to avoid T78018. It shouldn't matter because the
+			// page redirects immediately.
+			$router->add( $wgShortUrlTemplate, [ 'title' => 'Special:ShortUrl/$1' ] );
 		}
 		return true;
 	}
