@@ -10,6 +10,7 @@ class PopulateShortUrlsTable extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Populates ShortUrls Table with all existing articles';
+		$this->requireExtension( 'ShortUrl' );
 	}
 
 	private function insertRows( $a ) {
