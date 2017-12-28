@@ -10,6 +10,6 @@
 	"shorturl-desc": "Fornece [[Special:ShortUrl|URL encurtados de redirecionamento]] para as páginas de conteúdo",
 	"shorturl-not-found-title": "URL encurtado não encontrado",
 	"shorturl-not-found-message": "Desculpe, o URL que pretende não foi encontrado (não existe nenhum URL encurtado com a identificação $1)",
-	"shorturl-toolbox-title": "Copie esta ligação curta para partilhar",
+	"shorturl-toolbox-title": "Copie esta hiperligação curta para partilhar",
 	"shorturl-toolbox-text": "URL encurtado"
 }
