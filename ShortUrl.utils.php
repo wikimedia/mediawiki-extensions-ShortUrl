@@ -75,7 +75,7 @@ class ShortUrlUtils {
 				}
 			}
 
-			$wgMemc->set( $memcKey, $id );
+			$wgMemc->set( $memcKey, $id, BagOStuff::TTL_MONTH );
 		}
 
 		return base_convert( $id, 10, 36 );
@@ -103,7 +103,7 @@ class ShortUrlUtils {
 			if ( $entry === false ) {
 				return false; // No such shorturl exists
 			}
-			$wgMemc->set( $memcKey, $entry, 0 );
+			$wgMemc->set( $memcKey, $entry, BagOStuff::TTL_MONTH );
 		}
 
 		return Title::makeTitle( $entry->su_namespace, $entry->su_title );
