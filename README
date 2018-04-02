@@ -4,7 +4,7 @@ Copyright © 2011 Yuvi Panda
 Licenses: Modified BSD License
 --------------------------------------------------------------------------
 
-<http://mediawiki.org/wiki/Extension:ShortUrl>
+<https://mediawiki.org/wiki/Extension:ShortUrl>
 
 == Installing ==
 
@@ -17,7 +17,7 @@ LocalSettings.php file (near the end):
 == Configuration ==
 
 $wgShortUrlTemplate specifies the template to use for the shorturl.
-$1 in the template is replaced with the ShortURL id. 
+$1 in the template is replaced with the ShortURL id.
 $wgServer is prepended before $wgShortUrlTemplate.
 Defaults to using the longer form (with Special:ShortUrl). Can be
 condensed down to use anything else, via mod_rewrite rules
