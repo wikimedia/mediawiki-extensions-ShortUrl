@@ -9,6 +9,8 @@
  * @license Modified BSD License
  */
 
+use Wikimedia\Rdbms\DBReadOnlyError;
+
 class ShortUrlHooks {
 	/**
 	 * @param PathRouter $router
