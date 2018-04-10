@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"shorturl": "مسار قصير",
+	"shorturl-desc": "[[Special:ShortUrl|مسارات تحويل قصير]] لجميع صفحات المحتوى",
+	"shorturl-not-found-title": "لم يتم العثور على مسار قصير",
+	"shorturl-not-found-message": "عذرا، لم يتم العثور على المسار الذي تبحث عنه (لا يوجد مسار قصير بالمعرف $1)",
+	"shorturl-toolbox-title": "انسخ هذا الرابط القصير للمشاركة",
+	"shorturl-toolbox-text": "مسار قصير"
+}
