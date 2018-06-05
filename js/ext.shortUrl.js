@@ -6,7 +6,7 @@
 			var url = $( '#t-shorturl a' ).attr( 'href' ),
 				/* Add protocol for proto-relative urls */
 				protoNonRelative = ( new mw.Uri( url ) ).toString();
-			$( '#firstHeading' ).append(
+			$( '#firstHeading' ).after(
 				$( '<div class="title-shortlink-container"></div>')
 					.append( $( '<a>' )
 					.addClass( 'title-shortlink' )
