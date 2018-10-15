@@ -83,7 +83,7 @@ class ShortUrlUtils {
 
 	/**
 	 * @param string $urlFragment
-	 * @return Title
+	 * @return Title|bool
 	 */
 	public static function decodeURL( $urlFragment ) {
 		global $wgMemc;
