@@ -54,7 +54,7 @@ class ShortUrlHooks {
 			if ( $shortId !== false ) {
 				$shortURL = str_replace( '$1', $shortId, $urlTemplate );
 				$html = Html::rawElement( 'li', [ 'id' => 't-shorturl' ],
-					Html::Element( 'a', [
+					Html::element( 'a', [
 						'href' => $shortURL,
 						'title' => wfMessage( 'shorturl-toolbox-title' )->text()
 					],
