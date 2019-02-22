@@ -1,4 +1,4 @@
-( function ( mw, $ ) {
+( function () {
 	'use strict';
 
 	$( function () {
@@ -17,4 +17,4 @@
 		}
 	});
 
-} ( mediaWiki, jQuery ) );
+}() );
