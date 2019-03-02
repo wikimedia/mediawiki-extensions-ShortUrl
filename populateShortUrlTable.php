@@ -63,5 +63,5 @@ class PopulateShortUrlsTable extends Maintenance {
 	}
 }
 
-$maintClass = 'PopulateShortUrlsTable';
+$maintClass = PopulateShortUrlsTable::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
