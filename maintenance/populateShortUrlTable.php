@@ -6,7 +6,7 @@ if ( $IP === false ) {
 }
 require_once "$IP/maintenance/Maintenance.php";
 
-class PopulateShortUrlsTable extends Maintenance {
+class PopulateShortUrlTable extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Populates ShortUrls Table with all existing articles';
@@ -63,5 +63,5 @@ class PopulateShortUrlsTable extends Maintenance {
 	}
 }
 
-$maintClass = PopulateShortUrlsTable::class;
+$maintClass = PopulateShortUrlTable::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

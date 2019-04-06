@@ -86,7 +86,7 @@ class ShortUrlHooks {
 	 * @return bool
 	 */
 	public static function setupSchema( DatabaseUpdater $du ) {
-		$base = __DIR__ . '/schemas';
+		$base = dirname( __DIR__ ) . '/schemas';
 		$du->addExtensionTable( 'shorturls', "$base/shorturls.sql" );
 		return true;
 	}

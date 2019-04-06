@@ -18,9 +18,9 @@
 		"ShortUrlAlias": "ShortUrl.alias.php"
 	},
 	"AutoloadClasses": {
-		"ShortUrlUtils": "ShortUrl.utils.php",
-		"ShortUrlHooks": "ShortUrl.hooks.php",
-		"SpecialShortUrl": "SpecialShortUrl.php"
+		"ShortUrlUtils": "includes/ShortUrlUtils.php",
+		"ShortUrlHooks": "includes/ShortUrlHooks.php",
+		"SpecialShortUrl": "includes/specials/SpecialShortUrl.php"
 	},
 	"ResourceModules": {
 		"ext.shortUrl": {
