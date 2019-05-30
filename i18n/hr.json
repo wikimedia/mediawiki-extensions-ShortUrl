@@ -5,5 +5,9 @@
 		]
 	},
 	"shorturl": "Kratak URL",
+	"shorturl-desc": "[[Special:ShortUrl|Kratke URL-adrese za preusmjeravanje]] za sve sadržajne stranice",
+	"shorturl-not-found-title": "Kratak URL nije pronađen",
+	"shorturl-not-found-message": "Ispričavamo se, URL-adresa koju ste tražili nije pronađena (ne postoji URL s identifikatorom ID $1)",
+	"shorturl-toolbox-title": "Preslikaj navedenu kratku poveznicu za dijeljenje",
 	"shorturl-toolbox-text": "Kratak URL"
 }
