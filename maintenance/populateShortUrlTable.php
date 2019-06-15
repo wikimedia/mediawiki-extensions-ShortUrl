@@ -9,7 +9,7 @@ require_once "$IP/maintenance/Maintenance.php";
 class PopulateShortUrlTable extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Populates ShortUrls Table with all existing articles';
+		$this->addDescription( 'Populates ShortUrls Table with all existing articles' );
 		$this->requireExtension( 'ShortUrl' );
 	}
 
