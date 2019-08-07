@@ -9,10 +9,6 @@
  * @license BSD-3-Clause
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	exit( 1 );
-}
-
 /**
  * Utility functions for encoding and decoding short URLs
  */

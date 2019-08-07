@@ -9,11 +9,6 @@
  * @license BSD-3-Clause
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "not a valid entry point.\n";
-	die( 1 );
-}
-
 /**
  * Provides the actual redirection
  * @ingroup SpecialPage
