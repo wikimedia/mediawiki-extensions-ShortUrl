@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"shorturl": "Kratka URL",
+	"shorturl-desc": "[[Special:ShortUrl|Kratka URL-adresa za preusmjeravanja]] na sve sadržajne stranice",
+	"shorturl-not-found-title": "Nisam našao kratku URL-adresu",
+	"shorturl-not-found-message": "Ispričavamo se, nisam našao URL koju ste tražili (ne postoji kratka URL s naznakom $1)",
+	"shorturl-toolbox-title": "Iskopirajte ovu kratku poveznicu da je dijelite",
+	"shorturl-toolbox-text": "Kratka URL"
+}
