@@ -41,6 +41,11 @@ $specialPageAliases['bjn'] = [
 	'ShortUrl' => [ 'UrlHandap' ],
 ];
 
+/** Bosnian (bosanski) */
+$specialPageAliases['bs'] = [
+	'ShortUrl' => [ 'Skraćeni_URL' ],
+];
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
 	'ShortUrl' => [ 'Kurze_URL' ],
@@ -79,6 +84,11 @@ $specialPageAliases['gsw'] = [
 /** Hebrew (עברית) */
 $specialPageAliases['he'] = [
 	'ShortUrl' => [ 'כתובת_קצרה' ],
+];
+
+/** Croatian (hrvatski) */
+$specialPageAliases['hr'] = [
+	'ShortUrl' => [ 'Skraćeni_URL' ],
 ];
 
 /** Upper Sorbian (hornjoserbsce) */
@@ -154,6 +164,21 @@ $specialPageAliases['pa'] = [
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = [
 	'ShortUrl' => [ 'UrlCorto' ],
+];
+
+/** Serbo-Croatian (srpskohrvatski / српскохрватски) */
+$specialPageAliases['sh'] = [
+	'ShortUrl' => [ 'Skraćeni_URL' ],
+];
+
+/** Serbian Cyrillic (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = [
+	'ShortUrl' => [ 'Скраћени_URL', 'Скраћени_УРЛ' ],
+];
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'ShortUrl' => [ 'Skraćeni_URL' ],
 ];
 
 /** Vietnamese (Tiếng Việt) */
