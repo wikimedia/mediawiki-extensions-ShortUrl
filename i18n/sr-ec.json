@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog"
+		]
+	},
+	"shorturl": "Кратак URL",
+	"shorturl-desc": "[[Special:ShortUrl|Кратки URL-ови за преусмеравање]] на све странице садржаја",
+	"shorturl-not-found-title": "Није пронађен кратак URL",
+	"shorturl-not-found-message": "URL који тражите није пронађен (Не постоји кратак URL са ID-јем $1)",
+	"shorturl-toolbox-title": "Копирај ову кратку везу за дељење",
+	"shorturl-toolbox-text": "Кратак URL"
+}
