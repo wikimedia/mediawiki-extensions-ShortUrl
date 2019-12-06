@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Les Meloures"
 		]
 	},
 	"shorturl": "Kuerz URL",
 	"shorturl-desc": "[[Special:ShortUrl|Kuerz URL fir Viruleedunge]] fir all Säite mat Inhalt",
 	"shorturl-not-found-title": "Kuerz URL gouf net fonnt",
 	"shorturl-not-found-message": "Pardon, d'URL no där Dir sicht gouf net fonnt (Et gëtt keng Kuerz-URL mat der ID $1)",
-	"shorturl-toolbox-title": "Kopéiert dës Kuerz-URL fir se ze notzen",
+	"shorturl-toolbox-title": "Kopéiert dës kuerz URL fir se ze benotzen",
 	"shorturl-toolbox-text": "Kuerz URL"
 }

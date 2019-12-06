@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Emperyan"
+			"Emperyan",
+			"BaRaN6161 TURK"
 		]
 	},
 	"shorturl": "Kısa bağlantı",
-	"shorturl-desc": "[[Special:ShortUrl|Yönlendirmeler için kısa bağlantı]]",
+	"shorturl-desc": "[[Special:ShortUrl|Kısa yönlendirme URL'leri]] için tüm içerik sayfaları",
 	"shorturl-not-found-title": "Kısa bağlantı bulunamadı",
+	"shorturl-not-found-message": "Üzgünüz, aradığınız URL bulunamadı ($1 kimliği olan kısa bir URL yok)",
+	"shorturl-toolbox-title": "Bu kısa bağlantıyı paylaşım için kopyala",
 	"shorturl-toolbox-text": "Kısa bağlantı"
 }
