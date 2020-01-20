@@ -3,18 +3,20 @@
 
 	$( function () {
 		if ( $( '#t-shorturl' ).length ) {
+			// eslint-disable-next-line vars-on-top
 			var url = $( '#t-shorturl a' ).attr( 'href' ),
 				/* Add protocol for proto-relative urls */
 				protoNonRelative = ( new mw.Uri( url ) ).toString();
 			$( '#firstHeading' ).after(
-				$( '<div class="title-shortlink-container"></div>')
+				$( '<div>' )
+					.addClass( 'title-shortlink-container' )
 					.append( $( '<a>' )
-					.addClass( 'title-shortlink' )
-					.attr( 'href', url )
-					.text( protoNonRelative )
-				)
+						.addClass( 'title-shortlink' )
+						.attr( 'href', url )
+						.text( protoNonRelative )
+					)
 			);
 		}
-	});
+	} );
 
 }() );
