@@ -8,6 +8,7 @@
  * @copyright © 2011 Yuvaraj Pandian (yuvipanda@yuvi.in)
  * @license BSD-3-Clause
  */
+use MediaWiki\MediaWikiServices;
 
 /**
  * Utility functions for encoding and decoding short URLs
@@ -19,62 +20,64 @@ class ShortUrlUtils {
 	 * @return string|bool false if read-only mode
 	 */
 	public static function encodeTitle( Title $title ) {
-		global $wgMemc, $wgShortUrlReadOnly;
+		global $wgShortUrlReadOnly;
 
-		$memcKey = wfMemcKey( 'shorturls', 'title', md5( $title->getPrefixedText() ) );
+		if ( $wgShortUrlReadOnly ) {
+			// Not creating any new ids
+			return false;
+		}
 
-		$id = $wgMemc->get( $memcKey );
-		if ( !$id ) {
-			$id = wfGetDB( DB_REPLICA )->selectField(
-				'shorturls',
-				'su_id',
-				[
-					'su_namespace' => $title->getNamespace(),
-					'su_title' => $title->getDBkey()
-				],
-				__METHOD__
-			);
+		$fname = __METHOD__;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
-			if ( $wgShortUrlReadOnly ) {
-				// Not creating any new ids
-				return false;
-			}
-
-			// Automatically create an ID for this title if missing...
-			if ( !$id ) {
-				$dbw = wfGetDB( DB_MASTER );
-				$dbw->insert(
+		return $cache->getWithSetCallback(
+			$cache->makeKey( 'shorturls-title', md5( $title->getPrefixedText() ) ),
+			$cache::TTL_MONTH,
+			function () use ( $title, $fname ) {
+				$id = wfGetDB( DB_REPLICA )->selectField(
 					'shorturls',
+					'su_id',
 					[
-						'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 						'su_namespace' => $title->getNamespace(),
 						'su_title' => $title->getDBkey()
 					],
-					__METHOD__,
-					[ 'IGNORE' ]
+					$fname
 				);
 
-				if ( $dbw->affectedRows() ) {
-					$id = $dbw->insertId();
-				} else {
-					// Raced out; get the winning ID
-					$id = $dbw->selectField(
+				// Automatically create an ID for this title if missing...
+				if ( !$id ) {
+					$dbw = wfGetDB( DB_MASTER );
+					$dbw->insert(
 						'shorturls',
-						'su_id',
 						[
+							'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 							'su_namespace' => $title->getNamespace(),
 							'su_title' => $title->getDBkey()
 						],
-						__METHOD__,
-						[ 'LOCK IN SHARE MODE' ] // ignore snapshot
+						$fname,
+						[ 'IGNORE' ]
 					);
+
+					if ( $dbw->affectedRows() ) {
+						$id = $dbw->insertId();
+					} else {
+						// Raced out; get the winning ID
+						$id = $dbw->selectField(
+							'shorturls',
+							'su_id',
+							[
+								'su_namespace' => $title->getNamespace(),
+								'su_title' => $title->getDBkey()
+							],
+							$fname,
+							[ 'LOCK IN SHARE MODE' ] // ignore snapshot
+						);
+					}
 				}
+
+				return base_convert( $id, 10, 36 );
 			}
-
-			$wgMemc->set( $memcKey, $id, BagOStuff::TTL_MONTH );
-		}
-
-		return base_convert( $id, 10, 36 );
+		);
 	}
 
 	/**
@@ -82,27 +85,28 @@ class ShortUrlUtils {
 	 * @return Title|bool
 	 */
 	public static function decodeURL( $urlFragment ) {
-		global $wgMemc;
-
 		$id = intval( base_convert( $urlFragment, 36, 10 ) );
-		$memcKey = wfMemcKey( 'shorturls', 'id', $id );
-		$entry = $wgMemc->get( $memcKey );
-		if ( !$entry ) {
-			$dbr = wfGetDB( DB_REPLICA );
-			$entry = $dbr->selectRow(
-				'shorturls',
-				[ 'su_namespace', 'su_title' ],
-				[ 'su_id' => $id ],
-				__METHOD__
-			);
 
-			if ( $entry === false ) {
-				return false; // No such shorturl exists
+		$fname = __METHOD__;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$row = $cache->getWithSetCallback(
+			$cache->makeKey( 'shorturls-id', $id ),
+			$cache::TTL_MONTH,
+			function () use ( $id, $fname ) {
+				$dbr = wfGetDB( DB_REPLICA );
+
+				$row = $dbr->selectRow(
+					'shorturls',
+					[ 'su_namespace', 'su_title' ],
+					[ 'su_id' => $id ],
+					$fname
+				);
+
+				return $row ? (array)$row : false;
 			}
-			$wgMemc->set( $memcKey, $entry, BagOStuff::TTL_MONTH );
-		}
+		);
 
-		return Title::makeTitle( $entry->su_namespace, $entry->su_title );
+		return $row ? Title::makeTitle( $row['su_namespace'], $row['su_title'] ) : false;
 	}
 
 	/**
