@@ -7,8 +7,8 @@
 	],
 	"globals": {
 		"OO": "readonly"
-    },
-    "rules": {
-        "no-jquery/no-global-selector": 0
-    }
+	},
+	"rules": {
+		"no-jquery/no-global-selector": 0
+	}
 }
