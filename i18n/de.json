@@ -7,7 +7,7 @@
 		]
 	},
 	"shorturl": "Kurz-URL",
-	"shorturl-desc": "Erzeugt eine [[Special:ShortUrl|Spezialseite]] zum Erstellen von kurzen Weiterleitungs-URLs für alle Inhaltsseiten",
+	"shorturl-desc": "Erweitert das Wiki um eine [[Special:ShortUrl|Spezialseite]] zum Erstellen kurzer Weiterleitungs-URLs zu Seiten",
 	"shorturl-not-found-title": "Die Kurz-URL wurde nicht gefunden",
 	"shorturl-not-found-message": "Die gesuchte Kurz-URL wurde leider nicht gefunden (Es ist keine Kurz-URL mit der Kennung $1 vorhanden)",
 	"shorturl-toolbox-title": "Kurz-URL kopieren, um sie zu nutzen",
