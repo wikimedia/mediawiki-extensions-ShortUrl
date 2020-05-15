@@ -35,7 +35,10 @@
 	},
 	"Hooks": {
 		"SkinTemplateToolboxEnd": [
-			"ShortUrlHooks::addToolboxLink"
+			"ShortUrlHooks::onSkinTemplateToolboxEnd"
+		],
+		"SidebarBeforeOutput": [
+			"ShortUrlHooks::onSidebarBeforeOutput"
 		],
 		"LoadExtensionSchemaUpdates": [
 			"ShortUrlHooks::setupSchema"

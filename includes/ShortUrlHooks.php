@@ -29,13 +29,43 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * @param SkinTemplate &$tpl
-	 * @return bool
+	 * Add toolbox link to modern skins e.g. Vector
+	 * @param Skin $skin
+	 * @param array &$sidebar
 	 */
-	public static function addToolboxLink( &$tpl ) {
+	public static function onSidebarBeforeOutput( $skin, &$sidebar ) {
+		if ( isset( $sidebar['TOOLBOX'] ) ) {
+			$link = self::addToolboxLink( $skin );
+			if ( $link ) {
+				$sidebar['TOOLBOX'][] = $link;
+			}
+		}
+	}
+
+	/**
+	 * Add the URL shorterner link to legacy skins.
+	 * @param SkinTemplate $tpl
+	 */
+	public static function onSkinTemplateToolboxEnd( $tpl ) {
+		$link = self::addToolboxLink( $tpl->getSkin() );
+		if ( $link ) {
+			echo Html::rawElement( 'li', [ 'id' => $link['id'] ],
+				Html::element( 'a', [
+					'href' => $link['href'],
+					'title' => $link['title'],
+				], $link['text'] )
+			);
+		}
+	}
+
+	/**
+	 * @param Skin $skin
+	 * @return array|bool
+	 */
+	public static function addToolboxLink( $skin ) {
 		global $wgShortUrlTemplate, $wgServer, $wgShortUrlReadOnly;
 		if ( $wgShortUrlReadOnly ) {
-			return true;
+			return false;
 		}
 
 		if ( !is_string( $wgShortUrlTemplate ) ) {
@@ -44,7 +74,7 @@ class ShortUrlHooks {
 			$urlTemplate = $wgServer . $wgShortUrlTemplate;
 		}
 
-		$title = $tpl->getSkin()->getTitle();
+		$title = $skin->getTitle();
 		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
 			try {
 				$shortId = ShortUrlUtils::encodeTitle( $title );
@@ -53,18 +83,16 @@ class ShortUrlHooks {
 			}
 			if ( $shortId !== false ) {
 				$shortURL = str_replace( '$1', $shortId, $urlTemplate );
-				$html = Html::rawElement( 'li', [ 'id' => 't-shorturl' ],
-					Html::element( 'a', [
-						'href' => $shortURL,
-						'title' => wfMessage( 'shorturl-toolbox-title' )->text()
-					],
-						wfMessage( 'shorturl-toolbox-text' )->text() )
-				);
 
-				echo $html;
+				return [
+					'id' => 't-shorturl',
+					'href' => $shortURL,
+					'title' => wfMessage( 'shorturl-toolbox-title' )->text(),
+					'text' => wfMessage( 'shorturl-toolbox-text' )->text(),
+				];
 			}
 		}
-		return true;
+		return false;
 	}
 
 	/**
