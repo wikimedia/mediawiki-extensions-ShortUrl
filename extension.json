@@ -34,9 +34,6 @@
 		}
 	},
 	"Hooks": {
-		"SkinTemplateToolboxEnd": [
-			"ShortUrlHooks::onSkinTemplateToolboxEnd"
-		],
 		"SidebarBeforeOutput": [
 			"ShortUrlHooks::onSidebarBeforeOutput"
 		],
