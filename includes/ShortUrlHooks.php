@@ -29,41 +29,27 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * Add toolbox link to modern skins e.g. Vector
+	 * Add toolbox link the sidebar
+	 *
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 */
-	public static function onSidebarBeforeOutput( $skin, &$sidebar ) {
-		if ( isset( $sidebar['TOOLBOX'] ) ) {
-			$link = self::addToolboxLink( $skin );
-			if ( $link ) {
-				$sidebar['TOOLBOX'][] = $link;
-			}
-		}
-	}
-
-	/**
-	 * Add the URL shorterner link to legacy skins.
-	 * @param SkinTemplate $tpl
-	 */
-	public static function onSkinTemplateToolboxEnd( $tpl ) {
-		$link = self::addToolboxLink( $tpl->getSkin() );
+	public static function onSidebarBeforeOutput( Skin $skin, array &$sidebar ) {
+		$link = self::addToolboxLink( $skin );
 		if ( $link ) {
-			echo Html::rawElement( 'li', [ 'id' => $link['id'] ],
-				Html::element( 'a', [
-					'href' => $link['href'],
-					'title' => $link['title'],
-				], $link['text'] )
-			);
+			$sidebar['TOOLBOX']['shorturl'] = $link;
 		}
 	}
 
 	/**
+	 * Create toolbox link
+	 *
 	 * @param Skin $skin
 	 * @return array|bool
 	 */
-	public static function addToolboxLink( $skin ) {
+	public static function addToolboxLink( Skin $skin ) {
 		global $wgShortUrlTemplate, $wgServer, $wgShortUrlReadOnly;
+
 		if ( $wgShortUrlReadOnly ) {
 			return false;
 		}
@@ -87,8 +73,8 @@ class ShortUrlHooks {
 				return [
 					'id' => 't-shorturl',
 					'href' => $shortURL,
-					'title' => wfMessage( 'shorturl-toolbox-title' )->text(),
-					'text' => wfMessage( 'shorturl-toolbox-text' )->text(),
+					'title' => $skin->msg( 'shorturl-toolbox-title' )->text(),
+					'text' => $skin->msg( 'shorturl-toolbox-text' )->text(),
 				];
 			}
 		}
@@ -103,6 +89,7 @@ class ShortUrlHooks {
 	public static function onOutputPageBeforeHTML( &$out, &$text ) {
 		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
+
 		if ( !$wgShortUrlReadOnly && ShortUrlUtils::needsShortUrl( $title ) ) {
 			$out->addModules( 'ext.shortUrl' );
 		}
