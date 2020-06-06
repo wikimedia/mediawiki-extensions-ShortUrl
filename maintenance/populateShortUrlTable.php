@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
 	$IP = __DIR__ . '/../..';
@@ -23,10 +25,11 @@ class PopulateShortUrlTable extends Maintenance {
 		);
 	}
 
-	// @todo FIXME: Refactor out code in ShortUrl.functions.php so it can be used here
+	// @todo FIXME: Refactor out code in ShortUrlUtils.php so it can be used here
 	public function execute() {
 		$rowCount = 0;
 		$dbr = wfGetDB( DB_REPLICA );
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 
 		$last_processed_id = 0;
 
@@ -56,7 +59,7 @@ class PopulateShortUrlTable extends Maintenance {
 			}
 
 			$this->insertRows( $insertBuffer );
-			wfWaitForSlaves(); // 'Kill' lag
+			$lbFactory->waitForReplication();
 			$this->output( $rowCount . " titles done\n" );
 		}
 		$this->output( "Done\n" );
