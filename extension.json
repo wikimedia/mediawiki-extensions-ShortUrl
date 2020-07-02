@@ -38,13 +38,13 @@
 			"ShortUrlHooks::onSidebarBeforeOutput"
 		],
 		"LoadExtensionSchemaUpdates": [
-			"ShortUrlHooks::setupSchema"
+			"ShortUrlHooks::onLoadExtensionSchemaUpdates"
 		],
 		"OutputPageBeforeHTML": [
 			"ShortUrlHooks::onOutputPageBeforeHTML"
 		],
 		"WebRequestPathInfoRouter": [
-			"ShortUrlHooks::setupUrlRouting"
+			"ShortUrlHooks::onWebRequestPathInfoRouter"
 		]
 	},
 	"config": {

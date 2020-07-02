@@ -13,19 +13,17 @@ use Wikimedia\Rdbms\DBReadOnlyError;
 
 class ShortUrlHooks {
 	/**
+	 * Add ShortURL rules to the URL router.
 	 * @param PathRouter $router
-	 * @return bool
-	 *
-	 * Adds ShortURL rules to the URL router.
+	 * @return void
 	 */
-	public static function setupUrlRouting( $router ) {
+	public static function onWebRequestPathInfoRouter( $router ) : void {
 		global $wgShortUrlTemplate;
 		if ( $wgShortUrlTemplate ) {
 			// Hardcode full title to avoid T78018. It shouldn't matter because the
 			// page redirects immediately.
 			$router->add( $wgShortUrlTemplate, [ 'title' => 'Special:ShortUrl/$1' ] );
 		}
-		return true;
 	}
 
 	/**
@@ -84,25 +82,23 @@ class ShortUrlHooks {
 	/**
 	 * @param OutputPage &$out
 	 * @param string &$text the HTML text to be added
-	 * @return bool
+	 * @return void
 	 */
-	public static function onOutputPageBeforeHTML( &$out, &$text ) {
+	public static function onOutputPageBeforeHTML( &$out, &$text ) : void {
 		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
 
 		if ( !$wgShortUrlReadOnly && ShortUrlUtils::needsShortUrl( $title ) ) {
 			$out->addModules( 'ext.shortUrl' );
 		}
-		return true;
 	}
 
 	/**
 	 * @param DatabaseUpdater $du
-	 * @return bool
+	 * @return void
 	 */
-	public static function setupSchema( DatabaseUpdater $du ) {
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $du ) : void {
 		$base = dirname( __DIR__ ) . '/schemas';
 		$du->addExtensionTable( 'shorturls', "$base/shorturls.sql" );
-		return true;
 	}
 }
