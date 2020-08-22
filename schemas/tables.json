@@ -1,0 +1,30 @@
+[
+	{
+		"name": "shorturls",
+		"columns": [
+			{
+				"name": "su_id",
+				"type": "integer",
+				"options": { "notnull": true, "autoincrement": true }
+			},
+			{
+				"name": "su_namespace",
+				"type": "integer",
+				"options": { "notnull": true }
+			},
+			{
+				"name": "su_title",
+				"type": "string",
+				"options": { "notnull": true, "length": 255 }
+			}
+		],
+		"indexes": [
+			{
+				"name": "shorturls_ns_title",
+				"columns": [ "su_namespace", "su_title" ],
+				"unique": true
+			}
+		],
+		"pk": [ "su_id" ]
+	}
+]

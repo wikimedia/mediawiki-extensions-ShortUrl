@@ -94,11 +94,23 @@ class ShortUrlHooks {
 	}
 
 	/**
-	 * @param DatabaseUpdater $du
+	 * @param DatabaseUpdater $updater
 	 * @return void
 	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $du ) : void {
-		$base = dirname( __DIR__ ) . '/schemas';
-		$du->addExtensionTable( 'shorturls', "$base/shorturls.sql" );
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) : void {
+		$dbType = $updater->getDB()->getType();
+		if ( $dbType === 'mysql' ) {
+			$updater->addExtensionTable( 'shorturls',
+				dirname( __DIR__ ) . '/schemas/tables-generated.sql'
+			);
+		} elseif ( $dbType === 'sqlite' ) {
+			$updater->addExtensionTable( 'shorturls',
+				dirname( __DIR__ ) . '/schemas/sqlite/tables-generated.sql'
+			);
+		} elseif ( $dbType === 'postgres' ) {
+			$updater->addExtensionTable( 'shorturls',
+				dirname( __DIR__ ) . '/schemas/postgres/tables-generated.sql'
+			);
+		}
 	}
 }
