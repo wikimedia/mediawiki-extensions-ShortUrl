@@ -39,6 +39,9 @@ class SpecialShortUrl extends UnlistedSpecialPage {
 		}
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'pagetools';
 	}

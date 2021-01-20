@@ -70,7 +70,8 @@ class ShortUrlUtils {
 								'su_title' => $title->getDBkey()
 							],
 							$fname,
-							[ 'LOCK IN SHARE MODE' ] // ignore snapshot
+							// ignore snapshot
+							[ 'LOCK IN SHARE MODE' ]
 						);
 					}
 				}
