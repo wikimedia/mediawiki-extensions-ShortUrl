@@ -26,8 +26,8 @@
 		"ext.shortUrl": {
 			"scripts": "js/ext.shortUrl.js",
 			"styles": "css/ext.shortUrl.css",
-			"localBasePath": "",
-			"remoteExtPath": "ShortUrl",
+			"localBasePath": "resources",
+			"remoteExtPath": "ShortUrl/resources",
 			"dependencies": [
 				"mediawiki.Uri"
 			]
