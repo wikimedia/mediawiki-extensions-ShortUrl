@@ -3,7 +3,6 @@
 
 	$( function () {
 		if ( $( '#t-shorturl' ).length ) {
-			// eslint-disable-next-line vars-on-top
 			var url = $( '#t-shorturl a' ).attr( 'href' ),
 				/* Add protocol for proto-relative urls */
 				protoNonRelative = ( new mw.Uri( url ) ).toString();
