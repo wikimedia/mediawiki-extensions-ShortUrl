@@ -33,7 +33,7 @@ class ShortUrlUtils {
 		return $cache->getWithSetCallback(
 			$cache->makeKey( 'shorturls-title', md5( $title->getPrefixedText() ) ),
 			$cache::TTL_MONTH,
-			function () use ( $title, $fname ) {
+			static function () use ( $title, $fname ) {
 				$id = wfGetDB( DB_REPLICA )->selectField(
 					'shorturls',
 					'su_id',
@@ -93,7 +93,7 @@ class ShortUrlUtils {
 		$row = $cache->getWithSetCallback(
 			$cache->makeKey( 'shorturls-id', $id ),
 			$cache::TTL_MONTH,
-			function () use ( $id, $fname ) {
+			static function () use ( $id, $fname ) {
 				$dbr = wfGetDB( DB_REPLICA );
 
 				$row = $dbr->selectRow(
