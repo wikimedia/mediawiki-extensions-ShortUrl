@@ -17,7 +17,7 @@ class ShortUrlHooks {
 	 * @param PathRouter $router
 	 * @return void
 	 */
-	public static function onWebRequestPathInfoRouter( $router ) : void {
+	public static function onWebRequestPathInfoRouter( $router ): void {
 		global $wgShortUrlTemplate;
 		if ( $wgShortUrlTemplate ) {
 			// Hardcode full title to avoid T78018. It shouldn't matter because the
@@ -84,7 +84,7 @@ class ShortUrlHooks {
 	 * @param string &$text the HTML text to be added
 	 * @return void
 	 */
-	public static function onOutputPageBeforeHTML( &$out, &$text ) : void {
+	public static function onOutputPageBeforeHTML( &$out, &$text ): void {
 		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
 
@@ -97,7 +97,7 @@ class ShortUrlHooks {
 	 * @param DatabaseUpdater $updater
 	 * @return void
 	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) : void {
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ): void {
 		$dbType = $updater->getDB()->getType();
 		if ( $dbType === 'mysql' ) {
 			$updater->addExtensionTable( 'shorturls',
