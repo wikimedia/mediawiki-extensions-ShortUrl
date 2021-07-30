@@ -46,7 +46,7 @@ class ShortUrlUtils {
 
 				// Automatically create an ID for this title if missing...
 				if ( !$id ) {
-					$dbw = wfGetDB( DB_MASTER );
+					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->insert(
 						'shorturls',
 						[

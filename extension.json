@@ -3,6 +3,9 @@
 	"version": "1.2.0",
 	"author": "Yuvi Panda",
 	"license-name": "BSD-3-Clause",
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
 	"url": "https://www.mediawiki.org/wiki/Extension:ShortUrl",
 	"descriptionmsg": "shorturl-desc",
 	"type": "specialpage",
@@ -52,8 +55,5 @@
 			"value": false
 		}
 	},
-	"manifest_version": 2,
-	"requires": {
-		"MediaWiki": ">= 1.29.0"
-	}
+	"manifest_version": 2
 }

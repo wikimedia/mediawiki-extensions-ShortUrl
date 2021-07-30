@@ -19,7 +19,7 @@ class PopulateShortUrlTable extends Maintenance {
 	 * @param mixed $a
 	 */
 	private function insertRows( $a ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->insert(
 			'shorturls',
 			$a,
