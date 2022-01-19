@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana"
+		]
+	},
+	"shorturl": "URL Singkat",
+	"shorturl-desc": "[[Special:ShortUrl|URL pengalihan singkat]] untuk semua halaman konten",
+	"shorturl-not-found-title": "URL singkat tidak ditemukan",
+	"shorturl-not-found-message": "Maaf, URL yang Anda cari tidak ditemukan (Tidak ada URL singkat dengan ID $1)",
+	"shorturl-toolbox-title": "Salin pranala singkat ini untuk dibagikan",
+	"shorturl-toolbox-text": "URL Singkat"
+}
