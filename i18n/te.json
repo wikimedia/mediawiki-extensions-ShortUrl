@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari"
+		]
+	},
+	"shorturl": "పొట్టి URL",
+	"shorturl-desc": "కంటెంటు పేజీలన్నిటికీ [[Special:ShortUrl|పొట్టి దారిమార్పు URLలు]]",
+	"shorturl-not-found-title": "పొట్టి URL కనబడలేదు",
+	"shorturl-not-found-message": "సారీ, మీరు వెతుకుతున్న URL కనబడలేదు ($1 అనే ఐడీతో పొట్టి URL లేదు)",
+	"shorturl-toolbox-title": "ఇతరులకు ఇచ్చేందుకు ఈ లింకును కాపీ చేసుకోండి",
+	"shorturl-toolbox-text": "పొట్టి URL"
+}
