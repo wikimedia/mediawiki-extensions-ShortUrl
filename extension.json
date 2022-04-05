@@ -10,7 +10,7 @@
 	"descriptionmsg": "shorturl-desc",
 	"type": "specialpage",
 	"SpecialPages": {
-		"ShortUrl": "SpecialShortUrl"
+		"ShortUrl": "MediaWiki\\Extension\\ShortUrl\\Specials\\SpecialShortUrl"
 	},
 	"MessagesDirs": {
 		"ShortUrl": [
@@ -20,11 +20,10 @@
 	"ExtensionMessagesFiles": {
 		"ShortUrlAlias": "ShortUrl.alias.php"
 	},
-	"AutoloadClasses": {
-		"ShortUrlUtils": "includes/ShortUrlUtils.php",
-		"ShortUrlHooks": "includes/ShortUrlHooks.php",
-		"SpecialShortUrl": "includes/specials/SpecialShortUrl.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ShortUrl\\": "includes/"
 	},
+
 	"ResourceModules": {
 		"ext.shortUrl": {
 			"scripts": "js/ext.shortUrl.js",
@@ -38,16 +37,16 @@
 	},
 	"Hooks": {
 		"SidebarBeforeOutput": [
-			"ShortUrlHooks::onSidebarBeforeOutput"
+			"MediaWiki\\Extension\\ShortUrl\\Hooks::onSidebarBeforeOutput"
 		],
 		"LoadExtensionSchemaUpdates": [
-			"ShortUrlHooks::onLoadExtensionSchemaUpdates"
+			"MediaWiki\\Extension\\ShortUrl\\Hooks::onLoadExtensionSchemaUpdates"
 		],
 		"OutputPageBeforeHTML": [
-			"ShortUrlHooks::onOutputPageBeforeHTML"
+			"MediaWiki\\Extension\\ShortUrl\\Hooks::onOutputPageBeforeHTML"
 		],
 		"WebRequestPathInfoRouter": [
-			"ShortUrlHooks::onWebRequestPathInfoRouter"
+			"MediaWiki\\Extension\\ShortUrl\\Hooks::onWebRequestPathInfoRouter"
 		]
 	},
 	"config": {

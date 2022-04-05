@@ -9,13 +9,19 @@
  * @license BSD-3-Clause
  */
 
+namespace MediaWiki\Extension\ShortUrl;
+
+use DatabaseUpdater;
+use OutputPage;
+use PathRouter;
+use Skin;
+use SpecialPage;
 use Wikimedia\Rdbms\DBReadOnlyError;
 
-class ShortUrlHooks {
+class Hooks {
 	/**
 	 * Add ShortURL rules to the URL router.
 	 * @param PathRouter $router
-	 * @return void
 	 */
 	public static function onWebRequestPathInfoRouter( $router ): void {
 		global $wgShortUrlTemplate;
@@ -59,9 +65,9 @@ class ShortUrlHooks {
 		}
 
 		$title = $skin->getTitle();
-		if ( ShortUrlUtils::needsShortUrl( $title ) ) {
+		if ( Utils::needsShortUrl( $title ) ) {
 			try {
-				$shortId = ShortUrlUtils::encodeTitle( $title );
+				$shortId = Utils::encodeTitle( $title );
 			} catch ( DBReadOnlyError $e ) {
 				$shortId = false;
 			}
@@ -82,20 +88,18 @@ class ShortUrlHooks {
 	/**
 	 * @param OutputPage &$out
 	 * @param string &$text the HTML text to be added
-	 * @return void
 	 */
 	public static function onOutputPageBeforeHTML( &$out, &$text ): void {
 		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
 
-		if ( !$wgShortUrlReadOnly && ShortUrlUtils::needsShortUrl( $title ) ) {
+		if ( !$wgShortUrlReadOnly && Utils::needsShortUrl( $title ) ) {
 			$out->addModules( 'ext.shortUrl' );
 		}
 	}
 
 	/**
 	 * @param DatabaseUpdater $updater
-	 * @return void
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ): void {
 		$dbType = $updater->getDB()->getType();

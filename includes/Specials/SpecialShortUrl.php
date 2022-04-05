@@ -9,8 +9,14 @@
  * @license BSD-3-Clause
  */
 
+namespace MediaWiki\Extension\ShortUrl\Specials;
+
+use MediaWiki\Extension\ShortUrl\Utils;
+use UnlistedSpecialPage;
+
 /**
  * Provides the actual redirection
+ *
  * @ingroup SpecialPage
  */
 class SpecialShortUrl extends UnlistedSpecialPage {
@@ -30,7 +36,7 @@ class SpecialShortUrl extends UnlistedSpecialPage {
 	public function execute( $par ) {
 		$out = $this->getOutput();
 
-		$title = ShortUrlUtils::decodeURL( $par );
+		$title = Utils::decodeURL( $par );
 		if ( $title !== false ) {
 			$out->redirect( $title->getFullURL(), '301' );
 		} else {

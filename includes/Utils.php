@@ -8,12 +8,16 @@
  * @copyright © 2011 Yuvaraj Pandian (yuvipanda@yuvi.in)
  * @license BSD-3-Clause
  */
+
+namespace MediaWiki\Extension\ShortUrl;
+
 use MediaWiki\MediaWikiServices;
+use Title;
 
 /**
  * Utility functions for encoding and decoding short URLs
  */
-class ShortUrlUtils {
+class Utils {
 
 	/**
 	 * @param Title $title
