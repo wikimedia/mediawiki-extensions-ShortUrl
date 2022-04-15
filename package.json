@@ -1,4 +1,5 @@
 {
+	"name": "ShortUrl",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
