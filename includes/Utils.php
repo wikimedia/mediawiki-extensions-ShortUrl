@@ -86,10 +86,14 @@ class Utils {
 	}
 
 	/**
-	 * @param string $urlFragment
+	 * @param string|null $urlFragment
 	 * @return Title|bool
 	 */
 	public static function decodeURL( $urlFragment ) {
+		if ( $urlFragment === null ) {
+			return false;
+		}
+
 		$id = intval( base_convert( $urlFragment, 36, 10 ) );
 
 		$fname = __METHOD__;
