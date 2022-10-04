@@ -90,7 +90,9 @@ class Utils {
 	 * @return Title|bool
 	 */
 	public static function decodeURL( $urlFragment ) {
-		if ( $urlFragment === null ) {
+		if ( $urlFragment === null
+			|| !preg_match( '/^[0-9a-z]+$/i', $urlFragment )
+		) {
 			return false;
 		}
 
