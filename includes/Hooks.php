@@ -86,10 +86,10 @@ class Hooks {
 	}
 
 	/**
-	 * @param OutputPage &$out
-	 * @param string &$text the HTML text to be added
+	 * @param OutputPage $out
+	 * @param Skin $skin
 	 */
-	public static function onOutputPageBeforeHTML( &$out, &$text ): void {
+	public static function onBeforePageDisplay( $out, $skin ): void {
 		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
 

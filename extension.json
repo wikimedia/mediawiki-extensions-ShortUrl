@@ -42,8 +42,8 @@
 		"LoadExtensionSchemaUpdates": [
 			"MediaWiki\\Extension\\ShortUrl\\Hooks::onLoadExtensionSchemaUpdates"
 		],
-		"OutputPageBeforeHTML": [
-			"MediaWiki\\Extension\\ShortUrl\\Hooks::onOutputPageBeforeHTML"
+		"BeforePageDisplay": [
+			"MediaWiki\\Extension\\ShortUrl\\Hooks::onBeforePageDisplay"
 		],
 		"WebRequestPathInfoRouter": [
 			"MediaWiki\\Extension\\ShortUrl\\Hooks::onWebRequestPathInfoRouter"
