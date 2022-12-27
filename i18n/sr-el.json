@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"shorturl": "Kratak URL",
+	"shorturl-desc": "[[Special:ShortUrl|Kratki URL-ovi za preusmeravanje]] na sve stranice sadržaja",
+	"shorturl-not-found-title": "Nije pronađen kratak URL",
+	"shorturl-not-found-message": "URL koji tražite nije pronađen (Ne postoji kratak URL sa ID-jem $1)",
+	"shorturl-toolbox-title": "Kopiraj ovu kratku vezu za deljenje",
+	"shorturl-toolbox-text": "Kratak URL"
+}
