@@ -4,5 +4,10 @@
 			"Eleassar"
 		]
 	},
-	"shorturl-desc": "[[Special:ShortUrl|Kratki preusmeritveni URL-ji]] za vse strani z vsebino"
+	"shorturl": "Kratki URL",
+	"shorturl-desc": "[[Special:ShortUrl|Kratki preusmeritveni URL-ji]] za vse strani z vsebino",
+	"shorturl-not-found-title": "Kratki URL ni bil najden",
+	"shorturl-not-found-message": "URL, ki ga iščete, žal ni bil najden (kratki URL z ID-jem $1 ne obstaja)",
+	"shorturl-toolbox-title": "Kopirajte to kratko povezavo za deljenje",
+	"shorturl-toolbox-text": "Kratki URL"
 }
