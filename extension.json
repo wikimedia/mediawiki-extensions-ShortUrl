@@ -4,7 +4,7 @@
 	"author": "Yuvi Panda",
 	"license-name": "BSD-3-Clause",
 	"requires": {
-		"MediaWiki": ">= 1.35.3"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"url": "https://www.mediawiki.org/wiki/Extension:ShortUrl",
 	"descriptionmsg": "shorturl-desc",
@@ -23,7 +23,6 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\ShortUrl\\": "includes/"
 	},
-
 	"ResourceModules": {
 		"ext.shortUrl": {
 			"scripts": "js/ext.shortUrl.js",
