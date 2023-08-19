@@ -12,7 +12,7 @@
 namespace MediaWiki\Extension\ShortUrl;
 
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 
 /**
  * Utility functions for encoding and decoding short URLs
