@@ -12,8 +12,8 @@
 namespace MediaWiki\Extension\ShortUrl;
 
 use DatabaseUpdater;
+use MediaWiki\Request\PathRouter;
 use OutputPage;
-use PathRouter;
 use Skin;
 use SpecialPage;
 use Wikimedia\Rdbms\DBReadOnlyError;
