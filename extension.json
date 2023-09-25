@@ -35,18 +35,18 @@
 		}
 	},
 	"Hooks": {
-		"SidebarBeforeOutput": [
-			"MediaWiki\\Extension\\ShortUrl\\Hooks::onSidebarBeforeOutput"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"MediaWiki\\Extension\\ShortUrl\\Hooks::onLoadExtensionSchemaUpdates"
-		],
-		"BeforePageDisplay": [
-			"MediaWiki\\Extension\\ShortUrl\\Hooks::onBeforePageDisplay"
-		],
-		"WebRequestPathInfoRouter": [
-			"MediaWiki\\Extension\\ShortUrl\\Hooks::onWebRequestPathInfoRouter"
-		]
+		"SidebarBeforeOutput": "main",
+		"LoadExtensionSchemaUpdates": "schema",
+		"BeforePageDisplay": "main",
+		"WebRequestPathInfoRouter": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\ShortUrl\\Hooks"
+		},
+		"schema": {
+			"class": "MediaWiki\\Extension\\ShortUrl\\SchemaHooks"
+		}
 	},
 	"config": {
 		"ShortUrlTemplate": {

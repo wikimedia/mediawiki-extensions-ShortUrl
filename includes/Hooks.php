@@ -11,19 +11,25 @@
 
 namespace MediaWiki\Extension\ShortUrl;
 
-use DatabaseUpdater;
+use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Hook\SidebarBeforeOutputHook;
+use MediaWiki\Hook\WebRequestPathInfoRouterHook;
 use MediaWiki\Request\PathRouter;
 use OutputPage;
 use Skin;
 use SpecialPage;
 use Wikimedia\Rdbms\DBReadOnlyError;
 
-class Hooks {
+class Hooks implements
+	SidebarBeforeOutputHook,
+	BeforePageDisplayHook,
+	WebRequestPathInfoRouterHook
+{
 	/**
 	 * Add ShortURL rules to the URL router.
 	 * @param PathRouter $router
 	 */
-	public static function onWebRequestPathInfoRouter( $router ): void {
+	public function onWebRequestPathInfoRouter( $router ) {
 		global $wgShortUrlTemplate;
 		if ( $wgShortUrlTemplate ) {
 			// Hardcode full title to avoid T78018. It shouldn't matter because the
@@ -38,7 +44,7 @@ class Hooks {
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 */
-	public static function onSidebarBeforeOutput( Skin $skin, array &$sidebar ) {
+	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		$link = self::addToolboxLink( $skin );
 		if ( $link ) {
 			$sidebar['TOOLBOX']['shorturl'] = $link;
@@ -89,32 +95,12 @@ class Hooks {
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 */
-	public static function onBeforePageDisplay( $out, $skin ): void {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		global $wgShortUrlReadOnly;
 		$title = $out->getTitle();
 
 		if ( !$wgShortUrlReadOnly && Utils::needsShortUrl( $title ) ) {
 			$out->addModules( 'ext.shortUrl' );
-		}
-	}
-
-	/**
-	 * @param DatabaseUpdater $updater
-	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ): void {
-		$dbType = $updater->getDB()->getType();
-		if ( $dbType === 'mysql' ) {
-			$updater->addExtensionTable( 'shorturls',
-				dirname( __DIR__ ) . '/schemas/tables-generated.sql'
-			);
-		} elseif ( $dbType === 'sqlite' ) {
-			$updater->addExtensionTable( 'shorturls',
-				dirname( __DIR__ ) . '/schemas/sqlite/tables-generated.sql'
-			);
-		} elseif ( $dbType === 'postgres' ) {
-			$updater->addExtensionTable( 'shorturls',
-				dirname( __DIR__ ) . '/schemas/postgres/tables-generated.sql'
-			);
 		}
 	}
 }
