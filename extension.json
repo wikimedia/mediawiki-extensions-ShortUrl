@@ -51,6 +51,9 @@
 	"config": {
 		"ShortUrlTemplate": {
 			"value": false
+		},
+		"ShortUrlReadOnly": {
+			"value": false
 		}
 	},
 	"manifest_version": 2
