@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Hzy980512",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"LittlePaw365"
 		]
 	},
-	"shorturl": "短链接",
-	"shorturl-desc": "所有内容页的[[Special:ShortUrl|重定向短链接]]",
-	"shorturl-not-found-title": "找不到短链接",
-	"shorturl-not-found-message": "抱歉，请求的链接找不到（没有用ID$1的短链接）",
-	"shorturl-toolbox-title": "复制该短链接来共享",
-	"shorturl-toolbox-text": "短链接"
+	"shorturl": "短URL",
+	"shorturl-desc": "用于所有内容页面的[[Special:ShortUrl|短重定向URL]]",
+	"shorturl-not-found-title": "未找到短URL",
+	"shorturl-not-found-message": "对不起，未找到您要查找的URL（不存在ID为$1的短URL）",
+	"shorturl-toolbox-title": "复制此短链接进行分享",
+	"shorturl-toolbox-text": "短URL"
 }
