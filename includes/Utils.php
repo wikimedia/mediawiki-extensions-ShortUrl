@@ -38,15 +38,15 @@ class Utils {
 			$cache->makeKey( 'shorturls-title', md5( $title->getPrefixedText() ) ),
 			$cache::TTL_MONTH,
 			static function () use ( $title, $fname ) {
-				$id = wfGetDB( DB_REPLICA )->selectField(
-					'shorturls',
-					'su_id',
-					[
-						'su_namespace' => $title->getNamespace(),
-						'su_title' => $title->getDBkey()
-					],
-					$fname
-				);
+				$id = wfGetDB( DB_REPLICA )->newSelectQueryBuilder()
+				->select( 'su_id' )
+				->from( 'shorturls' )
+				->where( [
+					'su_namespace' => $title->getNamespace(),
+					'su_title' => $title->getDBkey()
+				] )
+				->caller( $fname )
+				->fetchField();
 
 				// Automatically create an ID for this title if missing...
 				if ( !$id ) {
@@ -66,17 +66,16 @@ class Utils {
 						$id = $dbw->insertId();
 					} else {
 						// Raced out; get the winning ID
-						$id = $dbw->selectField(
-							'shorturls',
-							'su_id',
-							[
-								'su_namespace' => $title->getNamespace(),
-								'su_title' => $title->getDBkey()
-							],
-							$fname,
-							// ignore snapshot
-							[ 'LOCK IN SHARE MODE' ]
-						);
+						$id = $dbw->newSelectQueryBuilder()
+						->select( 'su_id' )
+						->from( 'shorturls' )
+						->where( [
+							'su_namespace' => $title->getNamespace(),
+							'su_title' => $title->getDBkey()
+						] )
+						->caller( $fname )
+						->lockInShareMode()
+						->fetchField();
 					}
 				}
 
@@ -105,13 +104,12 @@ class Utils {
 			$cache::TTL_MONTH,
 			static function () use ( $id, $fname ) {
 				$dbr = wfGetDB( DB_REPLICA );
-
-				$row = $dbr->selectRow(
-					'shorturls',
-					[ 'su_namespace', 'su_title' ],
-					[ 'su_id' => $id ],
-					$fname
-				);
+				$row = $dbr->newSelectQueryBuilder()
+				->select( [ 'su_namespace', 'su_title' ] )
+				->from( 'shorturls' )
+				->where( [ 'su_id' => $id ] )
+				->caller( $fname )
+				->fetchRow();
 
 				return $row ? (array)$row : false;
 			}
