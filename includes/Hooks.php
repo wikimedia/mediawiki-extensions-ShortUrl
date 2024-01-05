@@ -14,10 +14,10 @@ namespace MediaWiki\Extension\ShortUrl;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Hook\WebRequestPathInfoRouterHook;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Request\PathRouter;
-use OutputPage;
+use MediaWiki\SpecialPage\SpecialPage;
 use Skin;
-use SpecialPage;
 use Wikimedia\Rdbms\DBReadOnlyError;
 
 class Hooks implements

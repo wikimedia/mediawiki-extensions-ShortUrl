@@ -12,7 +12,7 @@
 namespace MediaWiki\Extension\ShortUrl\Specials;
 
 use MediaWiki\Extension\ShortUrl\Utils;
-use UnlistedSpecialPage;
+use MediaWiki\SpecialPage\UnlistedSpecialPage;
 
 /**
  * Provides the actual redirection
