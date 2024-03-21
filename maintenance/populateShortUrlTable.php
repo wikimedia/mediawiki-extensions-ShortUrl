@@ -17,7 +17,7 @@ class PopulateShortUrlTable extends Maintenance {
 	 * @param mixed $a
 	 */
 	private function insertRows( $a ) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->getPrimaryDB();
 		$dbw->insert(
 			'shorturls',
 			$a,
@@ -31,7 +31,7 @@ class PopulateShortUrlTable extends Maintenance {
 	 */
 	public function execute() {
 		$rowCount = 0;
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->getReplicaDB();
 
 		$last_processed_id = 0;
 

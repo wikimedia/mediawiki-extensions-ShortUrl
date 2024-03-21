@@ -32,13 +32,15 @@ class Utils {
 		}
 
 		$fname = __METHOD__;
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getMainWANObjectCache();
+		$connectionProvider = $services->getConnectionProvider();
 
 		return $cache->getWithSetCallback(
 			$cache->makeKey( 'shorturls-title', md5( $title->getPrefixedText() ) ),
 			$cache::TTL_MONTH,
-			static function () use ( $title, $fname ) {
-				$id = wfGetDB( DB_REPLICA )->newSelectQueryBuilder()
+			static function () use ( $title, $fname, $connectionProvider ) {
+				$id = $connectionProvider->getReplicaDatabase()->newSelectQueryBuilder()
 				->select( 'su_id' )
 				->from( 'shorturls' )
 				->where( [
@@ -50,7 +52,7 @@ class Utils {
 
 				// Automatically create an ID for this title if missing...
 				if ( !$id ) {
-					$dbw = wfGetDB( DB_PRIMARY );
+					$dbw = $connectionProvider->getPrimaryDatabase();
 					$dbw->insert(
 						'shorturls',
 						[
@@ -98,12 +100,14 @@ class Utils {
 		$id = intval( base_convert( $urlFragment, 36, 10 ) );
 
 		$fname = __METHOD__;
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getMainWANObjectCache();
+		$connectionProvider = $services->getConnectionProvider();
 		$row = $cache->getWithSetCallback(
 			$cache->makeKey( 'shorturls-id', $id ),
 			$cache::TTL_MONTH,
-			static function () use ( $id, $fname ) {
-				$dbr = wfGetDB( DB_REPLICA );
+			static function () use ( $id, $fname, $connectionProvider ) {
+				$dbr = $connectionProvider->getReplicaDatabase();
 				$row = $dbr->newSelectQueryBuilder()
 				->select( [ 'su_namespace', 'su_title' ] )
 				->from( 'shorturls' )
