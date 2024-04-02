@@ -18,12 +18,12 @@ class PopulateShortUrlTable extends Maintenance {
 	 */
 	private function insertRows( $a ) {
 		$dbw = $this->getPrimaryDB();
-		$dbw->insert(
-			'shorturls',
-			$a,
-			__METHOD__,
-			[ 'IGNORE' ]
-		);
+		$dbw->newInsertQueryBuilder()
+			->insertInto( 'shorturls' )
+			->ignore()
+			->rows( $a )
+			->caller( __METHOD__ )
+			->execute();
 	}
 
 	/**

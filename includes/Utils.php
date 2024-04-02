@@ -53,16 +53,16 @@ class Utils {
 				// Automatically create an ID for this title if missing...
 				if ( !$id ) {
 					$dbw = $connectionProvider->getPrimaryDatabase();
-					$dbw->insert(
-						'shorturls',
-						[
+					$dbw->newInsertQueryBuilder()
+						->insertInto( 'shorturls' )
+						->ignore()
+						->row( [
 							'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 							'su_namespace' => $title->getNamespace(),
 							'su_title' => $title->getDBkey()
-						],
-						$fname,
-						[ 'IGNORE' ]
-					);
+						] )
+						->caller( $fname )
+						->execute();
 
 					if ( $dbw->affectedRows() ) {
 						$id = $dbw->insertId();
