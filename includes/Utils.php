@@ -57,7 +57,6 @@ class Utils {
 						->insertInto( 'shorturls' )
 						->ignore()
 						->row( [
-							'su_id' => $dbw->nextSequenceValue( 'shorturls_id_seq' ),
 							'su_namespace' => $title->getNamespace(),
 							'su_title' => $title->getDBkey()
 						] )
