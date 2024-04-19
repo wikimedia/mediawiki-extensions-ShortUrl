@@ -41,14 +41,14 @@ class Utils {
 			$cache::TTL_MONTH,
 			static function () use ( $title, $fname, $connectionProvider ) {
 				$id = $connectionProvider->getReplicaDatabase()->newSelectQueryBuilder()
-				->select( 'su_id' )
-				->from( 'shorturls' )
-				->where( [
-					'su_namespace' => $title->getNamespace(),
-					'su_title' => $title->getDBkey()
-				] )
-				->caller( $fname )
-				->fetchField();
+					->select( 'su_id' )
+					->from( 'shorturls' )
+					->where( [
+						'su_namespace' => $title->getNamespace(),
+						'su_title' => $title->getDBkey()
+					] )
+					->caller( $fname )
+					->fetchField();
 
 				// Automatically create an ID for this title if missing...
 				if ( !$id ) {
@@ -68,15 +68,15 @@ class Utils {
 					} else {
 						// Raced out; get the winning ID
 						$id = $dbw->newSelectQueryBuilder()
-						->select( 'su_id' )
-						->from( 'shorturls' )
-						->where( [
-							'su_namespace' => $title->getNamespace(),
-							'su_title' => $title->getDBkey()
-						] )
-						->caller( $fname )
-						->lockInShareMode()
-						->fetchField();
+							->select( 'su_id' )
+							->from( 'shorturls' )
+							->where( [
+								'su_namespace' => $title->getNamespace(),
+								'su_title' => $title->getDBkey()
+							] )
+							->caller( $fname )
+							->lockInShareMode()
+							->fetchField();
 					}
 				}
 
@@ -108,11 +108,11 @@ class Utils {
 			static function () use ( $id, $fname, $connectionProvider ) {
 				$dbr = $connectionProvider->getReplicaDatabase();
 				$row = $dbr->newSelectQueryBuilder()
-				->select( [ 'su_namespace', 'su_title' ] )
-				->from( 'shorturls' )
-				->where( [ 'su_id' => $id ] )
-				->caller( $fname )
-				->fetchRow();
+					->select( [ 'su_namespace', 'su_title' ] )
+					->from( 'shorturls' )
+					->where( [ 'su_id' => $id ] )
+					->caller( $fname )
+					->fetchRow();
 
 				return $row ? (array)$row : false;
 			}
