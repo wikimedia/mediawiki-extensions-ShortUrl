@@ -40,7 +40,7 @@ class PopulateShortUrlTable extends Maintenance {
 			$res = $dbr->newSelectQueryBuilder()
 				->select( [ 'page_id', 'page_namespace', 'page_title' ] )
 				->from( 'page' )
-				->where( [ 'page_id > ' . $last_processed_id ] )
+				->where( $dbr->expr( 'page_id', '>', $last_processed_id ) )
 				->limit( 100 )
 				->orderBy( 'page_id' )
 				->caller( __METHOD__ )
