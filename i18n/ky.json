@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bosogo"
+		]
+	},
+	"shorturl": "Кыска URL",
+	"shorturl-not-found-title": "Кыска URL табылган жок",
+	"shorturl-toolbox-title": "Бул кыска шилтемени көчүрүп алыңыз",
+	"shorturl-toolbox-text": "Кыска URL"
+}
