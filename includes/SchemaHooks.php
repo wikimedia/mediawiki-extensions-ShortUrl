@@ -9,7 +9,7 @@
 
 namespace MediaWiki\Extension\ShortUrl;
 
-use DatabaseUpdater;
+use MediaWiki\Installer\DatabaseUpdater;
 use MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook;
 
 class SchemaHooks implements LoadExtensionSchemaUpdatesHook {

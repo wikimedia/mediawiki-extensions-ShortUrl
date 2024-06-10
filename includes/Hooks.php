@@ -11,9 +11,9 @@
 
 namespace MediaWiki\Extension\ShortUrl;
 
-use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Hook\WebRequestPathInfoRouterHook;
+use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Request\PathRouter;
 use MediaWiki\SpecialPage\SpecialPage;
