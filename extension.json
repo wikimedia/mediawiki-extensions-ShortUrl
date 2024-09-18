@@ -30,7 +30,7 @@
 			"localBasePath": "resources",
 			"remoteExtPath": "ShortUrl/resources",
 			"dependencies": [
-				"mediawiki.Uri"
+				"web2017-polyfills"
 			]
 		}
 	},
