@@ -5,7 +5,7 @@
 		if ( $( '#t-shorturl' ).length ) {
 			var url = $( '#t-shorturl a' ).attr( 'href' ),
 				/* Add protocol for proto-relative urls */
-				protoNonRelative = ( new mw.Uri( url ) ).toString();
+				protoNonRelative = ( new URL( url, location.href ) ).toString();
 			$( '#firstHeading' ).after(
 				$( '<div>' )
 					.addClass( 'title-shortlink-container' )
