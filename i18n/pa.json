@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kuldeepburjbhalaike"
+			"Kuldeepburjbhalaike",
+			"Cabal"
 		]
 	},
 	"shorturl": "ਛੋਟਾ ਯੂਆਰਐੱਲ",
 	"shorturl-desc": "ਸਾਰੇ ਸਮੱਗਰੀ ਸਫ਼ਿਆਂ ਲਈ [[Special:ShortUrl|ਛੋਟੇ ਰੀਡਾਇਰੈਕਟ ਯੂਆਰਐੱਲ]]",
 	"shorturl-not-found-title": "ਛੋਟਾ ਯੂਆਰਐੱਲ ਨਹੀਂ ਮਿਲਿਆ",
-	"shorturl-toolbox-title": "ਸਾਂਝਾ ਕਰਨ ਲਈ ਇਸ ਛੋਟੇ ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ",
+	"shorturl-toolbox-title": "ਸਾਂਝਾ ਕਰਨ ਲਈ ਇਸ ਛੋਟੀ ਕੜੀ ਦੀ ਨਕਲ ਕਰੋ",
 	"shorturl-toolbox-text": "ਛੋਟਾ ਯੂਆਰਐੱਲ"
 }
