@@ -1,15 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cookai1205",
 			"Cwlin0416",
 			"LNDDYL",
 			"Oapbtommy"
 		]
 	},
-	"shorturl": "簡短 URL",
-	"shorturl-desc": "所有內容頁面的 [[Special:ShortUrl|簡短重新導向 URL]]",
-	"shorturl-not-found-title": "查無簡短 URL",
-	"shorturl-not-found-message": "抱歉，查無請求的 URL (沒有使用 ID $1 的簡短 URL)",
-	"shorturl-toolbox-title": "複製此簡短連結用來分享",
-	"shorturl-toolbox-text": "簡短 URL"
+	"shorturl": "短網址",
+	"shorturl-desc": "所有內容頁面的[[Special:ShortUrl|簡短重新導向網址]]",
+	"shorturl-not-found-title": "查無短網址",
+	"shorturl-not-found-message": "抱歉，查無請求的網址（沒有使用ID $1的短網址）",
+	"shorturl-toolbox-title": "複製此短網址用來分享",
+	"shorturl-toolbox-text": "短網址"
 }
