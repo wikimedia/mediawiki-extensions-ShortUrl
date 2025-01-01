@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Şeyx Şamil"
+			"Şeyx Şamil",
+			"Əkrəm Cəfər"
 		]
 	},
 	"shorturl": "Qısa URL",
 	"shorturl-not-found-title": "Qısa URL tapılmadı",
-	"shorturl-toolbox-title": "Bu qısa linki paylaşmaq üçün kopyala",
+	"shorturl-toolbox-title": "Bu qısa linki paylaşmaq üçün kopiyala",
 	"shorturl-toolbox-text": "Qısa URL"
 }
