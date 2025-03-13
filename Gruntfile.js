@@ -8,6 +8,9 @@ module.exports = function ( grunt ) {
 
 	grunt.initConfig( {
 		stylelint: {
+			options: {
+				cache: true
+			},
 			all: [
 				'**/*.css',
 				'!node_modules/**',
