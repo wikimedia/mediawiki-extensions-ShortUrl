@@ -4,7 +4,7 @@
 	"author": "Yuvi Panda",
 	"license-name": "BSD-3-Clause",
 	"requires": {
-		"MediaWiki": ">= 1.43"
+		"MediaWiki": ">= 1.44"
 	},
 	"url": "https://www.mediawiki.org/wiki/Extension:ShortUrl",
 	"descriptionmsg": "shorturl-desc",
