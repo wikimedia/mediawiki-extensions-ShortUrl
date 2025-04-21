@@ -16,8 +16,8 @@ use MediaWiki\Hook\WebRequestPathInfoRouterHook;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Request\PathRouter;
+use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\SpecialPage;
-use Skin;
 use Wikimedia\Rdbms\DBReadOnlyError;
 
 class Hooks implements
