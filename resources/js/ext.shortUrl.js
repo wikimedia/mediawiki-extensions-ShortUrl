@@ -1,9 +1,9 @@
 ( function () {
 	'use strict';
 
-	$( function () {
+	$( () => {
 		if ( $( '#t-shorturl' ).length ) {
-			var url = $( '#t-shorturl a' ).attr( 'href' ),
+			const url = $( '#t-shorturl a' ).attr( 'href' ),
 				/* Add protocol for proto-relative urls */
 				protoNonRelative = ( new URL( url, location.href ) ).toString();
 			$( '#firstHeading' ).after(
