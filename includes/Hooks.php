@@ -74,7 +74,7 @@ class Hooks implements
 		if ( Utils::needsShortUrl( $title ) ) {
 			try {
 				$shortId = Utils::encodeTitle( $title );
-			} catch ( DBReadOnlyError $e ) {
+			} catch ( DBReadOnlyError ) {
 				$shortId = false;
 			}
 			if ( $shortId !== false ) {
