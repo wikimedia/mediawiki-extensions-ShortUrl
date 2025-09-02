@@ -5,6 +5,9 @@
 		]
 	},
 	"shorturl": "Йоца хьажорг",
+	"shorturl-desc": "[[Special:ShortUrl|ДӀасахьажоргийн йоца хьажоргаш]] массо а агӀонашна",
 	"shorturl-not-found-title": "Доца URL цакарий",
+	"shorturl-not-found-message": "Бехк ма билла, билгалйаьккхина URL ца карийра ($1 ID йолу йоца хьажорг йац)",
+	"shorturl-toolbox-title": "ХӀара йоца хьажорг копи йе",
 	"shorturl-toolbox-text": "Йоца хьажорг"
 }
