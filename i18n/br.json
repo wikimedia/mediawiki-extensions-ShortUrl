@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"shorturl": "URL berr",
-	"shorturl-desc": "[[Special:ShortUrl|URL berr evit adkasoù]]",
+	"shorturl-desc": "[[Special:ShortUrl|URL berr adkas]] evit an holl bajennoù endalc'h",
 	"shorturl-not-found-title": "N'eo ket bet kavet an URL berr",
 	"shorturl-not-found-message": "Digarezit, n'eo ket bet kavet an URL emaoc'h o klask (N'eus URL berr ebet gant an ID $1)",
 	"shorturl-toolbox-title": "Kopiit al liamm berr-mañ evit e rannañ",
