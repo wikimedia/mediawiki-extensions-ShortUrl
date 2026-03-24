@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
 	"shorturl": "Kratka URL",
-	"shorturl-desc": "[[Special:ShortUrl|Kratka URL-adresa za preusmjeravanja]] na sve sadržajne stranice",
-	"shorturl-not-found-title": "Nisam našao kratku URL-adresu",
-	"shorturl-not-found-message": "Ispričavamo se, nisam našao URL koju ste tražili (ne postoji kratka URL s naznakom $1)",
-	"shorturl-toolbox-title": "Iskopirajte ovu kratku poveznicu da je dijelite",
+	"shorturl-desc": "[[Special:ShortUrl|Kratak URL za preusmjeravanja]] na sve sadržajne stranice",
+	"shorturl-not-found-title": "Kratak URL nije pronađen",
+	"shorturl-not-found-message": "Traženi URL nije pronađen (ne postoji kratak URL s ID-jem $1)",
+	"shorturl-toolbox-title": "Kopirajte ovu kratku vezu radi dijeljenja",
 	"shorturl-toolbox-text": "Kratka URL"
 }
