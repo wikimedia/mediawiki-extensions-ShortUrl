@@ -11,11 +11,11 @@
 
 namespace MediaWiki\Extension\ShortUrl;
 
-use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Hook\WebRequestPathInfoRouterHook;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Request\PathRouter;
+use MediaWiki\Skin\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\SpecialPage;
 use Wikimedia\Rdbms\DBReadOnlyError;
