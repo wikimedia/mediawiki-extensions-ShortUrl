@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"shorturl": "URL gaaban",
+	"shorturl-desc": "[[Special:ShortUrl|URL-yada gaaban ee sii toosinta]] ee dhammaan bogagga nuxurka",
+	"shorturl-not-found-title": "URL-ga gaaban lama helin",
+	"shorturl-not-found-message": "Raalli iga noqo, URL-ka gaaban ee aad raadinayso lama helin (Ma jiro URL gaaban oo leh Aqoonsi $1)",
+	"shorturl-toolbox-title": "Nuqul ka samee xiriirkan gaaban si aad ula wadaagto",
+	"shorturl-toolbox-text": "URL gaaban"
+}
