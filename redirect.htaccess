@@ -1,3 +1,0 @@
-RewriteEngine On
-# Needs fixing to remove extra Redirect
-RewriteRule ^/r/.*$ /w/index.php
